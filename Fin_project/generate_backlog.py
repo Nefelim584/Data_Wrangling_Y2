@@ -1,0 +1,373 @@
+import csv
+from pathlib import Path
+
+backlog_data = [
+    # EPIC 1: Data Ingestion, Inspection & Quality Wrangling
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.1.1: As a Data Engineer, I want to automatically ingest historical video game sales CSV data so that multi-regional commercial performance figures are available on a centralized analytical platform.",
+        "FEAT 1.1: Multi-Regional Sales Dataset Ingestion",
+        "TASK 1.1.1: Download and verify integrity of global video game sales dataset vgsales.csv."
+    ),
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.1.1: As a Data Engineer, I want to automatically ingest historical video game sales CSV data so that multi-regional commercial performance figures are available on a centralized analytical platform.",
+        "FEAT 1.1: Multi-Regional Sales Dataset Ingestion",
+        "TASK 1.1.2: Build robust CSV parser handling headers, comma-separated decimals, and missing indicators."
+    ),
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.1.1: As a Data Engineer, I want to automatically ingest historical video game sales CSV data so that multi-regional commercial performance figures are available on a centralized analytical platform.",
+        "FEAT 1.1: Multi-Regional Sales Dataset Ingestion",
+        "TASK 1.1.3: Validate initial DataFrame schema, shape (16,598 rows x 11 columns), and memory footprint."
+    ),
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.2.1: As a Data Quality Specialist, I want to audit missing and inconsistent records across release years and publishers so that downstream analytical models operate on high-fidelity data.",
+        "FEAT 1.2: Missing Data Auditing & Imputation Strategy",
+        "TASK 1.2.1: Calculate null frequencies and missingness percentages across all columns."
+    ),
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.2.1: As a Data Quality Specialist, I want to audit missing and inconsistent records across release years and publishers so that downstream analytical models operate on high-fidelity data.",
+        "FEAT 1.2: Missing Data Auditing & Imputation Strategy",
+        "TASK 1.2.2: Implement safe drop strategy for 271 unresolvable missing release years."
+    ),
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.2.1: As a Data Quality Specialist, I want to audit missing and inconsistent records across release years and publishers so that downstream analytical models operate on high-fidelity data.",
+        "FEAT 1.2: Missing Data Auditing & Imputation Strategy",
+        "TASK 1.2.3: Impute missing publisher identities with standardized 'Unknown' category."
+    ),
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.3.1: As a Data Engineer, I want to enforce strict data types and verify uniqueness across title-platform pairs so that numeric calculations avoid conversion errors.",
+        "FEAT 1.3: Type Casting & Duplicate Sanitization",
+        "TASK 1.3.1: Cast release years to clean integers and verify floating-point precision for sales figures."
+    ),
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.3.1: As a Data Engineer, I want to enforce strict data types and verify uniqueness across title-platform pairs so that numeric calculations avoid conversion errors.",
+        "FEAT 1.3: Type Casting & Duplicate Sanitization",
+        "TASK 1.3.2: Execute duplicate detection and deduplication scans across game-platform records."
+    ),
+    (
+        "EPIC 1: Data Ingestion, Inspection & Quality Wrangling",
+        "US_1.3.1: As a Data Engineer, I want to enforce strict data types and verify uniqueness across title-platform pairs so that numeric calculations avoid conversion errors.",
+        "FEAT 1.3: Type Casting & Duplicate Sanitization",
+        "TASK 1.3.3: Reset DataFrame index and output cleaned dataset validation report."
+    ),
+
+    # EPIC 2: Descriptive Statistics & Longitudinal Trends
+    (
+        "EPIC 2: Descriptive Statistics & Longitudinal Trends",
+        "US_2.1.1: As a Market Analyst, I want to compute key summary statistics and identify top-selling blockbusters so that sales distributions, skewness, and outliers are comprehensively profiled.",
+        "FEAT 2.1: Statistical Profiling & Outlier Diagnostics",
+        "TASK 2.1.1: Compute parametric and non-parametric metrics (mean, median, std, skewness, kurtosis)."
+    ),
+    (
+        "EPIC 2: Descriptive Statistics & Longitudinal Trends",
+        "US_2.1.1: As a Market Analyst, I want to compute key summary statistics and identify top-selling blockbusters so that sales distributions, skewness, and outliers are comprehensively profiled.",
+        "FEAT 2.1: Statistical Profiling & Outlier Diagnostics",
+        "TASK 2.1.2: Identify and profile the all-time Top 10 best-selling video games globally."
+    ),
+    (
+        "EPIC 2: Descriptive Statistics & Longitudinal Trends",
+        "US_2.1.1: As a Market Analyst, I want to compute key summary statistics and identify top-selling blockbusters so that sales distributions, skewness, and outliers are comprehensively profiled.",
+        "FEAT 2.1: Statistical Profiling & Outlier Diagnostics",
+        "TASK 2.1.3: Calculate interquartile ranges and quantify commercial blockbusters exceeding Q3 + 1.5xIQR."
+    ),
+    (
+        "EPIC 2: Descriptive Statistics & Longitudinal Trends",
+        "US_2.2.1: As an Industry Strategist, I want to analyze annual release volume and cumulative revenue trends over time so that growth eras, peak years, and cyclical shifts can be identified.",
+        "FEAT 2.2: Historical Sales & Release Trajectory Modeling",
+        "TASK 2.2.1: Aggregate game release counts and total global sales by calendar year."
+    ),
+    (
+        "EPIC 2: Descriptive Statistics & Longitudinal Trends",
+        "US_2.2.1: As an Industry Strategist, I want to analyze annual release volume and cumulative revenue trends over time so that growth eras, peak years, and cyclical shifts can be identified.",
+        "FEAT 2.2: Historical Sales & Release Trajectory Modeling",
+        "TASK 2.2.2: Segment industry history into 4 discrete commercial eras (Early, Growth, Peak, Digital Transition)."
+    ),
+    (
+        "EPIC 2: Descriptive Statistics & Longitudinal Trends",
+        "US_2.2.1: As an Industry Strategist, I want to analyze annual release volume and cumulative revenue trends over time so that growth eras, peak years, and cyclical shifts can be identified.",
+        "FEAT 2.2: Historical Sales & Release Trajectory Modeling",
+        "TASK 2.2.3: Annotate major console generation launch milestones across longitudinal revenue curves."
+    ),
+
+    # EPIC 3: Genre & Platform Industry Dynamics
+    (
+        "EPIC 3: Genre & Platform Industry Dynamics",
+        "US_3.1.1: As a Product Manager, I want to evaluate genre popularity by title volume versus commercial revenue so that high-yield categories and oversaturated genres can be distinguished.",
+        "FEAT 3.1: Genre Volume & Commercial Yield Analysis",
+        "TASK 3.1.1: Group titles by genre and rank by total sales, title counts, and average revenue per game."
+    ),
+    (
+        "EPIC 3: Genre & Platform Industry Dynamics",
+        "US_3.1.1: As a Product Manager, I want to evaluate genre popularity by title volume versus commercial revenue so that high-yield categories and oversaturated genres can be distinguished.",
+        "FEAT 3.1: Genre Volume & Commercial Yield Analysis",
+        "TASK 3.1.2: Compute rank divergence between release volume and sales revenue to spot high-yield genres."
+    ),
+    (
+        "EPIC 3: Genre & Platform Industry Dynamics",
+        "US_3.1.1: As a Product Manager, I want to evaluate genre popularity by title volume versus commercial revenue so that high-yield categories and oversaturated genres can be distinguished.",
+        "FEAT 3.1: Genre Volume & Commercial Yield Analysis",
+        "TASK 3.1.3: Generate side-by-side comparative visualizations of genre market shares."
+    ),
+    (
+        "EPIC 3: Genre & Platform Industry Dynamics",
+        "US_3.2.1: As a Hardware Partnerships Lead, I want to track platform lifecycles and console generational dominance so that platform longevity and peak sales windows are clearly quantified.",
+        "FEAT 3.2: Platform Lifecycle & Generation Modeling",
+        "TASK 3.2.1: Aggregate hardware platform metrics (first release, last release, lifespan, top title)."
+    ),
+    (
+        "EPIC 3: Genre & Platform Industry Dynamics",
+        "US_3.2.1: As a Hardware Partnerships Lead, I want to track platform lifecycles and console generational dominance so that platform longevity and peak sales windows are clearly quantified.",
+        "FEAT 3.2: Platform Lifecycle & Generation Modeling",
+        "TASK 3.2.2: Categorize platforms into 5 console generations and model generation lifecycle curves."
+    ),
+    (
+        "EPIC 3: Genre & Platform Industry Dynamics",
+        "US_3.2.1: As a Hardware Partnerships Lead, I want to track platform lifecycles and console generational dominance so that platform longevity and peak sales windows are clearly quantified.",
+        "FEAT 3.2: Platform Lifecycle & Generation Modeling",
+        "TASK 3.2.3: Build stacked area visualization showing top platform sales evolution over time."
+    ),
+
+    # EPIC 4: Regional Market Variations & Publisher Insights
+    (
+        "EPIC 4: Regional Market Variations & Publisher Insights",
+        "US_4.1.1: As an International Marketing Director, I want to compare regional sales shares across North America, Europe, and Japan so that geographic consumer preferences are exposed.",
+        "FEAT 4.1: Geographic Sales Distribution & Composition",
+        "TASK 4.1.1: Aggregate total and mean sales per regional territory (NA, EU, JP, Other)."
+    ),
+    (
+        "EPIC 4: Regional Market Variations & Publisher Insights",
+        "US_4.1.1: As an International Marketing Director, I want to compare regional sales shares across North America, Europe, and Japan so that geographic consumer preferences are exposed.",
+        "FEAT 4.1: Geographic Sales Distribution & Composition",
+        "TASK 4.1.2: Construct regional sales proportion heatmaps across all 12 game genres."
+    ),
+    (
+        "EPIC 4: Regional Market Variations & Publisher Insights",
+        "US_4.1.1: As an International Marketing Director, I want to compare regional sales shares across North America, Europe, and Japan so that geographic consumer preferences are exposed.",
+        "FEAT 4.1: Geographic Sales Distribution & Composition",
+        "TASK 4.1.3: Identify top 5 best-selling regional blockbusters for each geographic territory."
+    ),
+    (
+        "EPIC 4: Regional Market Variations & Publisher Insights",
+        "US_4.2.1: As an Industry Competitive Intelligence Analyst, I want to rank the top 10 publishers and identify genre monopolies so that hit publisher influence is documented.",
+        "FEAT 4.2: Top Publisher Benchmarking & Genre Dominance",
+        "TASK 4.2.1: Rank publishers by cumulative global revenue, title releases, and average sales."
+    ),
+    (
+        "EPIC 4: Regional Market Variations & Publisher Insights",
+        "US_4.2.1: As an Industry Competitive Intelligence Analyst, I want to rank the top 10 publishers and identify genre monopolies so that hit publisher influence is documented.",
+        "FEAT 4.2: Top Publisher Benchmarking & Genre Dominance",
+        "TASK 4.2.2: Compute genre portfolio composition percentages for the top 10 publishing giants."
+    ),
+    (
+        "EPIC 4: Regional Market Variations & Publisher Insights",
+        "US_4.2.1: As an Industry Competitive Intelligence Analyst, I want to rank the top 10 publishers and identify genre monopolies so that hit publisher influence is documented.",
+        "FEAT 4.2: Top Publisher Benchmarking & Genre Dominance",
+        "TASK 4.2.3: Determine dominant hit publishers per genre and identify closest runner-up publishers."
+    ),
+
+    # EPIC 5: Advanced Market Dominance & Publisher Archetypes
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.1.1: As a Quantitative Strategy Lead, I want to calculate genre market shares and flag official Genre Leaders (>30%) so that market concentration per genre is quantitatively measured.",
+        "FEAT 5.1: Genre Market Share & Leader Detection",
+        "TASK 5.1.1: Calculate each publisher's market share percentage within each genre."
+    ),
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.1.1: As a Quantitative Strategy Lead, I want to calculate genre market shares and flag official Genre Leaders (>30%) so that market concentration per genre is quantitatively measured.",
+        "FEAT 5.1: Genre Market Share & Leader Detection",
+        "TASK 5.1.2: Filter and flag publishers exceeding the 30% genre leadership threshold."
+    ),
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.1.1: As a Quantitative Strategy Lead, I want to calculate genre market shares and flag official Genre Leaders (>30%) so that market concentration per genre is quantitatively measured.",
+        "FEAT 5.1: Genre Market Share & Leader Detection",
+        "TASK 5.1.3: Generate horizontal threshold chart spotlighting Nintendo and EA's genre leadership."
+    ),
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.2.1: As a Quantitative Strategy Lead, I want to compute Genre Diversity, Regional Consistency, and Hit Rate metrics so that publisher capability scores are standardized.",
+        "FEAT 5.2: Multi-Dimensional Publisher Performance Metrics",
+        "TASK 5.2.1: Compute Genre Diversity Score as count of unique genres published in (range 1–12)."
+    ),
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.2.1: As a Quantitative Strategy Lead, I want to compute Genre Diversity, Regional Consistency, and Hit Rate metrics so that publisher capability scores are standardized.",
+        "FEAT 5.2: Multi-Dimensional Publisher Performance Metrics",
+        "TASK 5.2.2: Compute Regional Consistency Score as standard deviation of regional sales shares."
+    ),
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.2.1: As a Quantitative Strategy Lead, I want to compute Genre Diversity, Regional Consistency, and Hit Rate metrics so that publisher capability scores are standardized.",
+        "FEAT 5.2: Multi-Dimensional Publisher Performance Metrics",
+        "TASK 5.2.3: Calculate Hit Rate as percentage of publisher games selling above their genre median."
+    ),
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.3.1: As an Executive Portfolio Manager, I want to formulate a Market Power Index (MPI) and classify publishers into archetypes so that strategic competitive postures can be benchmarked.",
+        "FEAT 5.3: Market Power Index & Strategic Archetype Segmentation",
+        "TASK 5.3.1: Formulate weighted Market Power Index combining scale, hit rate, diversity, and consistency."
+    ),
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.3.1: As an Executive Portfolio Manager, I want to formulate a Market Power Index (MPI) and classify publishers into archetypes so that strategic competitive postures can be benchmarked.",
+        "FEAT 5.3: Market Power Index & Strategic Archetype Segmentation",
+        "TASK 5.3.2: Segment publishers into archetypes (Diversified Giants, Genre Specialists, Regional Powerhouses)."
+    ),
+    (
+        "EPIC 5: Advanced Market Dominance & Publisher Archetypes",
+        "US_5.3.1: As an Executive Portfolio Manager, I want to formulate a Market Power Index (MPI) and classify publishers into archetypes so that strategic competitive postures can be benchmarked.",
+        "FEAT 5.3: Market Power Index & Strategic Archetype Segmentation",
+        "TASK 5.3.3: Visualize publisher competitive landscape via multi-metric scatter plot and ranked MPI charts."
+    ),
+
+    # EPIC 6: Regional Preference Divergence & Cultural Outliers
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.1.1: As a Cultural Localization Strategist, I want to compute custom divergence metrics for every game so that titles with non-standard geographic appeal are mathematically detected.",
+        "FEAT 6.1: Game-Level Regional Divergence Scoring",
+        "TASK 6.1.1: Normalize regional sales into proportion vectors and establish global benchmark Q."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.1.1: As a Cultural Localization Strategist, I want to compute custom divergence metrics for every game so that titles with non-standard geographic appeal are mathematically detected.",
+        "FEAT 6.1: Game-Level Regional Divergence Scoring",
+        "TASK 6.1.2: Implement entropy-based Jensen-Shannon Distance and Total Variation Distance functions."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.1.1: As a Cultural Localization Strategist, I want to compute custom divergence metrics for every game so that titles with non-standard geographic appeal are mathematically detected.",
+        "FEAT 6.1: Game-Level Regional Divergence Scoring",
+        "TASK 6.1.3: Rank and profile Top 10 high-divergence cult titles versus globally balanced blockbusters."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.2.1: As an International Product Marketer, I want to construct Genre-Region Affinity Scores so that over-indexed and under-indexed categories are clearly isolated for regional targeting.",
+        "FEAT 6.2: Genre-Region Affinity & Deviation Indexing",
+        "TASK 6.2.1: Calculate percentage distribution of genre revenue across NA, EU, JP, and Other."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.2.1: As an International Product Marketer, I want to construct Genre-Region Affinity Scores so that over-indexed and under-indexed categories are clearly isolated for regional targeting.",
+        "FEAT 6.2: Genre-Region Affinity & Deviation Indexing",
+        "TASK 6.2.2: Compute Affinity Index (100 = neutral baseline) and percentage point deviation matrix."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.2.1: As an International Product Marketer, I want to construct Genre-Region Affinity Scores so that over-indexed and under-indexed categories are clearly isolated for regional targeting.",
+        "FEAT 6.2: Genre-Region Affinity & Deviation Indexing",
+        "TASK 6.2.3: Generate dual heatmaps highlighting Japan's 260% RPG affinity and Western shooter preference."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.3.1: As a Market Researcher, I want to measure longitudinal regional preference shifts and calculate a Preference Stability Index so that consumer taste inertia is tracked.",
+        "FEAT 6.3: Temporal Preference Tracking & Stability Index",
+        "TASK 6.3.1: Extract annual favorite genres per geographic territory from 1995 to 2015."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.3.1: As a Market Researcher, I want to measure longitudinal regional preference shifts and calculate a Preference Stability Index so that consumer taste inertia is tracked.",
+        "FEAT 6.3: Temporal Preference Tracking & Stability Index",
+        "TASK 6.3.2: Track pairwise JSD convergence between Western markets and divergence with Japan."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.3.1: As a Market Researcher, I want to measure longitudinal regional preference shifts and calculate a Preference Stability Index so that consumer taste inertia is tracked.",
+        "FEAT 6.3: Temporal Preference Tracking & Stability Index",
+        "TASK 6.3.3: Implement Preference Stability Index based on year-over-year genre distribution cosine similarity."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.4.1: As a Commercial Risk Lead, I want to isolate cultural outlier titles and compute Cultural Specificity Scores so that single-market commercial dependency is quantified.",
+        "FEAT 6.4: Cultural Outlier Detection & Specificity Scoring",
+        "TASK 6.4.1: Apply strict outlier filter (>50% sales in one territory, <10% in each remaining territory)."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.4.1: As a Commercial Risk Lead, I want to isolate cultural outlier titles and compute Cultural Specificity Scores so that single-market commercial dependency is quantified.",
+        "FEAT 6.4: Cultural Outlier Detection & Specificity Scoring",
+        "TASK 6.4.2: Formulate Cultural Specificity Score (CSS) normalized on 0–100% scale."
+    ),
+    (
+        "EPIC 6: Regional Preference Divergence & Cultural Outliers",
+        "US_6.4.1: As a Commercial Risk Lead, I want to isolate cultural outlier titles and compute Cultural Specificity Scores so that single-market commercial dependency is quantified.",
+        "FEAT 6.4: Cultural Outlier Detection & Specificity Scoring",
+        "TASK 6.4.3: Visualize cultural outlier distribution and profile standout blockbusters."
+    ),
+
+    # EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.1.1: As an Executive Stakeholder, I want an end-to-end clean, commented Jupyter Notebook so that the entire data wrangling, EDA, and statistical modeling workflow is fully reproducible.",
+        "FEAT 7.1: Comprehensive Jupyter Notebook Workflow",
+        "TASK 7.1.1: Structure notebook with markdown narratives, mathematical formulas, and data cleaning steps."
+    ),
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.1.1: As an Executive Stakeholder, I want an end-to-end clean, commented Jupyter Notebook so that the entire data wrangling, EDA, and statistical modeling workflow is fully reproducible.",
+        "FEAT 7.1: Comprehensive Jupyter Notebook Workflow",
+        "TASK 7.1.2: Validate all execution outputs, table formats, and error-free cell execution."
+    ),
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.1.1: As an Executive Stakeholder, I want an end-to-end clean, commented Jupyter Notebook so that the entire data wrangling, EDA, and statistical modeling workflow is fully reproducible.",
+        "FEAT 7.1: Comprehensive Jupyter Notebook Workflow",
+        "TASK 7.1.3: Author Executive Short Conclusion summarizing insights, wrangling challenges, and visualization value."
+    ),
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.2.1: As an Executive Decision Maker, I want a self-contained interactive HTML dashboard modeled after modern enterprise dashboards so that all market dimensions can be dynamically explored.",
+        "FEAT 7.2: Standalone Interactive HTML Dashboard",
+        "TASK 7.2.1: Build dashboard generation script Fin_project/dashboard.py embedding clean analytical JSON payload."
+    ),
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.2.1: As an Executive Decision Maker, I want a self-contained interactive HTML dashboard modeled after modern enterprise dashboards so that all market dimensions can be dynamically explored.",
+        "FEAT 7.2: Standalone Interactive HTML Dashboard",
+        "TASK 7.2.2: Design modern HTML/CSS interface with responsive KPI cards, filters, and interactive canvas charts."
+    ),
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.2.1: As an Executive Decision Maker, I want a self-contained interactive HTML dashboard modeled after modern enterprise dashboards so that all market dimensions can be dynamically explored.",
+        "FEAT 7.2: Standalone Interactive HTML Dashboard",
+        "TASK 7.2.3: Compile standalone Fin_project/output/dashboard.html requiring zero internet connection or server."
+    ),
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.3.1: As a Project Management Office (PMO) Lead, I want a structured project backlog CSV mapping EPICS, User Stories, Features, and Dev Tasks so that development traceability is preserved.",
+        "FEAT 7.3: Agile Project Management Backlog Delivery",
+        "TASK 7.3.1: Generate compliant project_backlog.csv matching strict hierarchy and validation rules."
+    ),
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.3.1: As a Project Management Office (PMO) Lead, I want a structured project backlog CSV mapping EPICS, User Stories, Features, and Dev Tasks so that development traceability is preserved.",
+        "FEAT 7.3: Agile Project Management Backlog Delivery",
+        "TASK 7.3.2: Validate epic counts (<=7), feature counts (<=5 per epic), and task counts (<=4 per feature)."
+    ),
+    (
+        "EPIC 7: Interactive Dashboard, Storytelling & Reporting Deliverables",
+        "US_7.3.1: As a Project Management Office (PMO) Lead, I want a structured project backlog CSV mapping EPICS, User Stories, Features, and Dev Tasks so that development traceability is preserved.",
+        "FEAT 7.3: Agile Project Management Backlog Delivery",
+        "TASK 7.3.3: Finalize and cross-verify all project deliverables in Fin_project/todo.md."
+    ),
+]
+
+def main():
+    base_dir = Path(__file__).resolve().parent
+    output_path = base_dir / "project_backlog.csv"
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["EPIC", "User story", "Features", "Dev tasks"])
+        for row in backlog_data:
+            writer.writerow(row)
+    print(f"Generated {output_path} with {len(backlog_data)} rows.")
+
+if __name__ == "__main__":
+    main()
