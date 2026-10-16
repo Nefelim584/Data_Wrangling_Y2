@@ -1,0 +1,245 @@
+id_reclamation|numero_colis|id_enquete|date_reclamation|ville|code_produit|canal|motif_saisi|description|langue_saisie|statut|montant_mad
+MA-C-00099|FC-MA-100483|MA-S-00484|10/10/2025|Oujda|MAR_STD|Agence|TA5IR|Colis livré avec trois jours de retard|FR|Ouvert|
+MA-C-00161|FC-MA-100679|MA-S-00680|21/05/2025|Rabat|MAR_EXP|Agence|M3ATTEL|الطرد وصل متأخر بثلاثة أيام|AR|Résolu|
+MA-C-00115|FC-MA-100803|MA-S-00804|09/09/2025|Tanger|MAR_LRG|Téléphone|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00111|FC-MA-100271|MA-S-00272|27/05/2025|Agadir|MAR_EXP|Agence|M5SER|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00194|FC-MA-100434|MA-S-00435|27/07/2025|Casablanca|MAR_FRG|Agence|FRAIS|تم احتساب رسوم إضافية دون إخبارنا|AR|Clos|58
+MA-C-00040|FC-MA-100061|MA-S-00062|08/08/2025| Rabat |MAR_CLD|Agence|M5SER|Carton écrasé, contenu cassé|FR|Ouvert|
+MA-C-00131|FC-MA-100319|MA-S-00320|09/01/2025|Fès|MAR_CLD|Téléphone|M3ATTEL|lkolis wsel m3attel b 3 iyam|Darija|En cours|
+MA-C-00098|FC-MA-100038|MA-S-00039|05/03/2025|Oujda|MAR_EXP|Agence|m5ser|lkarton m5ser o li dakhel therres|Darija|Clos|1131
+MA-C-00060|FC-MA-100316|MA-S-00317|13/02/2025|Tanger|MAR_FRG|Web|MAKAYJAWBOCH|Impossible de joindre le service client|FR|En cours|
+MA-C-00023|FC-MA-101247||05/01/2025|Agadir|MAR_FRG|Agence|sav|service client ma kayjawbch f telephone|Darija|Clos|
+MA-C-00209|FC-MA-100761|MA-S-00762|27/08/2025|Rabat|MAR_LRG|Agence|M3ATTEL|الطرد وصل متأخر بثلاثة أيام|AR|Ouvert|
+MA-C-00016|FC-MA-100277|MA-S-00278|27/03/2025|Meknès|MAR_FRG|Téléphone|M3ATTEL|الطرد وصل متأخر بثلاثة أيام|AR|Résolu|
+MA-C-00116|FC-MA-100666|MA-S-00667|06/05/2025|Oujda|MAR_EXP|Web|ABIME|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00150|FC-MA-100836|MA-S-00837|23/03/2025| Tanger|MAR_LRG|Web|MAKAYJAWBOCH|Impossible de joindre le service client|FR|Clos|
+MA-C-00184|FC-MA-100193|MA-S-00194|08/01/2025|Fès|MAR_STD|Agence|M5SER|Carton écrasé, contenu cassé|FR|Clos|604
+MA-C-00219|FC-MA-100355|MA-S-00356|15/03/2025|Agadir|MAR_STD|Agence|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|Clos|1143
+MA-C-00105|FC-MA-100578|MA-S-00579|07/04/2025|Casablanca|MAR_STD|Téléphone|ABIME|lkarton m5ser o li dakhel therres|Darija|Résolu|528
+MA-C-00055|FC-MA-100423|MA-S-00424|26/09/2025|Marrakech|MAR_FRG|WhatsApp|abime|Carton écrasé, contenu cassé|FR|Ouvert|
+MA-C-00008|FC-MA-100151|MA-S-00152|01/05/2025|Meknès|MAR_EXP|WhatsApp|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|Résolu|314
+MA-C-00158|FC-MA-100921||12/06/2025|Fès|MAR_EXP|WhatsApp|MAKAYJAWBOCH|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00128|FC-MA-100833|MA-S-00834|13/09/2025|Tanger|MAR_VAL|WhatsApp|m5ser|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00234|FC-MA-100458|MA-S-00459|26/01/2025|Tanger|MAR_CLD|Web|MAKAYJAWBOCH|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00101|FC-MA-100765|MA-S-00766|21/08/2025|Fès|MAR_CLD|Agence|M5SER|lkarton m5ser o li dakhel therres|Darija|Résolu|654
+MA-C-00014|FC-MA-100657|MA-S-00658|12/03/2025|Marrakech|MAR_VAL|Téléphone|ABIME|lkarton m5ser o li dakhel therres|Darija|Résolu|348
+MA-C-00095|FC-MA-100752|MA-S-00753|25/07/2025|FÈS|MAR_VAL|Agence|SAV|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00061|FC-MA-100706|MA-S-00707|22/01/2025|Oujda|MAR_STD|Téléphone|M5SER|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00133|FC-MA-101169||16/03/2025|Oujda|MAR_STD|Web| ABIME |lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00037|FC-MA-100462|MA-S-00463|17/03/2025|Marrakech|MAR_EXP|Web|ABIME|lkarton m5ser o li dakhel therres|Darija|Clos|38
+MA-C-00228|FC-MA-100652|MA-S-00653|17/08/2025|Agadir|MAR_EXP|WhatsApp|SAV|Impossible de joindre le service client|FR|En cours|
+MA-C-00015|FC-MA-100157|MA-S-00158|16/02/2025|Casablanca|MAR_FRG|WhatsApp|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00113|FC-MA-100661|MA-S-00662|05/05/2025|Marrakech|MAR_EXP|Agence|sav|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00155|FC-MA-100371|MA-S-00372|17/02/2025|Fès|INCONNU|Web|MAKAYJAWBOCH|Impossible de joindre le service client|FR|Résolu|
+MA-C-00076|FC-MA-100603|MA-S-00604|30/05/2025|Rabat|MAR_VAL|Téléphone|SAV|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00079|FC-MA-100382|MA-S-00383|10/01/2025|Tanger|MAR_FRG|Web|M5SER|Carton écrasé, contenu cassé|FR|Ouvert|
+MA-C-00175|FC-MA-100834|MA-S-00835|30/07/2025|Oujda|MAR_LRG|Agence|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00004|FC-MA-100612|MA-S-00613|02/04/2025|Marrakech|MAR_EXP|Web|SAV|Impossible de joindre le service client|FR|En cours|
+MA-C-00073|FC-MA-100089|MA-S-00090|18/05/2025|Marrakech|MAR_VAL|WhatsApp|SAV|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Ouvert|
+MA-C-00108|FC-MA-100511|MA-S-00512|13/09/2025|Marrakech|MAR_LRG|WhatsApp|M5SER|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00046|FC-MA-100330|MA-S-00331|17/01/2025|Fès|MAR_CLD|Téléphone|M5SER|Carton écrasé, contenu cassé|FR|Clos|1198
+MA-C-00242|FC-MA-100120|MA-S-00121|27/09/2025|Meknès|MAR_CLD|Agence|MA3AYETCH|livreur ma3ayetch 3liya o mcha|Darija|En cours|
+MA-C-00137|FC-MA-100112|MA-S-00113|26/02/2025|Tanger|MAR_CLD|Web|RETARD|lkolis wsel m3attel b 3 iyam|Darija|Clos|
+MA-C-00022|FC-MA-100863|MA-S-00864|05/04/2025|Tanger|MAR_STD|Web|SAV|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00223|FC-MA-100786|MA-S-00787|21/01/2025|Tanger|MAR_FRG|Agence| M5SER |lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00141|FC-MA-100860|MA-S-00861|05/05/2025|Tanger|MAR_VAL|Agence|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|Clos|673
+MA-C-00156|FC-MA-100614|MA-S-00615|07/07/2025|Rabat|MAR_EXP|Web|FRAIS|تم احتساب رسوم إضافية دون إخبارنا|AR|Résolu|267
+MA-C-00070|FC-MA-100331|MA-S-00332|11/03/2025|Agadir|MAR_EXP|Agence|M5SER|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00226|FC-MA-100424|MA-S-00425|28/08/2025|Fès|MAR_CLD|Agence|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|Ouvert|
+MA-C-00162|FC-MA-100875|MA-S-00876|27/05/2025|Oujda|MAR_CLD|Agence|M5SER|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00003|FC-MA-100243|MA-S-00244|12/09/2025|Agadir|MAR_STD|WhatsApp|M5SER|Carton écrasé, contenu cassé|FR|Résolu|648
+MA-C-00230|FC-MA-100660|MA-S-00661|22/06/2025|CASABLANCA|MAR_LRG|Téléphone|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00068|FC-MA-100645|MA-S-00646|17/02/2025|Rabat|MAR_LRG|Web| M5SER |الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00118|FC-MA-100293|MA-S-00294|22/09/2025|Rabat|MAR_LRG|Téléphone|TA5IR|الطرد وصل متأخر بثلاثة أيام|AR|Ouvert|
+MA-C-00039|FC-MA-100210|MA-S-00211|20/08/2025|Fès|MAR_CLD|Agence|M5SER|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00100|FC-MA-100795|MA-S-00796|10/06/2025|Agadir|MAR_LRG|Agence|IMPOLI|livreur hder m3aya b tari9a khayba|Darija|Résolu|
+MA-C-00027|FC-MA-100889|MA-S-00890|04/10/2025|Tanger|MAR_CLD|WhatsApp|SAV|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00107|FC-MA-100292|MA-S-00293|15/06/2025|Tanger|MAR_LRG|WhatsApp|M5SER|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00058|FC-MA-100559|MA-S-00560|17/08/2025|Rabat|MAR_CLD|Téléphone|M5SER|lkarton m5ser o li dakhel therres|Darija|Résolu|275
+MA-C-00165|FC-MA-100435|MA-S-00436|25/08/2025|Oujda|MAR_LRG|Téléphone|ABIME|Carton écrasé, contenu cassé|FR|Résolu|1132
+MA-C-00236|FC-MA-100797|MA-S-00798|27/07/2025|Meknès|MAR_VAL|Web|M5SER|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00188|FC-MA-100091|MA-S-00092|02/08/2025|Oujda|MAR_LRG|Web|M3ATTEL|lkolis wsel m3attel b 3 iyam|Darija|Ouvert|
+MA-C-00109|FC-MA-100615|MA-S-00616|16/01/2025|MEKNÈS|MAR_LRG|WhatsApp|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00089|FC-MA-100502|MA-S-00503|28/02/2025|Rabat|MAR_LRG|Web|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|Résolu|
+MA-C-00237|FC-MA-100602|MA-S-00603|18/10/2025|Oujda|MAR_LRG|Web|SAV|Impossible de joindre le service client|FR|En cours|
+MA-C-00034|FC-MA-100518|MA-S-00519|08/07/2025|Agadir|MAR_CLD|Web|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00224|FC-MA-100642|MA-S-00643|24/01/2025|Casablanca|MAR_FRG|Web|SAV|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Ouvert|
+MA-C-00049|FC-MA-100734|MA-S-00735|28/06/2025|Casa|MAR_FRG|WhatsApp|FRAIS|Des frais supplémentaires qui n'étaient pas annoncés|FR|Clos|247
+MA-C-00050|FC-MA-100678|MA-S-00679|17/08/2025|Casablanca|MAR_FRG|Web|RETARD|الطرد وصل متأخر بثلاثة أيام|AR|Résolu|
+MA-C-00198|FC-MA-100744|MA-S-00745|18/02/2025|Marrakech|MAR_VAL|WhatsApp|M5SER|lkarton m5ser o li dakhel therres|Darija|Résolu|1178
+MA-C-00123|FC-MA-100746|MA-S-00747|04/01/2025|Marrakech|MAR_VAL|Téléphone|TA5IR|الطرد وصل متأخر بثلاثة أيام|AR|Résolu|
+MA-C-00182|FC-MA-100062|MA-S-00063|18/08/2025|Casablanca|MAR_LRG|Agence|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|Ouvert|
+MA-C-00056|FC-MA-100840|MA-S-00841|11/07/2025|Oujda|MAR_STD|WhatsApp|ABIME|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00025|FC-MA-100805|MA-S-00806|20/08/2025|Marrakech|MAR_STD|Agence|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00216|FC-MA-100586|MA-S-00587|12/01/2025|Casablanca|MAR_STD|WhatsApp|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00012|FC-MA-100222|MA-S-00223|13/05/2025|Meknès|MAR_EXP|Agence|SAV|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Ouvert|
+MA-C-00135|FC-MA-100755|MA-S-00756|03/05/2025|Oujda|MAR_STD|Téléphone|QLIL_LADAB|Livreur désagréable au moment de la remise|FR|Clos|
+MA-C-00178|FC-MA-100359|MA-S-00360|29/01/2025|Rabat|MAR_LRG|WhatsApp|ABIME|Carton écrasé, contenu cassé|FR|Ouvert|
+MA-C-00221|FC-MA-100019|MA-S-00020|01/01/2025|Tanger|MAR_EXP|Web|M5SER|lkarton m5ser o li dakhel therres|Darija|Résolu|850
+MA-C-00127|FC-MA-100034|MA-S-00035|11/03/2025|Meknès|MAR_FRG|Téléphone|ABIME|lkarton m5ser o li dakhel therres|Darija|Résolu|113
+MA-C-00093|FC-MA-100672|MA-S-00673|22/04/2025|Oujda|MAR_STD|Téléphone|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00048|FC-MA-100290|MA-S-00291|15/05/2025|Casablanca|MAR_STD|Web|MAKAYJAWBOCH|Impossible de joindre le service client|FR|En cours|
+MA-C-00229|FC-MA-100740|MA-S-00741|23/09/2025|Agadir|MAR_CLD|WhatsApp|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|Résolu|1100
+MA-C-00173|FC-MA-100266|MA-S-00267|05/01/2025|AGADIR|MAR_FRG|Web|SAV|Impossible de joindre le service client|FR|Clos|
+MA-C-00096|FC-MA-100680|MA-S-00681|18/10/2025|Casablanca|MAR_CLD|Web|SKHOUNA|lkolis dyal lbred wsel skhoun|Darija|En cours|
+MA-C-00001|FC-MA-100078|MA-S-00079|19/08/2025|Casablanca|MAR_EXP|Téléphone| ABIME |lkarton m5ser o li dakhel therres|Darija|Résolu|974
+MA-C-00214|FC-MA-100361|MA-S-00362|01/01/2025|Fès|MAR_FRG|Agence|TA5IR|lkolis wsel m3attel b 3 iyam|Darija|Ouvert|
+MA-C-00171|FC-MA-100160|MA-S-00161|05/10/2025|Tanger|MAR_EXP|Web|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|Ouvert|
+MA-C-00028|FC-MA-100360|MA-S-00361|18/06/2025|Agadir|MAR_VAL|Web|FRAIS|khellsouni frais zayda bla ma y3elmoni|Darija|Clos|205
+MA-C-00213|FC-MA-100150|MA-S-00151|08/01/2025|Fès|MAR_EXP|Téléphone|A_CLASSER|الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00042|FC-MA-100260|MA-S-00261|14/01/2025|Meknès|MAR_LRG|Web|ABIME|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00074|FC-MA-100480|MA-S-00481|17/04/2025|Tanger|MAR_EXP|Web|M5SER|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00053|FC-MA-100854|MA-S-00855|14/03/2025|Rabat|MAR_FRG|Agence|ABIME|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00097|FC-MA-100208|MA-S-00209|09/01/2025|Agadir|MAR_LRG|Téléphone|M5SER|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00129|FC-MA-100184|MA-S-00185|10/07/2025| Agadir|MAR_EXP|WhatsApp|MAKAYJAWBOCH|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Clos|
+MA-C-00117|FC-MA-100918||26/06/2025|Rabat|MAR_EXP|WhatsApp|TA5IR|Colis livré avec trois jours de retard|FR|Ouvert|
+MA-C-00154|FC-MA-100899|MA-S-00900|24/08/2025|Marrakech|MAR_CLD|Agence|MAKAYJAWBOCH|Impossible de joindre le service client|FR|En cours|
+MA-C-00145|FC-MA-100215|MA-S-00216|03/10/2025|Casablanca|MAR_CLD|Agence|MAKAYJAWBOCH|Impossible de joindre le service client|FR|En cours|
+MA-C-00191|FC-MA-100394|MA-S-00395|03/10/2025|Rabat|MAR_CLD|Web|M3ATTEL|lkolis wsel m3attel b 3 iyam|Darija|En cours|
+MA-C-00152|FC-MA-100272|MA-S-00273|14/05/2025|FÈS|MAR_VAL|WhatsApp|M5SER|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00063|FC-MA-100072|MA-S-00073|26/06/2025| Rabat|MAR_EXP|WhatsApp|TA5IR|Colis livré avec trois jours de retard|FR|Ouvert|
+MA-C-00164|FC-MA-100279|MA-S-00280|10/06/2025| Rabat|MAR_LRG|Téléphone|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00171|FC-MA-100160|MA-S-00161|05/10/2025|Tanger|MAR_EXP|Web|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|Ouvert|
+MA-C-00202|FC-MA-100251|MA-S-00252|03/04/2025|Rabat|MAR_STD|Téléphone|FLOUS|طلب الاسترجاع لم يعالج منذ أسابيع|AR|En cours|
+MA-C-00163|FC-MA-100340|MA-S-00341|16/03/2025|Oujda|MAR_STD|WhatsApp|ABIME|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00140|FC-MA-100877|MA-S-00878|19/07/2025|Casablanca|MAR_STD|Téléphone|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00031|FC-MA-100663|MA-S-00664|04/03/2025|Meknès|MAR_STD|Agence|ZAYED|khellsouni frais zayda bla ma y3elmoni|Darija|Résolu|110
+MA-C-00189|FC-MA-100270|MA-S-00271|04/08/2025|Oujda|mar_exp|Agence|MAKAYJAWBOCH|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00102|FC-MA-100768|MA-S-00769|16/03/2025|Meknès|MAR_STD|Téléphone|SAV|service client ma kayjawbch f telephone|Darija|Ouvert|
+MA-C-00174|FC-MA-100069|MA-S-00070|19/02/2025|Tanger|MAR_LRG|Téléphone|M3ATTEL|الطرد وصل متأخر بثلاثة أيام|AR|Clos|
+MA-C-00120|FC-MA-100040|MA-S-00041|03/06/2025|Tanger|MAR_LRG|WhatsApp|M5SER|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00104|FC-MA-100866|MA-S-00867|03/10/2025|Tanger|MAR_STD|WhatsApp|RETARD|الطرد وصل متأخر بثلاثة أيام|AR|Résolu|
+MA-C-00005|FC-MA-100723|MA-S-00724|18/01/2025|Tanger|MAR_VAL|Agence|SAV|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00091|FC-MA-100558|MA-S-00559|07/05/2025|FÈS|MAR_FRG|Téléphone| M5SER |lkarton m5ser o li dakhel therres|Darija|Résolu|1156
+MA-C-00088|FC-MA-100380|MA-S-00381|21/04/2025|Oujda|MAR_LRG|Web|M5SER|lkarton m5ser o li dakhel therres|Darija|Clos|479
+MA-C-00090|FC-MA-100688|MA-S-00689|01/01/2025|Rabat |MAR_EXP|Agence|RETARD|Colis livré avec trois jours de retard|FR|Ouvert|
+MA-C-00080|FC-MA-100594|MA-S-00595|19/04/2025|Agadir|MAR_EXP|WhatsApp|SAV|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00197|FC-MA-101195||26/07/2025|TANGER|MAR_EXP|Téléphone|M3ATTEL|الطرد وصل متأخر بثلاثة أيام|AR|Clos|
+MA-C-00146|FC-MA-100110|MA-S-00111|19/08/2025|Casablanca|MAR_CLD|Téléphone|RETARD|lkolis wsel m3attel b 3 iyam|Darija|Ouvert|
+MA-C-00136|FC-MA-100315|MA-S-00316|04/07/2025|Agadir|MAR_EXP|Téléphone|M5SER|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00051|FC-MA-100717|MA-S-00718|19/05/2025|Fès|MAR_EXP|WhatsApp|ABIME|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00020|FC-MA-100561|MA-S-00562|13/02/2025|Fès|MAR_LRG|WhatsApp|m5ser|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00238|FC-MA-100148|MA-S-00149|10/03/2025|Rabat|MAR_CLD|Téléphone|SAV|service client ma kayjawbch f telephone|Darija|Ouvert|
+MA-C-00200|FC-MA-100949||24/01/2025|Casablanca|MAR_FRG|Téléphone|SAV|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00033|FC-MA-100519|MA-S-00520|06/06/2025|Agadir|MAR_STD|Agence|SAV|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00225|FC-MA-100275|MA-S-00276|24/09/2025| Rabat|MAR_CLD|Téléphone|M3ATTEL|lkolis wsel m3attel b 3 iyam|Darija|Clos|
+MA-C-00122|FC-MA-100588|MA-S-00589|12/01/2025|Meknès| MAR_FRG |Web|MANQUANT|Deux articles manquent dans le colis|FR|Ouvert|
+MA-C-00066|FC-MA-100772|MA-S-00773|26/06/2025|Tanger|MAR_FRG|Téléphone|M5SER|lkarton m5ser o li dakhel therres|Darija|Résolu|917
+MA-C-00195|FC-MA-100237|MA-S-00238|19/03/2025|Oujda|MAR_LRG|Téléphone|ma3lomat_ghalta|أعطوني تاريخ تسليم خاطئ|AR|Résolu|
+MA-C-00167|FC-MA-100426|MA-S-00427|06/02/2025| Fès|MAR_CLD|Téléphone|ABIME|Carton écrasé, contenu cassé|FR|Résolu|1119
+MA-C-00092|FC-MA-100406|MA-S-00407|26/07/2025|Tanger|MAR_EXP|Agence|M3ATTEL|lkolis wsel m3attel b 3 iyam|Darija|Clos|
+MA-C-00199|FC-MA-100554|MA-S-00555|08/03/2025|Marrakech|MAR_STD|WhatsApp|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|Ouvert|
+MA-C-00124|FC-MA-100401|MA-S-00402|13/05/2025|Fès|MAR_STD|WhatsApp|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|Ouvert|
+MA-C-00212|FC-MA-100865|MA-S-00866|29/07/2025|Casablanca|MAR_VAL|WhatsApp|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00110|FC-MA-100592|MA-S-00593|11/05/2025|Meknès|MAR_VAL|Téléphone|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00103|FC-MA-100411|MA-S-00412|31/05/2025|Tanger|MAR_STD|WhatsApp|MAKAYJAWBOCH|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Résolu|
+MA-C-00172|FC-MA-100439|MA-S-00440|04/03/2025|Fès|MAR_VAL|Web|SAV|service client ma kayjawbch f telephone|Darija|Ouvert|
+MA-C-00157|FC-MA-100245|MA-S-00246|29/05/2025|Agadir|MAR_CLD|Téléphone|TA5IR|الطرد وصل متأخر بثلاثة أيام|AR|En cours|
+MA-C-00134|FC-MA-100197|MA-S-00198|17/06/2025|Rabat|MAR_CLD|WhatsApp|SAV|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Ouvert|
+MA-C-00081|FC-MA-100562|MA-S-00563|17/08/2025|Agadir|MAR_VAL|WhatsApp|SAV|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|En cours|
+MA-C-00029|FC-MA-100596|MA-S-00597|25/06/2025|Casablanca|MAR_LRG|Web|ABIME|lkarton m5ser o li dakhel therres|Darija|Clos|1032
+MA-C-00054|FC-MA-100622|MA-S-00623|30/03/2025|Tanger|MAR_VAL|Web|FRAIS|تم احتساب رسوم إضافية دون إخبارنا|AR|En cours|
+MA-C-00083|FC-MA-100632|MA-S-00633|05/09/2025|Tanger|MAR_LRG|WhatsApp|FRAIS|Des frais supplémentaires qui n'étaient pas annoncés|FR|En cours|
+MA-C-00121|FC-MA-100482|MA-S-00483|01/06/2025|Marrakech|MAR_CLD|WhatsApp|M5SER|Carton écrasé, contenu cassé|FR|Ouvert|
+MA-C-00087|FC-MA-100021|MA-S-00022|06/04/2025|Fès|MAR_LRG|WhatsApp|abime|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00013|FC-MA-100064|MA-S-00065|19/03/2025|Casablanca|MAR_STD|Web|ABIME|Carton écrasé, contenu cassé|FR|Résolu|661
+MA-C-00035|FC-MA-100228|MA-S-00229|30/06/2025|Marrakech|MAR_STD|Agence|RETARD|lkolis wsel m3attel b 3 iyam|Darija|Résolu|
+MA-C-00112|FC-MA-100198|MA-S-00199|17/07/2025|Casablanca|MAR_STD|WhatsApp|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|Ouvert|
+MA-C-00130|FC-MA-100633|MA-S-00634|28/06/2025|Agadir|MAR_CLD|Agence|TA5IR|Colis livré avec trois jours de retard|FR|Résolu|
+MA-C-00139|FC-MA-100242|MA-S-00243|12/08/2025|Tanger|MAR_LRG|WhatsApp|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00166|FC-MA-100736|MA-S-00737|26/08/2025|Casablanca|MAR_STD|Web|ABIME|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00069|FC-MA-100515|MA-S-00516|26/03/2025|Rabat|MAR_EXP|Agence|M5SER|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00084|FC-MA-100796|MA-S-00797|11/10/2025|Tanger|MAR_FRG|Web|M3ATTEL|lkolis wsel m3attel b 3 iyam|Darija|Résolu|
+MA-C-00205|FC-MA-100475|MA-S-00476|19/08/2025|Agadir|MAR_CLD|Téléphone|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00044|FC-MA-100267|MA-S-00268|05/08/2025|Oujda|MAR_VAL|Téléphone|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00119|FC-MA-100721|MA-S-00722|03/07/2025|Casablanca|MAR_VAL|Agence||Impossible de joindre le service client|FR|Ouvert|
+MA-C-00147|FC-MA-100908||29/08/2025|Agadir|MAR_LRG|Téléphone|M5SER|Carton écrasé, contenu cassé|FR|Ouvert|
+MA-C-00078|FC-MA-100255|MA-S-00256|30/04/2025|Marrakech|MAR_EXP|Agence|RETARD|Colis livré avec trois jours de retard|FR|En cours|
+MA-C-00180|FC-MA-100229|MA-S-00230|29/08/2025|Agadir|MAR_LRG|Web|ABIME|Carton écrasé, contenu cassé|FR|Ouvert|
+MA-C-00176|FC-MA-100571|MA-S-00572|23/09/2025|Fès|MAR_FRG|Web|MAKAYJAWBOCH|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00130|FC-MA-100633|MA-S-00634|28/06/2025|Agadir|MAR_CLD|Agence|TA5IR|Colis livré avec trois jours de retard|FR|Résolu|
+MA-C-00179|FC-MA-100097|MA-S-00098|07/09/2025|Meknès|MAR_CLD|WhatsApp|M5SER|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00241|FC-MA-100853|MA-S-00854|22/06/2025|Oujda|MAR_LRG|Téléphone|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|Résolu|203
+MA-C-00231|FC-MA-100465|MA-S-00466||Casablanca|MAR_CLD|Agence|TA5IR|Colis livré avec trois jours de retard|FR|En cours|
+MA-C-00017|FC-MA-100807|MA-S-00808|06/01/2025|Casablanca|MAR_STD|Téléphone|SAV|service client ma kayjawbch f telephone|Darija|Résolu|
+MA-C-00192|FC-MA-100552|MA-S-00553|03/07/2025|Rabat|MAR_LRG|Agence|SAV|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00186|FC-MA-100323|MA-S-00324|01/01/2025|Rabat|MAR_VAL|Web|M3ATTEL|Colis livré avec trois jours de retard|FR|En cours|
+MA-C-00208|FC-MA-100701|MA-S-00702|05/09/2025|Rabat|MAR_LRG|Agence|M5SER|lkarton m5ser o li dakhel therres|Darija|Résolu|1092
+MA-C-00207|FC-MA-100619|MA-S-00620|20/08/2025|Rabat|MAR_CLD|WhatsApp|M3ATTEL|lkolis wsel m3attel b 3 iyam|Darija|En cours|
+MA-C-00240|FC-MA-100507|MA-S-00508|09/09/2025|Casablanca|MAR_LRG|Téléphone|ZAYED|Des frais supplémentaires qui n'étaient pas annoncés|FR|En cours|
+MA-C-00072|FC-MA-100131|MA-S-00132|31/05/2025|Oujda|MAR_STD|Web|M5SER|Carton écrasé, contenu cassé|FR|Résolu|509
+MA-C-00177|FC-MA-100686|MA-S-00687|21/03/2025|Agadir|MAR_VAL|Web|abime|الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00235|FC-MA-100076|MA-S-00077|27/09/2025|Marrakech|MAR_VAL|Téléphone|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|Résolu|999
+MA-C-00160|FC-MA-100104|MA-S-00105|18/06/2025|Rabat|MAR_EXP|Web|SAV|Impossible de joindre le service client|FR|En cours|
+MA-C-00024|FC-MA-100791|MA-S-00792|01/02/2025|Oujda|MAR_FRG|Téléphone|SAV|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00138|FC-MA-100625|MA-S-00626|05/06/2025|Agadir|MAR_CLD|Web|M3ATTEL|الطرد وصل متأخر بثلاثة أيام|AR|Résolu|
+MA-C-00011|FC-MA-100281|MA-S-00282|28/03/2025|Agadir|MAR_EXP|Web|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00210|FC-MA-100587|MA-S-00588|09/08/2025|Oujda|MAR_FRG|Web|sav|Impossible de joindre le service client|FR|En cours|
+MA-C-00007|FC-MA-100265|MA-S-00266|08/03/2025|Casablanca|MAR_FRG|Web|M5SER|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00094|FC-MA-100353|MA-S-00354|17/05/2025|Rabat|MAR_EXP|Téléphone|RETARD|الطرد وصل متأخر بثلاثة أيام|AR|Ouvert|
+MA-C-00148|FC-MA-100230|MA-S-00231|09/01/2025|Casablanca|MAR_VAL|Agence|ABIME|lkarton m5ser o li dakhel therres|Darija|Résolu|505
+MA-C-00085|FC-MA-100177|MA-S-00178|21/08/2025|Fès|MAR_EXP|Agence|ZAYED|Des frais supplémentaires qui n'étaient pas annoncés|FR|Clos|117
+MA-C-00082|FC-MA-100403|MA-S-00404|12/01/2025|Meknès|MAR_LRG|Web|RETARD|Colis livré avec trois jours de retard|FR|Ouvert|
+MA-C-00183|FC-MA-100616|MA-S-00617|05/07/2025|Rabat|MAR_CLD|Agence|RETARD|Colis livré avec trois jours de retard|FR|Clos|
+MA-C-00064|FC-MA-100345|MA-S-00346|29/05/2025|Meknès|MAR_FRG|WhatsApp|MANQUANT|Deux articles manquent dans le colis|FR|Résolu|49
+MA-C-00006|FC-MA-100526|MA-S-00527|24/08/2025|Tanger|MAR_CLD|Agence|ABIME|lkarton m5ser o li dakhel therres|Darija|Résolu|565
+MA-C-00132|FC-MA-100053|MA-S-00054|16/10/2025|Meknès|MAR_STD|WhatsApp|SAV|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00026|FC-MA-100404|MA-S-00405|01/01/2025|Fès|MAR_VAL|Téléphone|SAV|Impossible de joindre le service client|FR|En cours|
+MA-C-00149|FC-MA-100647|MA-S-00648|01/09/2025|Meknès|MAR_EXP|Web|ABIME|lkarton m5ser o li dakhel therres|Darija|Résolu|344
+MA-C-00126|FC-MA-100262|MA-S-00263|05/10/2025|Fès|MAR_VAL|WhatsApp|SAV|service client ma kayjawbch f telephone|Darija|Résolu|
+MA-C-00187|FC-MA-100653|MA-S-00654|13/06/2025|Meknès|MAR_LRG|Téléphone|SAV|Impossible de joindre le service client|FR|En cours|
+MA-C-00168|FC-MA-100597|MA-S-00598|19/05/2025|Meknès|MAR_LRG|Téléphone|M3ATTEL|الطرد وصل متأخر بثلاثة أيام|AR|En cours|
+MA-C-00047|FC-MA-100684|MA-S-00685|13/02/2025|Casablanca|MAR_LRG|Web|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00233|FC-MA-100630|MA-S-00631|07/10/2025|Casablanca|MAR_CLD|Téléphone|TA5IR|lkolis wsel m3attel b 3 iyam|Darija|Ouvert|
+MA-C-00232|FC-MA-100081|MA-S-00082|10/05/2025|Marrakech|MAR_LRG|WhatsApp|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00065|FC-MA-100568|MA-S-00569|05/01/2025|Agadir|MAR_VAL|Agence|SAV|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|En cours|
+MA-C-00062|FC-MA-100730|MA-S-00731|28/06/2025|FÈS|MAR_CLD|Téléphone|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|Clos|777
+MA-C-00041|FC-MA-100322|MA-S-00323|28/05/2025|Tanger|MAR_FRG|Agence|M5SER|الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00222|FC-MA-100634|MA-S-00635|11/08/2025|Agadir|MAR_VAL|Téléphone|M5SER|Carton écrasé, contenu cassé|FR|Résolu|362
+MA-C-00217|FC-MA-100604|MA-S-00605|19/06/2025|Marrakech|MAR_STD|WhatsApp|MAKAYJAWBOCH|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|En cours|
+MA-C-00218|FC-MA-100416|MA-S-00417|01/03/2025|Rabat|MAR_VAL|WhatsApp|3NWAN_GHALAT|Colis déposé à la mauvaise adresse|FR|Ouvert|
+MA-C-00019|FC-MA-100537|MA-S-00538|04/06/2025|Fès|MAR_FRG|Web|SAV|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00125|FC-MA-100141|MA-S-00142|21/07/2025|Fès|MAR_LRG|Agence|ABIME|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00203|FC-MA-100199|MA-S-00200|10/07/2025|Casablanca|MAR_VAL|Téléphone|SAV|Impossible de joindre le service client|FR|Ouvert|
+MA-C-00114|FC-MA-100236|MA-S-00237|17/07/2025|Oujda|MAR_CLD|Web|SAV|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|En cours|
+MA-C-00010|FC-MA-100512|MA-S-00513|09/03/2025|Tanger|MAR_CLD|Agence|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|En cours|
+MA-C-00170|FC-MA-100173|MA-S-00174|12/06/2025|Meknès|MAR_FRG|Agence|SAV|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Clos|
+MA-C-00201|FC-MA-100806|MA-S-00807|01/01/2025| Agadir|MAR_CLD|Agence|m3attel|الطرد وصل متأخر بثلاثة أيام|AR|Résolu|
+MA-C-00018|FC-MA-100575|MA-S-00576|01/05/2025|Tanger|MAR_EXP|Téléphone|MAKAYJAWBOCH|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Ouvert|
+MA-C-00181|FC-MA-100092|MA-S-00093|25/03/2025|Agadir|MAR_EXP|Web|M5SER|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00196|FC-MA-100087|MA-S-00088|09/03/2025|Meknès|MAR_CLD|WhatsApp|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00239|FC-MA-100753|MA-S-00754|08/05/2025|Casablanca|MAR_LRG|Web|SAV|service client ma kayjawbch f telephone|Darija|Résolu|
+MA-C-00052|FC-MA-100181|MA-S-00182|23/02/2025|Oujda|MAR_STD|Téléphone|ABIME|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00211|FC-MA-100767|MA-S-00768|17/09/2025|Meknès|MAR_FRG|WhatsApp|RETARD|Colis livré avec trois jours de retard|FR|En cours|
+MA-C-00032|FC-MA-100227|MA-S-00228|30/09/2025|Rabat|MAR_LRG|Téléphone|ABIME|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00159|FC-MA-100729|MA-S-00730|01/01/2025|Oujda|MAR_FRG|Web|M5SER|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00185|FC-MA-100398|MA-S-00399|25/10/2025|Rabat|MAR_FRG|Téléphone|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00009|FC-MA-100527|MA-S-00528|26/01/2025|Rabat|MAR_CLD|Téléphone|ABIME|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00204|FC-MA-100253|MA-S-00254|24/06/2025|Marrakech|MAR_CLD|WhatsApp|RETARD|Colis livré avec trois jours de retard|FR|En cours|
+MA-C-00143|FC-MA-100485|MA-S-00486|01/08/2025|AGADIR|MAR_FRG|WhatsApp|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|Résolu|1205
+MA-C-00144|FC-MA-100640|MA-S-00641|13/04/2025|Marrakech|MAR_STD|Téléphone|TA5IR|Colis livré avec trois jours de retard|FR|Résolu|
+MA-C-00038|FC-MA-100606|MA-S-00607|09/05/2025|Oujda|MAR_VAL|Agence|ABIME|Carton écrasé, contenu cassé|FR|Ouvert|
+MA-C-00077|FC-MA-100714|MA-S-00715|21/06/2025|Marrakech|MAR_FRG|WhatsApp|ABIME|Carton écrasé, contenu cassé|FR|Clos|329
+MA-C-00106|FC-MA-100023|MA-S-00024|17/01/2025|Casablanca|MAR_STD|Téléphone|M5SER|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00036|FC-MA-100137|MA-S-00138|23/08/2025|Marrakech|MAR_STD|Agence|MAKAYJAWBOCH|service client ma kayjawbch f telephone|Darija|Ouvert|
+MA-C-00142|FC-MA-100410|MA-S-00411|02/03/2025|Fès|MAR_STD|WhatsApp|makayjawboch|خدمة الزبناء ما كيجاوبوش في الهاتف|AR|Clos|
+MA-C-00067|FC-MA-100870|MA-S-00871|06/03/2025|Tanger|MAR_EXP|WhatsApp|M5SER|lkarton m5ser o li dakhel therres|Darija|En cours|
+MA-C-00227|FC-MA-100811|MA-S-00812|21/05/2025|Rabat|MAR_CLD|Téléphone|FRAIS|khellsouni frais zayda bla ma y3elmoni|Darija|En cours|
+MA-C-00190|FC-MA-100888|MA-S-00889|16/02/2025|Oujda|MAR_STD|Agence|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00030|FC-MA-100777|MA-S-00778|28/08/2025|Casablanca|MAR_FRG|WhatsApp|SAV|service client ma kayjawbch f telephone|Darija|Résolu|
+MA-C-00059|FC-MA-100285|MA-S-00286|19/09/2025|Casablanca|MAR_VAL|Web|ABIME|Carton écrasé, contenu cassé|FR|Clos|405
+MA-C-00075|FC-MA-100492|MA-S-00493|05/01/2025|Casablanca|MAR_CLD|WhatsApp|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|Résolu|469
+MA-C-00151|FC-MA-100405|MA-S-00406|14/09/2025|Fès|MAR_EXP|Téléphone|MAKAYJAWBOCH|Impossible de joindre le service client|FR|Clos|
+MA-C-00206|FC-MA-100356|MA-S-00357|22/07/2025|Tanger|MAR_LRG|Agence|SAV|Impossible de joindre le service client|FR|Résolu|
+MA-C-00057|FC-MA-100763|MA-S-00764|30/05/2025|Oujda|MAR_EXP|Web|ABIME|lkarton m5ser o li dakhel therres|Darija|Résolu|794
+MA-C-00153|FC-MA-100077|MA-S-00078|15/07/2025|MARRAKECH|MAR_VAL|WhatsApp|???|Colis livré avec trois jours de retard|FR|En cours|
+MA-C-00045|FC-MA-100400|MA-S-00401|29/04/2025|Tanger|MAR_LRG|Agence|SAV|Impossible de joindre le service client|FR|En cours|
+MA-C-00086|FC-MA-100099|MA-S-00100|19/04/2025|Meknès|MAR_FRG|WhatsApp|MAKAYJAWBOCH|Impossible de joindre le service client|FR|En cours|
+MA-C-00043|FC-MA-100351|MA-S-00352|27/10/2025|Agadir|MAR_CLD|Web|ABIME|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00071|FC-MA-100785|MA-S-00786|14/01/2025|Fès|MAR_LRG|WhatsApp|M5SER|Carton écrasé, contenu cassé|FR|En cours|
+MA-C-00193|FC-MA-100707|MA-S-00708|27/03/2025|Tanger|MAR_CLD|WhatsApp|ABIME|lkarton m5ser o li dakhel therres|Darija|Ouvert|
+MA-C-00002|FC-MA-100827|MA-S-00828|26/01/2025|Tanger|MAR_FRG|Agence|M3ATTEL|lkolis wsel m3attel b 3 iyam|Darija|Ouvert|
+MA-C-00220|FC-MA-100665|MA-S-00666|16/10/2025|Agadir|MAR_EXP|WhatsApp|M5SER|lkarton m5ser o li dakhel therres|Darija|Résolu|436
+MA-C-00021|FC-MA-100133|MA-S-00134|12/06/2025|Fès|MAR_EXP|Agence|SAV|service client ma kayjawbch f telephone|Darija|Ouvert|
+MA-C-00215|FC-MA-100042|MA-S-00043|08/07/2025|Agadir|MAR_FRG|Téléphone|SAV|service client ma kayjawbch f telephone|Darija|En cours|
+MA-C-00169|FC-MA-100579|MA-S-00580|22/09/2025|Marrakech|MAR_CLD|Web|ABIME|الكرتونة مخسرة والمحتوى مكسور|AR|Résolu|921

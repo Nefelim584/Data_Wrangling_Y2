@@ -1,0 +1,33 @@
+hub_id,hub_name,hub_type,city,country_code,latitude,longitude
+WH_CDG_01,Roissy Central Fulfillment Warehouse,WAREHOUSE,Paris,FR,49.0097,2.5479
+APT_CDG,Paris Charles de Gaulle Cargo Terminal,AIRPORT,Paris,FR,49.008,2.55
+HUB_PAR_01,Paris Nord Regional Sorting Hub,REGIONAL_HUB,Paris,FR,48.91,2.37
+DEP_PAR_01,Paris Center Urban Depot,LOCAL_DEPOT,Paris,FR,48.86,2.34
+WH_LYN_01,Lyon Saint-Exupéry Warehouse,WAREHOUSE,Lyon,FR,45.72,5.08
+APT_LYS,Lyon Airport Cargo Hub,AIRPORT,Lyon,FR,45.7255,5.0811
+HUB_LYN_01,Lyon Rhône-Alpes Sorting Hub,REGIONAL_HUB,Lyon,FR,45.75,4.85
+DEP_LYN_01,Lyon Villeurbanne Local Depot,LOCAL_DEPOT,Lyon,FR,45.77,4.88
+WH_MAD_01,Madrid Coslada Logistics Park,WAREHOUSE,Madrid,ES,40.426,-3.56
+APT_MAD,Adolfo Suárez Madrid-Barajas Cargo Hub,AIRPORT,Madrid,ES,40.4839,-3.568
+HUB_MAD_01,Madrid Central Sortation Hub,REGIONAL_HUB,Madrid,ES,40.4168,-3.7038
+DEP_MAD_01,Madrid Chamartín Last-Mile Depot,LOCAL_DEPOT,Madrid,ES,40.46,-3.69
+WH_BCN_01,Barcelona Port Logistics Platform,WAREHOUSE,Barcelona,ES,41.34,2.13
+APT_BCN,Barcelona El Prat Cargo Hub,AIRPORT,Barcelona,ES,41.2974,2.0833
+HUB_BCN_01,Barcelona Catalunya Sorting Hub,REGIONAL_HUB,Barcelona,ES,41.3879,2.1699
+DEP_BCN_01,Barcelona Eixample Local Depot,LOCAL_DEPOT,Barcelona,ES,41.39,2.16
+WH_FRA_01,Frankfurt Gateway Gardens Warehouse,WAREHOUSE,Frankfurt,DE,50.05,8.6
+APT_FRA,Frankfurt CargoCity Airport,AIRPORT,Frankfurt,DE,50.0379,8.5622
+HUB_FRA_01,Frankfurt Hessen Regional Hub,REGIONAL_HUB,Frankfurt,DE,50.1109,8.6821
+DEP_FRA_01,Frankfurt West Local Depot,LOCAL_DEPOT,Frankfurt,DE,50.1,8.65
+WH_BER_01,Berlin Schönefeld Logistics Center,WAREHOUSE,Berlin,DE,52.38,13.52
+APT_BER,Berlin Brandenburg Air Cargo,AIRPORT,Berlin,DE,52.3667,13.5033
+HUB_BER_01,Berlin Brandenburg Sorting Hub,REGIONAL_HUB,Berlin,DE,52.52,13.405
+DEP_BER_01,Berlin Mitte Urban Depot,LOCAL_DEPOT,Berlin,DE,52.52,13.41
+WH_CAS_01,Casablanca Ain Sebaa Warehouse,WAREHOUSE,Casablanca,MA,33.6,-7.53
+APT_CMN,Casablanca Mohammed V Cargo Hub,AIRPORT,Casablanca,MA,33.3675,-7.5899
+HUB_CAS_01,Casablanca Regional Transit Hub,REGIONAL_HUB,Casablanca,MA,33.5731,-7.5898
+DEP_CAS_01,Casablanca Maarif Local Depot,LOCAL_DEPOT,Casablanca,MA,33.58,-7.63
+WH_TOR_01,Toronto Mississauga Logistics Center,WAREHOUSE,Toronto,CA,43.6,-79.65
+APT_YYZ,Toronto Pearson Cargo Terminal,AIRPORT,Toronto,CA,43.6777,-79.6248
+HUB_TOR_01,Toronto Ontario Sorting Hub,REGIONAL_HUB,Toronto,CA,43.6532,-79.3832
+DEP_TOR_01,Toronto Downtown Delivery Depot,LOCAL_DEPOT,Toronto,CA,43.65,-79.38

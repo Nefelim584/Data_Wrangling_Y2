@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FastColis — International Customer Satisfaction</title>
+<style>
+  :root {
+    --bg: #eef1f6;
+    --card: #ffffff;
+    --ink: #16202e;
+    --muted: #6b7a8d;
+    --line: #dde3ec;
+    --accent: #2f6df6;
+    --warn: #e0533d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header { margin-bottom: 20px; }
+  h1 { margin: 0; font-size: 24px; letter-spacing: -0.3px; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  h2 { margin: 0 0 14px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .filters { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end; margin-bottom: 18px; }
+  .filter-group { display: flex; flex-direction: column; gap: 8px; }
+  .filter-group > span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    border: 1px solid var(--line);
+    background: #f7f9fc;
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 5px 13px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  select, button {
+    font: inherit;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  button:hover, .chip:hover { border-color: var(--accent); }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-bottom: 18px; }
+  .kpi .value { font-size: 28px; font-weight: 600; letter-spacing: -0.5px; }
+  .kpi .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
+  .kpi .note { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px; }
+  .wide { grid-column: 1 / -1; }
+  .bar { display: grid; grid-template-columns: 130px 1fr 74px; align-items: center; gap: 10px; padding: 3px 0; }
+  .bar.clickable { cursor: pointer; }
+  .bar.clickable:hover .name { color: var(--accent); }
+  .bar.off { opacity: 0.35; }
+  .bar .name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .track { background: #eef1f6; border-radius: 6px; height: 20px; overflow: hidden; }
+  .fill { height: 100%; border-radius: 6px; }
+  .bar .score { text-align: right; font-variant-numeric: tabular-nums; }
+  .bar .score small { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+  th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .heat td.cell { text-align: center; color: #fff; font-weight: 600; border-radius: 5px; }
+  .heat td.rate { text-align: center; font-weight: 600; border-radius: 5px; font-variant-numeric: tabular-nums; }
+  .scroll { max-height: 310px; overflow-y: auto; }
+  .scroll-x { overflow-x: auto; }
+  .tabs { display: flex; gap: 8px; margin-top: 14px; }
+  .tab {
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 7px 18px;
+    font: inherit;
+    font-weight: 600;
+  }
+  .tab.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .legend { margin-top: 6px; }
+  .legend span { font-weight: 600; margin-right: 14px; }
+  .empty { color: var(--muted); padding: 30px 0; text-align: center; }
+  footer { margin-top: 18px; color: var(--muted); font-size: 12px; }
+  .insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 18px; }
+  .insight {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--warn);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .insight .kicker { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); margin-bottom: 6px; }
+  .insight p { margin: 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>FastColis — International Customer Satisfaction</h1>
+  <p>Survey scores and the complaints that explain them, five branches on one 1–5 scale.</p>
+  <div class="tabs">
+    <button class="tab on" data-view="viewSatisfaction">Satisfaction</button>
+    <button class="tab" data-view="viewComplaints">Complaints</button>
+  </div>
+</header>
+
+<div class="filters card">
+  <div class="filter-group">
+    <span>Country</span>
+    <div class="chips" id="countryChips"></div>
+  </div>
+  <div class="filter-group">
+    <span>Product</span>
+    <div class="chips" id="productChips"></div>
+  </div>
+  <div class="filter-group">
+    <span>From</span>
+    <select id="fromMonth"></select>
+  </div>
+  <div class="filter-group">
+    <span>To</span>
+    <select id="toMonth"></select>
+  </div>
+  <div class="filter-group">
+    <span>&nbsp;</span>
+    <div class="chips">
+      <button id="reset">Reset filters</button>
+      <button id="export">Export CSV</button>
+    </div>
+  </div>
+</div>
+
+<section id="viewSatisfaction">
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid">
+    <div class="card"><h2>Satisfaction by country</h2><div id="byCountry"></div></div>
+    <div class="card"><h2>Satisfaction by product</h2><div id="byProduct"></div></div>
+    <div class="card"><h2>Satisfaction by service aspect</h2><div id="byAspect"></div></div>
+    <div class="card"><h2>Score distribution</h2><div id="distribution"></div></div>
+    <div class="card wide"><h2>Monthly trend</h2><div id="trend"></div></div>
+    <div class="card wide"><h2>Country × product</h2><div class="scroll-x" id="heatmap"></div></div>
+    <div class="card"><h2>Cities</h2><div class="scroll"><div id="cities"></div></div></div>
+    <div class="card"><h2>Most frequent comments</h2><div class="scroll"><div id="comments"></div></div></div>
+  </div>
+</section>
+
+<section id="viewComplaints" hidden>
+  <div class="kpis" id="complaintKpis"></div>
+  <div class="insights" id="insights"></div>
+
+  <div class="grid">
+    <div class="card wide">
+      <h2>Why customers are unhappy — volume and the score that reason explains</h2>
+      <div id="byReason"></div>
+    </div>
+    <div class="card"><h2>Complaints by service aspect</h2><div id="reasonAspects"></div></div>
+    <div class="card"><h2>Open backlog by reason</h2><div id="backlog"></div></div>
+    <div class="card"><h2>Complaints per 100 surveys — country</h2><div id="rateCountry"></div></div>
+    <div class="card"><h2>Complaints per 100 surveys — product</h2><div id="rateProduct"></div></div>
+    <div class="card"><h2>Cities with the highest complaint rate</h2><div class="scroll" id="rateCity"></div></div>
+    <div class="card"><h2>Refunds paid, in euro</h2><div id="refunds"></div></div>
+    <div class="card"><h2>Satisfaction of customers who complained</h2><div id="gap"></div></div>
+    <div class="card"><h2>Severity mix</h2><div id="severity"></div></div>
+    <div class="card wide">
+      <h2>Monthly complaint rate against satisfaction</h2>
+      <div id="complaintTrend"></div>
+    </div>
+    <div class="card wide">
+      <h2>Country × reason, complaints per 100 surveys</h2>
+      <div class="scroll-x" id="reasonHeatmap"></div>
+    </div>
+    <div class="card"><h2>Handling and resolution</h2><div id="statuses"></div></div>
+    <div class="card"><h2>Where complaints come in</h2><div id="channels"></div></div>
+  </div>
+</section>
+
+<footer>Click a country, product or reason bar to filter the whole dashboard. The Complaints tab is the briefing to take to the client.</footer>
+
+<script>
+const DATA = __DATA__;
+
+const COUNTRY = 0, PRODUCT = 1, CITY = 2, MONTH = 3, OVERALL = 8, COMMENT = 9, COMPLAINED = 10;
+const ASPECT_COLS = [4, 5, 6, 7];
+const SERIES_COLORS = ["#2f6df6", "#e0533d", "#1f9d6b", "#9b59d0", "#e8a33d"];
+
+// Complaint rows carry the score of the aspect their reason is about.
+const C_COUNTRY = 0, C_PRODUCT = 1, C_CITY = 2, C_MONTH = 3, C_REASON = 4, C_SEVERITY = 5,
+      C_STATUS = 6, C_CHANNEL = 7, C_REFUND = 8, C_DAYS = 9, C_ASPECT_SCORE = 10;
+const UNRESOLVED = new Set(["OPEN", "IN_PROGRESS", "ESCALATED"]);
+const SEVERITY_LABELS = { 1: "Minor", 2: "Moderate", 3: "Major", 4: "Critical" };
+
+const state = {
+  countries: new Set(DATA.countries.map((_, i) => i)),
+  products: new Set(DATA.products.map((_, i) => i)),
+  reasons: new Set(DATA.reasons.map((_, i) => i)),
+  from: 0,
+  to: DATA.months.length - 1,
+  view: "viewSatisfaction",
+};
+
+/* ---------- helpers ---------- */
+
+function selectedRows() {
+  return DATA.rows.filter(r =>
+    state.countries.has(r[COUNTRY]) &&
+    state.products.has(r[PRODUCT]) &&
+    r[MONTH] >= state.from && r[MONTH] <= state.to);
+}
+
+function selectedComplaints(ignoreReason) {
+  return DATA.complaints.filter(r =>
+    state.countries.has(r[C_COUNTRY]) &&
+    state.products.has(r[C_PRODUCT]) &&
+    (ignoreReason || state.reasons.has(r[C_REASON])) &&
+    r[C_MONTH] >= state.from && r[C_MONTH] <= state.to);
+}
+
+function average(rows, column) {
+  let sum = 0, n = 0;
+  for (const row of rows) {
+    if (row[column] !== null) { sum += row[column]; n++; }
+  }
+  return n ? sum / n : null;
+}
+
+function groupBy(rows, column) {
+  const groups = new Map();
+  for (const row of rows) {
+    if (!groups.has(row[column])) groups.set(row[column], []);
+    groups.get(row[column]).push(row);
+  }
+  return groups;
+}
+
+function scoreColor(score) {
+  if (score === null) return "#cfd6e0";
+  const hue = Math.max(0, Math.min(1, (score - 1) / 4)) * 125;
+  return `hsl(${hue}, 62%, 45%)`;
+}
+
+function format(score) {
+  return score === null ? "–" : score.toFixed(2);
+}
+
+function escapeHtml(text) {
+  return text.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+/* ---------- charts ---------- */
+
+function barChart(target, items, onClick) {
+  if (!items.length) {
+    target.innerHTML = '<p class="empty">No surveys match the filters.</p>';
+    return;
+  }
+  target.innerHTML = items.map((item, i) => `
+    <div class="bar ${onClick ? "clickable" : ""} ${item.dimmed ? "off" : ""}" data-i="${i}">
+      <span class="name" title="${escapeHtml(item.label)}">${escapeHtml(item.label)}</span>
+      <div class="track">
+        <div class="fill" style="width:${item.value === null ? 0 : ((item.value - 1) / 4) * 100}%;
+             background:${scoreColor(item.value)}"></div>
+      </div>
+      <span class="score">${format(item.value)} <small>${item.count}</small></span>
+    </div>`).join("");
+
+  if (onClick) {
+    target.querySelectorAll(".bar").forEach(bar =>
+      bar.addEventListener("click", () => onClick(items[Number(bar.dataset.i)])));
+  }
+}
+
+function renderKpis(rows) {
+  const overall = average(rows, OVERALL);
+  const scored = rows.filter(r => r[OVERALL] !== null);
+  const happy = scored.filter(r => r[OVERALL] >= 4).length;
+  const unhappy = scored.filter(r => r[OVERALL] <= 2).length;
+
+  const aspects = ASPECT_COLS.map((col, i) => ({ label: DATA.aspects[i], value: average(rows, col) }))
+    .filter(a => a.value !== null)
+    .sort((a, b) => a.value - b.value);
+
+  const byCountry = [...groupBy(rows, COUNTRY)]
+    .map(([i, group]) => ({ label: DATA.countries[i].country_name, value: average(group, OVERALL) }))
+    .filter(c => c.value !== null)
+    .sort((a, b) => b.value - a.value);
+
+  const cards = [
+    { label: "Surveys", value: rows.length.toLocaleString("en"), note: `${DATA.months[state.from]} → ${DATA.months[state.to]}` },
+    { label: "Average satisfaction", value: format(overall), note: "out of 5" },
+    { label: "Satisfied", value: scored.length ? Math.round((happy / scored.length) * 100) + "%" : "–", note: "scored 4 or 5" },
+    { label: "Dissatisfied", value: scored.length ? Math.round((unhappy / scored.length) * 100) + "%" : "–", note: "scored 1 or 2" },
+    { label: "Weakest aspect", value: aspects.length ? aspects[0].label : "–", note: aspects.length ? format(aspects[0].value) + " / 5" : "" },
+    { label: "Best country", value: byCountry.length ? byCountry[0].label : "–", note: byCountry.length ? format(byCountry[0].value) + " / 5" : "" },
+  ];
+
+  document.getElementById("kpis").innerHTML = cards.map(card => `
+    <div class="card kpi">
+      <div class="label">${card.label}</div>
+      <div class="value">${card.value}</div>
+      <div class="note">${card.note}</div>
+    </div>`).join("");
+}
+
+function renderCountries(rows) {
+  const groups = groupBy(rows, COUNTRY);
+  const items = DATA.countries.map((country, i) => ({
+    key: i,
+    label: country.country_name,
+    value: average(groups.get(i) || [], OVERALL),
+    count: (groups.get(i) || []).length,
+    dimmed: !state.countries.has(i),
+  })).sort((a, b) => (b.value ?? 0) - (a.value ?? 0));
+
+  barChart(document.getElementById("byCountry"), items, item => toggle(state.countries, item.key));
+}
+
+function renderProducts(rows) {
+  const groups = groupBy(rows, PRODUCT);
+  const items = DATA.products.map((product, i) => ({
+    key: i,
+    label: product.product_name,
+    value: average(groups.get(i) || [], OVERALL),
+    count: (groups.get(i) || []).length,
+    dimmed: !state.products.has(i),
+  })).sort((a, b) => (b.value ?? 0) - (a.value ?? 0));
+
+  barChart(document.getElementById("byProduct"), items, item => toggle(state.products, item.key));
+}
+
+function renderAspects(rows) {
+  const items = ASPECT_COLS.map((col, i) => ({
+    label: DATA.aspects[i],
+    value: average(rows, col),
+    count: rows.filter(r => r[col] !== null).length,
+  }));
+  barChart(document.getElementById("byAspect"), items, null);
+}
+
+function renderDistribution(rows) {
+  const counts = [0, 0, 0, 0, 0];
+  for (const row of rows) {
+    if (row[OVERALL] !== null) counts[Math.min(4, Math.max(0, Math.round(row[OVERALL]) - 1))]++;
+  }
+  const total = counts.reduce((a, b) => a + b, 0);
+  document.getElementById("distribution").innerHTML = total === 0
+    ? '<p class="empty">No surveys match the filters.</p>'
+    : counts.map((count, i) => `
+      <div class="bar">
+        <span class="name">${i + 1} star${i ? "s" : ""}</span>
+        <div class="track">
+          <div class="fill" style="width:${(count / Math.max(...counts)) * 100}%;background:${scoreColor(i + 1)}"></div>
+        </div>
+        <span class="score">${Math.round((count / total) * 100)}% <small>${count}</small></span>
+      </div>`).join("");
+}
+
+function renderTrend(rows) {
+  const months = DATA.months.slice(state.from, state.to + 1);
+  const target = document.getElementById("trend");
+  if (months.length < 2 || !rows.length) {
+    target.innerHTML = '<p class="empty">Widen the date range to see a trend.</p>';
+    return;
+  }
+
+  const width = 900, height = 280, padX = 46, padY = 24;
+  const x = i => padX + (i / (months.length - 1)) * (width - padX * 2);
+  const y = value => height - padY - ((value - 1) / 4) * (height - padY * 2);
+
+  const series = [...state.countries].sort().map((countryIndex, order) => {
+    const byMonth = groupBy(rows.filter(r => r[COUNTRY] === countryIndex), MONTH);
+    const points = months.map((month, i) => {
+      const value = average(byMonth.get(state.from + i) || [], OVERALL);
+      return value === null ? null : { x: x(i), y: y(value), month, value };
+    }).filter(Boolean);
+    return { name: DATA.countries[countryIndex].country_name, color: SERIES_COLORS[order % SERIES_COLORS.length], points };
+  }).filter(s => s.points.length);
+
+  const gridLines = [1, 2, 3, 4, 5].map(value => `
+    <line x1="${padX}" y1="${y(value)}" x2="${width - padX}" y2="${y(value)}" stroke="#e6eaf1"/>
+    <text x="${padX - 10}" y="${y(value) + 4}" text-anchor="end" font-size="11" fill="#6b7a8d">${value}</text>`).join("");
+
+  const step = Math.ceil(months.length / 12);
+  const monthLabels = months.map((month, i) => i % step === 0
+    ? `<text x="${x(i)}" y="${height - 4}" text-anchor="middle" font-size="11" fill="#6b7a8d">${month}</text>` : "").join("");
+
+  const lines = series.map(s => `
+    <polyline fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round"
+      points="${s.points.map(p => `${p.x},${p.y}`).join(" ")}"/>
+    ${s.points.map(p => `<circle cx="${p.x}" cy="${p.y}" r="3" fill="${s.color}">
+        <title>${s.name} — ${p.month}: ${p.value.toFixed(2)}</title></circle>`).join("")}`).join("");
+
+  const legend = series.map(s =>
+    `<span style="color:${s.color};font-weight:600;margin-right:14px">&#9632; ${s.name}</span>`).join("");
+
+  target.innerHTML = `<svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}">
+      ${gridLines}${lines}${monthLabels}</svg><div style="margin-top:6px">${legend}</div>`;
+}
+
+function renderHeatmap(rows) {
+  const countries = [...state.countries].sort();
+  const products = [...state.products].sort();
+  const target = document.getElementById("heatmap");
+  if (!countries.length || !products.length) {
+    target.innerHTML = '<p class="empty">No surveys match the filters.</p>';
+    return;
+  }
+
+  const head = products.map(p => `<th class="num">${DATA.products[p].product_name}</th>`).join("");
+  const body = countries.map(c => {
+    const cells = products.map(p => {
+      const value = average(rows.filter(r => r[COUNTRY] === c && r[PRODUCT] === p), OVERALL);
+      return `<td class="cell" style="background:${scoreColor(value)}">${format(value)}</td>`;
+    }).join("");
+    return `<tr><td>${DATA.countries[c].country_name}</td>${cells}</tr>`;
+  }).join("");
+
+  target.innerHTML = `<table class="heat"><thead><tr><th>Country</th>${head}</tr></thead><tbody>${body}</tbody></table>`;
+}
+
+function renderCities(rows) {
+  const items = [...groupBy(rows, CITY)].map(([i, group]) => ({
+    label: `${DATA.cities[i].city_name} (${DATA.cities[i].country_code})`,
+    value: average(group, OVERALL),
+    count: group.length,
+  })).sort((a, b) => (b.value ?? 0) - (a.value ?? 0));
+
+  barChart(document.getElementById("cities"), items, null);
+}
+
+function renderComments(rows) {
+  const counts = new Map();
+  for (const row of rows) {
+    if (row[COMMENT] !== null) counts.set(row[COMMENT], (counts.get(row[COMMENT]) || 0) + 1);
+  }
+  const top = [...counts].sort((a, b) => b[1] - a[1]).slice(0, 10);
+  const target = document.getElementById("comments");
+  if (!top.length) {
+    target.innerHTML = '<p class="empty">No comments in the current selection.</p>';
+    return;
+  }
+  target.innerHTML = `<table><thead><tr><th>Comment</th><th class="num">Surveys</th></tr></thead><tbody>
+    ${top.map(([i, count]) => `<tr><td>${escapeHtml(DATA.comments[i])}</td><td class="num">${count}</td></tr>`).join("")}
+    </tbody></table>`;
+}
+
+/* ---------- complaints ---------- */
+
+function total(rows, column) {
+  let sum = 0;
+  for (const row of rows) if (row[column] !== null) sum += row[column];
+  return sum;
+}
+
+function prettify(value) {
+  const text = value.replace(/_/g, " ").toLowerCase();
+  return text[0].toUpperCase() + text.slice(1);
+}
+
+function heatColor(share) {
+  return `hsl(10, ${Math.round(30 + share * 50)}%, ${Math.round(94 - share * 40)}%)`;
+}
+
+function magnitudeChart(target, items, onClick) {
+  if (!items.length) {
+    target.innerHTML = '<p class="empty">No complaints match the filters.</p>';
+    return;
+  }
+  const max = Math.max(...items.map(item => item.value)) || 1;
+  target.innerHTML = items.map((item, i) => `
+    <div class="bar ${onClick ? "clickable" : ""} ${item.dimmed ? "off" : ""}" data-i="${i}">
+      <span class="name" title="${escapeHtml(item.label)}">${escapeHtml(item.label)}</span>
+      <div class="track">
+        <div class="fill" style="width:${(item.value / max) * 100}%;
+             background:${item.color || "var(--warn)"}"></div>
+      </div>
+      <span class="score">${item.text} <small>${item.note || ""}</small></span>
+    </div>`).join("");
+
+  if (onClick) {
+    target.querySelectorAll(".bar").forEach(bar =>
+      bar.addEventListener("click", () => onClick(items[Number(bar.dataset.i)])));
+  }
+}
+
+function renderComplaintKpis(complaints, surveys) {
+  const ranked = [...groupBy(complaints, C_REASON)]
+    .map(([i, group]) => ({ name: DATA.reasons[i].reason_name, count: group.length }))
+    .sort((a, b) => b.count - a.count);
+  const unresolved = complaints.filter(r => UNRESOLVED.has(DATA.statuses[r[C_STATUS]])).length;
+  const silent = average(surveys.filter(r => r[COMPLAINED] === 0), OVERALL);
+  const vocal = average(surveys.filter(r => r[COMPLAINED] === 1), OVERALL);
+
+  const cards = [
+    { label: "Complaints", value: complaints.length.toLocaleString("en"),
+      note: `${DATA.months[state.from]} → ${DATA.months[state.to]}` },
+    { label: "Per 100 surveys", value: surveys.length ? (complaints.length / surveys.length * 100).toFixed(1) : "–",
+      note: `${surveys.length.toLocaleString("en")} surveys in range` },
+    { label: "Top reason", value: ranked.length ? ranked[0].name : "–",
+      note: ranked.length ? Math.round(ranked[0].count / complaints.length * 100) + "% of complaints" : "" },
+    { label: "Still unresolved", value: complaints.length ? Math.round(unresolved / complaints.length * 100) + "%" : "–",
+      note: "open, in progress or escalated" },
+    { label: "Refunds paid", value: "€" + Math.round(total(complaints, C_REFUND)).toLocaleString("en"),
+      note: "all branches in euro" },
+    { label: "Satisfaction cost", value: silent === null || vocal === null ? "–" : "−" + (silent - vocal).toFixed(2),
+      note: "points lost when a parcel goes wrong" },
+  ];
+
+  document.getElementById("complaintKpis").innerHTML = cards.map(card => `
+    <div class="card kpi">
+      <div class="label">${card.label}</div>
+      <div class="value">${card.value}</div>
+      <div class="note">${card.note}</div>
+    </div>`).join("");
+}
+
+function renderInsights(complaints, surveys) {
+  const target = document.getElementById("insights");
+  if (!complaints.length || !surveys.length) {
+    target.innerHTML = "";
+    return;
+  }
+
+  const networkRate = complaints.length / surveys.length * 100;
+  const cards = [];
+
+  const countryRates = DATA.countries.map((country, i) => {
+    const count = complaints.filter(r => r[C_COUNTRY] === i).length;
+    const base = surveys.filter(r => r[COUNTRY] === i).length;
+    return { name: country.country_name, rate: base ? count / base * 100 : 0, base };
+  }).filter(row => row.base).sort((a, b) => b.rate - a.rate);
+  if (countryRates.length && countryRates[0].rate > networkRate) {
+    const top = countryRates[0];
+    cards.push({
+      kicker: "Country hotspot",
+      text: `<strong>${escapeHtml(top.name)}</strong> files ${top.rate.toFixed(1)} complaints per 100 surveys — ${(top.rate / networkRate).toFixed(1)}× the network average of ${networkRate.toFixed(1)}.`,
+    });
+  }
+
+  const ranked = [...groupBy(complaints, C_REASON)].map(([i, group]) => ({
+    name: DATA.reasons[i].reason_name,
+    aspect: DATA.reasons[i].aspect,
+    count: group.length,
+    score: average(group, C_ASPECT_SCORE),
+  })).sort((a, b) => b.count - a.count);
+  if (ranked.length) {
+    const top = ranked[0];
+    const aspect = top.aspect === null ? "the service" : DATA.aspects[top.aspect].toLowerCase();
+    const score = top.score === null ? "" : `, and those customers scored ${aspect} at ${format(top.score)} / 5`;
+    cards.push({
+      kicker: "Main driver",
+      text: `<strong>${escapeHtml(top.name)}</strong> is ${Math.round(top.count / complaints.length * 100)}% of tickets${score}.`,
+    });
+  }
+
+  const unresolved = complaints.filter(r => UNRESOLVED.has(DATA.statuses[r[C_STATUS]]));
+  if (unresolved.length) {
+    const slow = [...groupBy(unresolved, C_REASON)]
+      .map(([i, group]) => ({ name: DATA.reasons[i].reason_name, days: average(group, C_DAYS), count: group.length }))
+      .filter(row => row.days !== null)
+      .sort((a, b) => b.days - a.days)[0];
+    const share = Math.round(unresolved.length / complaints.length * 100);
+    cards.push({
+      kicker: "Open backlog",
+      text: `<strong>${share}%</strong> of tickets are still open, in progress or escalated`
+        + (slow ? ` — ${escapeHtml(slow.name)} waits ${slow.days.toFixed(0)} days on average.` : "."),
+    });
+  }
+
+  const payout = total(complaints, C_REFUND);
+  if (payout > 0) {
+    const byReason = [...groupBy(complaints, C_REASON)]
+      .map(([i, group]) => ({ name: DATA.reasons[i].reason_name, eur: total(group, C_REFUND) }))
+      .sort((a, b) => b.eur - a.eur)[0];
+    cards.push({
+      kicker: "Payouts",
+      text: `<strong>€${Math.round(payout).toLocaleString("en")}</strong> has been paid back.`
+        + (byReason && byReason.eur > 0
+          ? ` ${escapeHtml(byReason.name)} alone is ${Math.round(byReason.eur / payout * 100)}% of that bill.`
+          : ""),
+    });
+  }
+
+  const silent = average(surveys.filter(r => r[COMPLAINED] === 0), OVERALL);
+  const vocal = average(surveys.filter(r => r[COMPLAINED] === 1), OVERALL);
+  if (silent !== null && vocal !== null) {
+    cards.push({
+      kicker: "Satisfaction cost",
+      text: `Customers who filed a complaint scored <strong>${format(vocal)} / 5</strong>, against ${format(silent)} for those who did not — a gap of ${(silent - vocal).toFixed(2)} points.`,
+    });
+  }
+
+  const cityRates = [...groupBy(complaints, C_CITY)].map(([i, group]) => {
+    const base = surveys.filter(r => r[CITY] === i).length;
+    return {
+      name: DATA.cities[i].city_name,
+      country: DATA.cities[i].country_code,
+      rate: base ? group.length / base * 100 : 0,
+      base,
+    };
+  }).filter(row => row.base >= 40).sort((a, b) => b.rate - a.rate);
+  if (cityRates.length && cityRates[0].rate > networkRate * 1.4) {
+    const top = cityRates[0];
+    cards.push({
+      kicker: "Local hotspot",
+      text: `<strong>${escapeHtml(top.name)}</strong> (${top.country}) is the worst city in the current selection, at ${top.rate.toFixed(1)} complaints per 100 surveys.`,
+    });
+  }
+
+  target.innerHTML = cards.map(card => `
+    <div class="insight">
+      <div class="kicker">${card.kicker}</div>
+      <p>${card.text}</p>
+    </div>`).join("");
+}
+
+function renderReasons(complaints) {
+  const groups = groupBy(complaints, C_REASON);
+  const items = DATA.reasons.map((reason, i) => {
+    const group = groups.get(i) || [];
+    const score = average(group, C_ASPECT_SCORE);
+    return {
+      key: i,
+      label: reason.reason_name,
+      value: group.length,
+      text: group.length.toLocaleString("en"),
+      // The bar is coloured by the score the complaint explains.
+      note: score === null ? "" : format(score),
+      color: scoreColor(score),
+      dimmed: !state.reasons.has(i),
+    };
+  }).filter(item => item.value > 0).sort((a, b) => b.value - a.value);
+
+  magnitudeChart(document.getElementById("byReason"), items, item => toggle(state.reasons, item.key));
+}
+
+function renderReasonAspects(complaints) {
+  const buckets = DATA.aspects.map(label => ({ label, rows: [] }));
+  buckets.push({ label: "Other", rows: [] });
+  for (const row of complaints) {
+    const aspect = DATA.reasons[row[C_REASON]].aspect;
+    buckets[aspect === null ? buckets.length - 1 : aspect].rows.push(row);
+  }
+
+  const items = buckets.map(bucket => {
+    const score = average(bucket.rows, C_ASPECT_SCORE);
+    return {
+      label: bucket.label,
+      value: bucket.rows.length,
+      text: bucket.rows.length.toLocaleString("en"),
+      note: score === null ? "" : format(score),
+      color: scoreColor(score),
+    };
+  }).filter(item => item.value > 0).sort((a, b) => b.value - a.value);
+
+  magnitudeChart(document.getElementById("reasonAspects"), items, null);
+}
+
+function renderBacklog(complaints) {
+  const open = complaints.filter(r => UNRESOLVED.has(DATA.statuses[r[C_STATUS]]));
+  const items = [...groupBy(open, C_REASON)].map(([i, group]) => ({
+    label: DATA.reasons[i].reason_name,
+    value: group.length,
+    text: group.length.toLocaleString("en"),
+    note: average(group, C_DAYS) === null ? "" : average(group, C_DAYS).toFixed(0) + "d",
+  })).sort((a, b) => b.value - a.value);
+
+  magnitudeChart(document.getElementById("backlog"), items, null);
+}
+
+function renderGap(surveys) {
+  const silent = surveys.filter(r => r[COMPLAINED] === 0);
+  const vocal = surveys.filter(r => r[COMPLAINED] === 1);
+  const items = [
+    { label: "Did not complain", value: average(silent, OVERALL), count: silent.length },
+    { label: "Filed a complaint", value: average(vocal, OVERALL), count: vocal.length },
+  ].filter(item => item.count);
+  barChart(document.getElementById("gap"), items, null);
+}
+
+function renderSeverity(complaints) {
+  const counts = { 1: 0, 2: 0, 3: 0, 4: 0 };
+  for (const row of complaints) {
+    if (row[C_SEVERITY] !== null) counts[Math.round(row[C_SEVERITY])] = (counts[Math.round(row[C_SEVERITY])] || 0) + 1;
+  }
+  const items = [1, 2, 3, 4].map(level => ({
+    label: SEVERITY_LABELS[level],
+    value: counts[level],
+    text: counts[level].toLocaleString("en"),
+    color: scoreColor(6 - level),
+  })).filter(item => item.value > 0);
+
+  magnitudeChart(document.getElementById("severity"), items, null);
+}
+
+function renderRate(target, complaints, surveys, column, labels) {
+  const complained = groupBy(complaints, column);
+  const answered = groupBy(surveys, column);
+  const items = labels.map((label, i) => {
+    const count = (complained.get(i) || []).length;
+    const base = (answered.get(i) || []).length;
+    return {
+      label,
+      value: base ? (count / base) * 100 : 0,
+      text: base ? (count / base * 100).toFixed(1) : "–",
+      note: count,
+    };
+  }).filter(item => item.value > 0).sort((a, b) => b.value - a.value);
+
+  magnitudeChart(document.getElementById(target), items, null);
+}
+
+function renderCityRates(complaints, surveys) {
+  const complained = groupBy(complaints, C_CITY);
+  const answered = groupBy(surveys, CITY);
+  const items = DATA.cities.map((city, i) => {
+    const count = (complained.get(i) || []).length;
+    const base = (answered.get(i) || []).length;
+    return {
+      label: `${city.city_name} (${city.country_code})`,
+      value: base ? (count / base) * 100 : 0,
+      text: base ? (count / base * 100).toFixed(1) : "–",
+      note: count,
+    };
+  }).filter(item => item.value > 0).sort((a, b) => b.value - a.value).slice(0, 12);
+
+  magnitudeChart(document.getElementById("rateCity"), items, null);
+}
+
+function renderRefunds(complaints) {
+  const items = [...groupBy(complaints, C_REASON)].map(([i, group]) => ({
+    label: DATA.reasons[i].reason_name,
+    value: total(group, C_REFUND),
+    text: "€" + Math.round(total(group, C_REFUND)).toLocaleString("en"),
+    note: group.filter(r => r[C_REFUND] > 0).length,
+  })).filter(item => item.value > 0).sort((a, b) => b.value - a.value);
+
+  magnitudeChart(document.getElementById("refunds"), items, null);
+}
+
+function renderStatuses(complaints) {
+  const groups = groupBy(complaints, C_STATUS);
+  const rows = DATA.statuses.map((name, i) => {
+    const group = groups.get(i) || [];
+    return { name, count: group.length, days: average(group, C_DAYS), severity: average(group, C_SEVERITY) };
+  }).filter(row => row.count).sort((a, b) => b.count - a.count);
+
+  const target = document.getElementById("statuses");
+  if (!rows.length) {
+    target.innerHTML = '<p class="empty">No complaints match the filters.</p>';
+    return;
+  }
+  target.innerHTML = `<table><thead><tr>
+      <th>Status</th><th class="num">Complaints</th><th class="num">Avg days</th><th class="num">Avg severity</th>
+    </tr></thead><tbody>
+    ${rows.map(row => `<tr>
+      <td>${prettify(row.name)}</td>
+      <td class="num">${row.count}</td>
+      <td class="num">${row.days === null ? "–" : row.days.toFixed(1)}</td>
+      <td class="num">${row.severity === null ? "–" : row.severity.toFixed(1)}</td>
+    </tr>`).join("")}</tbody></table>`;
+}
+
+function renderChannels(complaints) {
+  const items = [...groupBy(complaints, C_CHANNEL)].map(([i, group]) => ({
+    label: prettify(DATA.channels[i]),
+    value: group.length,
+    text: Math.round(group.length / complaints.length * 100) + "%",
+    note: group.length,
+    color: "var(--accent)",
+  })).sort((a, b) => b.value - a.value);
+
+  magnitudeChart(document.getElementById("channels"), items, null);
+}
+
+function renderReasonHeatmap(complaints, surveys) {
+  const target = document.getElementById("reasonHeatmap");
+  const countries = [...state.countries].sort();
+  const top = [...groupBy(complaints, C_REASON)]
+    .sort((a, b) => b[1].length - a[1].length).slice(0, 7).map(([i]) => i);
+  if (!top.length || !countries.length) {
+    target.innerHTML = '<p class="empty">No complaints match the filters.</p>';
+    return;
+  }
+
+  const answered = groupBy(surveys, COUNTRY);
+  const matrix = countries.map(country => top.map(reason => {
+    const base = (answered.get(country) || []).length;
+    const count = complaints.filter(r => r[C_COUNTRY] === country && r[C_REASON] === reason).length;
+    return base ? (count / base) * 100 : null;
+  }));
+  const max = Math.max(...matrix.flat().map(value => value ?? 0), 0.1);
+
+  const head = top.map(i => `<th class="num">${escapeHtml(DATA.reasons[i].reason_name)}</th>`).join("");
+  const body = countries.map((country, row) => {
+    const cells = matrix[row].map(value => value === null
+      ? '<td class="rate">–</td>'
+      : `<td class="rate" style="background:${heatColor(value / max)}">${value.toFixed(1)}</td>`).join("");
+    return `<tr><td>${DATA.countries[country].country_name}</td>${cells}</tr>`;
+  }).join("");
+
+  target.innerHTML = `<table class="heat"><thead><tr><th>Country</th>${head}</tr></thead><tbody>${body}</tbody></table>`;
+}
+
+function renderComplaintTrend(complaints, surveys) {
+  const months = DATA.months.slice(state.from, state.to + 1);
+  const target = document.getElementById("complaintTrend");
+  if (months.length < 2 || !complaints.length) {
+    target.innerHTML = '<p class="empty">Widen the date range to see a trend.</p>';
+    return;
+  }
+
+  const width = 900, height = 280, padX = 46, padY = 24;
+  const complained = groupBy(complaints, C_MONTH);
+  const answered = groupBy(surveys, MONTH);
+  const points = months.map((month, i) => {
+    const group = answered.get(state.from + i) || [];
+    const count = (complained.get(state.from + i) || []).length;
+    return { month, count, rate: group.length ? (count / group.length) * 100 : 0, score: average(group, OVERALL) };
+  });
+
+  const maxRate = Math.max(...points.map(p => p.rate), 1);
+  const slot = (width - padX * 2) / months.length;
+  const x = i => padX + (i + 0.5) * slot;
+  const yRate = value => height - padY - (value / maxRate) * (height - padY * 2);
+  const yScore = value => height - padY - ((value - 1) / 4) * (height - padY * 2);
+
+  const grid = [0, 0.5, 1].map(part => {
+    const value = maxRate * part;
+    return `<line x1="${padX}" y1="${yRate(value)}" x2="${width - padX}" y2="${yRate(value)}" stroke="#e6eaf1"/>
+      <text x="${padX - 8}" y="${yRate(value) + 4}" text-anchor="end" font-size="11" fill="#6b7a8d">${value.toFixed(0)}</text>`;
+  }).join("");
+
+  const rightAxis = [1, 3, 5].map(value =>
+    `<text x="${width - padX + 8}" y="${yScore(value) + 4}" font-size="11" fill="#6b7a8d">${value}</text>`).join("");
+
+  const bars = points.map((point, i) => `
+    <rect x="${x(i) - slot * 0.3}" y="${yRate(point.rate)}" width="${slot * 0.6}"
+          height="${Math.max(0, height - padY - yRate(point.rate))}" fill="#e0533d" opacity="0.75" rx="2">
+      <title>${point.month}: ${point.count} complaints, ${point.rate.toFixed(1)} per 100 surveys</title>
+    </rect>`).join("");
+
+  const scored = points.map((point, i) => point.score === null ? null : { x: x(i), y: yScore(point.score), point })
+    .filter(Boolean);
+  const line = `<polyline fill="none" stroke="#2f6df6" stroke-width="2" stroke-linejoin="round"
+      points="${scored.map(p => `${p.x},${p.y}`).join(" ")}"/>
+    ${scored.map(p => `<circle cx="${p.x}" cy="${p.y}" r="3" fill="#2f6df6">
+        <title>${p.point.month}: ${p.point.score.toFixed(2)} / 5</title></circle>`).join("")}`;
+
+  const step = Math.ceil(months.length / 12);
+  const labels = months.map((month, i) => i % step === 0
+    ? `<text x="${x(i)}" y="${height - 4}" text-anchor="middle" font-size="11" fill="#6b7a8d">${month}</text>` : "").join("");
+
+  target.innerHTML = `<svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}">
+      ${grid}${bars}${line}${rightAxis}${labels}</svg>
+    <div class="legend">
+      <span style="color:#e0533d">&#9632; Complaints per 100 surveys</span>
+      <span style="color:#2f6df6">&#9632; Average satisfaction (right axis)</span>
+    </div>`;
+}
+
+/* ---------- filters ---------- */
+
+function toggle(set, key) {
+  if (set.has(key) && set.size > 1) set.delete(key);
+  else if (set.has(key)) return;
+  else set.add(key);
+  render();
+}
+
+function buildChips(target, labels, set) {
+  target.innerHTML = labels.map((label, i) =>
+    `<button class="chip" data-i="${i}">${escapeHtml(label)}</button>`).join("");
+  target.querySelectorAll(".chip").forEach(chip =>
+    chip.addEventListener("click", () => toggle(set, Number(chip.dataset.i))));
+}
+
+function buildMonthSelects() {
+  const options = DATA.months.map((month, i) => `<option value="${i}">${month}</option>`).join("");
+  const from = document.getElementById("fromMonth");
+  const to = document.getElementById("toMonth");
+  from.innerHTML = options;
+  to.innerHTML = options;
+  to.value = state.to;
+  from.addEventListener("change", () => {
+    state.from = Math.min(Number(from.value), state.to);
+    from.value = state.from;
+    render();
+  });
+  to.addEventListener("change", () => {
+    state.to = Math.max(Number(to.value), state.from);
+    to.value = state.to;
+    render();
+  });
+}
+
+function exportComplaintCsv(rows) {
+  const header = ["country", "product", "city", "month", "reason", "severity", "status",
+                  "channel", "handling_days", "refund_eur", "aspect_score"];
+  const lines = rows.map(r => [
+    DATA.countries[r[C_COUNTRY]].country_name,
+    DATA.products[r[C_PRODUCT]].product_name,
+    DATA.cities[r[C_CITY]].city_name,
+    DATA.months[r[C_MONTH]],
+    DATA.reasons[r[C_REASON]].reason_name,
+    r[C_SEVERITY] ?? "",
+    DATA.statuses[r[C_STATUS]],
+    DATA.channels[r[C_CHANNEL]],
+    r[C_DAYS] ?? "",
+    r[C_REFUND] ?? "",
+    r[C_ASPECT_SCORE] ?? "",
+  ].map(value => `"${String(value).replace(/"/g, '""')}"`).join(","));
+
+  download("complaints_filtered.csv", [header.join(","), ...lines].join("\n"));
+}
+
+function download(name, text) {
+  const blob = new Blob([text], { type: "text/csv;charset=utf-8" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = name;
+  link.click();
+  URL.revokeObjectURL(link.href);
+}
+
+function exportCsv(rows) {
+  const header = ["country", "product", "city", "month", ...DATA.aspects, "overall", "comment"];
+  const lines = rows.map(r => [
+    DATA.countries[r[COUNTRY]].country_name,
+    DATA.products[r[PRODUCT]].product_name,
+    DATA.cities[r[CITY]].city_name,
+    DATA.months[r[MONTH]],
+    ...ASPECT_COLS.map(col => r[col] ?? ""),
+    r[OVERALL] ?? "",
+    r[COMMENT] === null ? "" : DATA.comments[r[COMMENT]],
+  ].map(value => `"${String(value).replace(/"/g, '""')}"`).join(","));
+
+  download("satisfaction_filtered.csv", [header.join(","), ...lines].join("\n"));
+}
+
+/* ---------- render loop ---------- */
+
+function render() {
+  const rows = selectedRows();
+  const complaints = selectedComplaints(false);
+
+  document.querySelectorAll("#countryChips .chip").forEach((chip, i) =>
+    chip.classList.toggle("on", state.countries.has(i)));
+  document.querySelectorAll("#productChips .chip").forEach((chip, i) =>
+    chip.classList.toggle("on", state.products.has(i)));
+  document.getElementById("fromMonth").value = state.from;
+  document.getElementById("toMonth").value = state.to;
+
+  renderKpis(rows);
+  renderCountries(rows);
+  renderProducts(rows);
+  renderAspects(rows);
+  renderDistribution(rows);
+  renderTrend(rows);
+  renderHeatmap(rows);
+  renderCities(rows);
+  renderComments(rows);
+
+  renderComplaintKpis(complaints, rows);
+  renderInsights(complaints, rows);
+  // The reason chart ignores the reason filter, so a hidden reason stays clickable.
+  renderReasons(selectedComplaints(true));
+  renderReasonAspects(complaints);
+  renderBacklog(complaints);
+  renderRate("rateCountry", complaints, rows, COUNTRY, DATA.countries.map(c => c.country_name));
+  renderRate("rateProduct", complaints, rows, PRODUCT, DATA.products.map(p => p.product_name));
+  renderCityRates(complaints, rows);
+  renderRefunds(complaints);
+  renderGap(rows);
+  renderSeverity(complaints);
+  renderComplaintTrend(complaints, rows);
+  renderReasonHeatmap(complaints, rows);
+  renderStatuses(complaints);
+  renderChannels(complaints);
+}
+
+function showView(view) {
+  state.view = view;
+  document.querySelectorAll(".tab").forEach(tab =>
+    tab.classList.toggle("on", tab.dataset.view === view));
+  document.getElementById("viewSatisfaction").hidden = view !== "viewSatisfaction";
+  document.getElementById("viewComplaints").hidden = view !== "viewComplaints";
+}
+
+buildChips(document.getElementById("countryChips"), DATA.countries.map(c => c.country_name), state.countries);
+buildChips(document.getElementById("productChips"), DATA.products.map(p => p.product_name), state.products);
+buildMonthSelects();
+
+document.querySelectorAll(".tab").forEach(tab =>
+  tab.addEventListener("click", () => showView(tab.dataset.view)));
+
+document.getElementById("reset").addEventListener("click", () => {
+  state.countries = new Set(DATA.countries.map((_, i) => i));
+  state.products = new Set(DATA.products.map((_, i) => i));
+  state.reasons = new Set(DATA.reasons.map((_, i) => i));
+  state.from = 0;
+  state.to = DATA.months.length - 1;
+  render();
+});
+document.getElementById("export").addEventListener("click", () => state.view === "viewComplaints"
+  ? exportComplaintCsv(selectedComplaints(false))
+  : exportCsv(selectedRows()));
+
+render();
+</script>
+</body>
+</html>

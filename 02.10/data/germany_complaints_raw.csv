@@ -1,0 +1,210 @@
+﻿beschwerde_id;paket_nr;umfrage_id;datum;stadt;produkt_code;kanal;grund_code;beschreibung;schweregrad;status;bearbeitungstage;erstattung_eur
+DE-C-00181;FC-DE-100754;DE-S-00755;21.05.2025;Berlin;PAK_001;Web;???;Karton eingedrückt, Inhalt beschädigt;1;in Bearbeitung;7;
+DE-C-00082;FC-DE-100882;DE-S-00883;19.03.2025;Hamburg;PAK_004;Web; R-01 ;Paket kam drei Tage zu spät;1;gelöst;3;
+DE-C-00051;FC-DE-100764;DE-S-00765;;Hamburg;PAK_003;Telefon;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;eskaliert;25;
+DE-C-00205;FC-DE-100495;DE-S-00496;15.02.2025;Hamburg;PAK_001;Filiale;R-01;Paket kam drei Tage zu spät;1;geschlossen;1;
+DE-C-00131;FC-DE-100170;DE-S-00171;01.01.2025;Leipzig;PAK_005;Filiale;N/A;Zusteller ist im gebuchten Zeitfenster nicht erschienen;2;in Bearbeitung;30;
+DE-C-00044;FC-DE-100813;DE-S-00814;04.02.2025;Hamburg;PAK_006;E-Mail;R-04;Der Zusteller war an der Tür unhöflich;2;gelöst;2;
+DE-C-00094;FC-DE-100049;DE-S-00050;02.07.2025;Stuttgart;PAK_006;E-Mail;R-09;Zwei Artikel fehlen im Paket;2;in Bearbeitung;27;
+DE-C-00052;FC-DE-100757;DE-S-00758;24.09.2025;Stuttgart;PAK_005;Web;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;offen;26;
+DE-C-00183;FC-DE-100464;DE-S-00465;25.03.2025;Düsseldorf;PAK_006;Filiale;R-10;Der Kundenservice ist nicht erreichbar;2;eskaliert;8;
+DE-C-00174;FC-DE-100105;DE-S-00106;15.05.2025;Leipzig;PAK_002;Telefon;R-04;Der Zusteller war an der Tür unhöflich;2;geschlossen;2;
+DE-C-00165;FC-DE-100602;DE-S-00603;01.05.2025; Leipzig;PAK_004;Web;R-10;Der Kundenservice ist nicht erreichbar;2;offen;15;
+DE-C-00016;FC-DE-100317;DE-S-00318;24.06.2025;München;PAK_002;Web;R-07;Karton eingedrückt, Inhalt beschädigt;1;in Bearbeitung;13;
+DE-C-00177;FC-DE-100223;DE-S-00224;09.02.2025; Berlin;PAK_004;Filiale;R-08;Kühlsendung kam warm an;2;gelöst;1;10,10
+DE-C-00198;FC-DE-100165;DE-S-00166;15.07.2025;LEIPZIG;PAK_004;Telefon;R-03;Paket nie angekommen, Sendungsverfolgung steht still;2;gelöst;2;14,67
+DE-C-00068;FC-DE-100478;DE-S-00479;21.06.2025;KÖLN;PAK_002;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;1;offen;15;
+DE-C-00185;FC-DE-100685;DE-S-00686;22.03.2025;Berlin;PAK_003;E-Mail;R-12;Falsche Auskunft zum Liefertermin erhalten;1;gelöst;1;
+DE-C-00013;FC-DE-100205;DE-S-00206;01.01.2025;Düsseldorf;PAK_006;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;2;eskaliert;17;
+DE-C-00186;FC-DE-101068;DE-S-01069;24.08.2025;München;PAK_006;Web;R-06;Paket wurde an der falschen Adresse abgegeben;1;eskaliert;34;
+DE-C-00027;FC-DE-100451;DE-S-00452;16.09.2025;Köln;PAK_006;Filiale;R-01;Paket kam drei Tage zu spät;2;offen;22;
+DE-C-00193;FC-DE-100812;DE-S-00813;26.03.2025;Düsseldorf;PAK_004;Telefon;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;in Bearbeitung;16;
+DE-C-00114;FC-DE-101042;DE-S-01043;19.07.2025;München;PAK_003;Filiale;R-07;Karton eingedrückt, Inhalt beschädigt;2;gelöst;4;39,11
+DE-C-00099;FC-DE-100908;DE-S-00909;10.05.2025;München;PAK_005;Telefon;R-04;Der Zusteller war an der Tür unhöflich;1;eskaliert;41;
+DE-C-00119;FC-DE-100799;DE-S-00800;14.04.2025;Hamburg;pak_002;E-Mail;r-07;Karton eingedrückt, Inhalt beschädigt;1;gelöst;4;7,98
+DE-C-00069;FC-DE-100881;DE-S-00882;20.08.2025;München;PAK_004;Filiale;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;1;gelöst;3;
+DE-C-00123;FC-DE-100724;DE-S-00725;28.08.2025;KÖLN;PAK_006;E-Mail;R-13;Unangekündigte Zusatzkosten berechnet;1;geschlossen;3;5,97
+DE-C-00142;FC-DE-100827;DE-S-00828;10.06.2025;Düsseldorf;PAK_001;Web;R-07;Karton eingedrückt, Inhalt beschädigt;2;eskaliert;21;
+DE-C-00087;FC-DE-100386;DE-S-00387;01.03.2025;Hamburg;PAK_006;Filiale;R-09;Zwei Artikel fehlen im Paket;2;offen;27;
+DE-C-00192;FC-DE-100196;DE-S-00197;01.01.2025;Berlin;PAK_006;Filiale;R-02;Zusteller ist im gebuchten Zeitfenster nicht erschienen;1;geschlossen;4;
+DE-C-00050;FC-DE-100778;DE-S-00779;02.06.2025;Stuttgart;PAK_002;Web;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;gelöst;3;14,88
+DE-C-00076;FC-DE-100394;DE-S-00395;06.03.2025;Berlin;PAK_004;Filiale;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;eskaliert;41;
+DE-C-00037;FC-DE-100105;DE-S-00106;17.05.2025;Leipzig;PAK_002;E-Mail;R-10;Der Kundenservice ist nicht erreichbar;2;gelöst;4;
+DE-C-00171;FC-DE-100421;DE-S-00422;05.05.2025;Frankfurt;PAK_005;E-Mail;R-10;Der Kundenservice ist nicht erreichbar;2;in Bearbeitung;21;
+DE-C-00091;FC-DE-100960;DE-S-00961;08.08.2025;Leipzig;PAK_003;E-Mail;R-04;Der Zusteller war an der Tür unhöflich;1;gelöst;6;
+DE-C-00137;FC-DE-100972;DE-S-00973;19.04.2025;Stuttgart;PAK_001;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;2;in Bearbeitung;18;
+DE-C-00180;FC-DE-101039;DE-S-01040;05.07.2025;München;PAK_005;E-Mail;R-03;Paket nie angekommen, Sendungsverfolgung steht still;3;in Bearbeitung;30;
+DE-C-00064;FC-DE-101017;DE-S-01018;27.04.2025;Frankfurt;PAK_002;Web;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;gelöst;1;
+DE-C-00111;FC-DE-100898;DE-S-00899;14.01.2025;Hamburg;PAK_001;Telefon;R-09;Zwei Artikel fehlen im Paket;1;in Bearbeitung;33;
+DE-C-00112;FC-DE-100895;DE-S-00896;24.04.2025;Berlin;PAK_004;Filiale;R-10;Der Kundenservice ist nicht erreichbar;2;offen;37;
+DE-C-00089;FC-DE-100536;DE-S-00537;09.04.2025;Frankfurt;PAK_005;Web;R-02;Zusteller ist im gebuchten Zeitfenster nicht erschienen;2;geschlossen;5;
+DE-C-00113;FC-DE-100421;DE-S-00422;12.05.2025;Frankfurt;PAK_005;Web;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;gelöst;3;
+DE-C-00173;FC-DE-101072;DE-S-01073;04.08.2025;Stuttgart;PAK_002;E-Mail;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;1;offen;44;
+DE-C-00015;FC-DE-100530;DE-S-00531;07.08.2025;Berlin;PAK_006;Telefon;R-04;Der Zusteller war an der Tür unhöflich;1;in Bearbeitung;23;
+DE-C-00120;FC-DE-100441;DE-S-00442;16.07.2025;Stuttgart;PAK_003;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;2;gelöst;1;29,31
+DE-C-00007;FC-DE-100072;DE-S-00073;27.04.2025;München;PAK_006;E-Mail;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;gelöst;5;
+DE-C-00053;FC-DE-100625;DE-S-00626;27.06.2025;Köln;PAK_006;Web;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;offen;24;
+DE-C-00036;FC-DE-100623;DE-S-00624;27.01.2025;Berlin;PAK_001;E-Mail;R-01;Paket kam drei Tage zu spät;2;in Bearbeitung;39;
+DE-C-00057;FC-DE-100195;DE-S-00196;31.07.2025;München;PAK_004;Telefon;R-01;Paket kam drei Tage zu spät;2;offen;19;
+DE-C-00023;FC-DE-101006;DE-S-01007;14.07.2025;Frankfurt;PAK_006;Web;R-07;Karton eingedrückt, Inhalt beschädigt;2;gelöst;1;14,80
+DE-C-00204;FC-DE-101051;DE-S-01052;01.10.2025;Leipzig;PAK_006;Web;R-06;Paket wurde an der falschen Adresse abgegeben;2;eskaliert;18;
+DE-C-00075;FC-DE-100824;DE-S-00825;28.09.2025;Leipzig;PAK_003;Telefon;R-09;Zwei Artikel fehlen im Paket;1;gelöst;6;7,37
+DE-C-00176;FC-DE-100024;DE-S-00025;28.03.2025;Leipzig;PAK_005;Filiale;R-07;Karton eingedrückt, Inhalt beschädigt;2;offen;22;
+DE-C-00203;FC-DE-100411;DE-S-00412;06.03.2025;Frankfurt;PAK_006;Web;R-07;Karton eingedrückt, Inhalt beschädigt;2;gelöst;4;32,75
+DE-C-00042;FC-DE-100248;DE-S-00249;08.08.2025;München;PAK_003;Telefon;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;eskaliert;24;
+DE-C-00175;FC-DE-101006;DE-S-01007;12.07.2025;Frankfurt;PAK_006;Telefon;R-03;Paket nie angekommen, Sendungsverfolgung steht still;2;gelöst;5;44,66
+DE-C-00122;FC-DE-100952;DE-S-00953;28.08.2025;Berlin;PAK_006;Filiale;R-04;Der Zusteller war an der Tür unhöflich;2;in Bearbeitung;40;
+DE-C-00062;FC-DE-100502;DE-S-00503;20.06.2025;Leipzig;PAK_006;E-Mail;R-02;Zusteller ist im gebuchten Zeitfenster nicht erschienen;2;geschlossen;1;
+DE-C-00143;FC-DE-100894;DE-S-00895;25.01.2025;Köln;PAK_001;Telefon;R-04;Der Zusteller war an der Tür unhöflich;1;gelöst;4;
+DE-C-00086;FC-DE-101190;;07.08.2025;Berlin;PAK_006;Web;R-04;Der Zusteller war an der Tür unhöflich;1;in Bearbeitung;23;
+DE-C-00167;FC-DE-100283;DE-S-00284;12.10.2025;Stuttgart;PAK_005;Filiale;R-01;Paket kam drei Tage zu spät;1;geschlossen;5;
+DE-C-00141;FC-DE-100137;DE-S-00138;04.03.2025;Stuttgart;PAK_002;E-Mail;R-10;Der Kundenservice ist nicht erreichbar;2;offen;31;
+DE-C-00147;FC-DE-100528;DE-S-00529;08.10.2025;BERLIN;PAK_006;Filiale;r-13;Unangekündigte Zusatzkosten berechnet;2;in Bearbeitung;32;
+DE-C-00096;FC-DE-100669;DE-S-00670;21.02.2025;Hamburg;PAK_005;Filiale;R-09;Zwei Artikel fehlen im Paket;2;gelöst;2;7,73
+DE-C-00140;FC-DE-100616;DE-S-00617;18.03.2025;Stuttgart;PAK_003;E-Mail;R-09;Zwei Artikel fehlen im Paket;1;in Bearbeitung;21;
+DE-C-00065;FC-DE-100965;DE-S-00966;26.05.2025;Berlin;PAK_006;Web;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;in Bearbeitung;11;
+DE-C-00088;FC-DE-100362;DE-S-00363;24.06.2025;Düsseldorf;PAK_005;E-Mail;R-07;Karton eingedrückt, Inhalt beschädigt;2;offen;17;
+DE-C-00121;FC-DE-100618;DE-S-00619;24.07.2025; Köln;PAK_001;Web;R-09;Zwei Artikel fehlen im Paket;1;eskaliert;22;
+DE-C-00078;FC-DE-100303;DE-S-00304;10.07.2025;Leipzig;PAK_006;Telefon;R-04;Der Zusteller war an der Tür unhöflich;2;gelöst;1;
+DE-C-00039;FC-DE-100995;DE-S-00996;25.09.2025;Stuttgart;PAK_003;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;1;gelöst;4;5,40
+DE-C-00080;FC-DE-100721;DE-S-00722;08.07.2025;Frankfurt;PAK_004;Telefon;R-08;Kühlsendung kam warm an;3;offen;7;
+DE-C-00155;FC-DE-100952;DE-S-00953;21.08.2025;Berlin;PAK_006;Telefon;R-10;Der Kundenservice ist nicht erreichbar;2;in Bearbeitung;35;
+DE-C-00196;FC-DE-100629;DE-S-00630;22.04.2025;Leipzig;PAK_003;Filiale;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;gelöst;3;6,53
+DE-C-00025;FC-DE-100469;DE-S-00470;19.08.2025;Leipzig;PAK_001;Telefon;r-01;Paket kam drei Tage zu spät;2;in Bearbeitung;10;
+DE-C-00081;FC-DE-101025;DE-S-01026;08.02.2025;Köln;PAK_001;Web;R-04;Der Zusteller war an der Tür unhöflich;2;geschlossen;6;
+DE-C-00028;FC-DE-100921;DE-S-00922;25.01.2025;Berlin;PAK_005;Filiale;r-10;Der Kundenservice ist nicht erreichbar;2;gelöst;6;
+DE-C-00134;FC-DE-100363;DE-S-00364;04.03.2025;Köln;PAK_006;Telefon;R-01;Paket kam drei Tage zu spät;1;gelöst;2;
+DE-C-00059;FC-DE-100060;DE-S-00061;14.09.2025;Berlin;PAK_006;Telefon;R-10;Der Kundenservice ist nicht erreichbar;2;gelöst;3;
+DE-C-00049;FC-DE-101007;DE-S-01008;24.02.2025;Stuttgart;PAK_001;Web;R-04;Der Zusteller war an der Tür unhöflich;2;offen;39;
+DE-C-00163;FC-DE-100945;DE-S-00946;12.06.2025;Frankfurt;PAK_006;Filiale;R-09;Zwei Artikel fehlen im Paket;2;gelöst;3;8,70
+DE-C-00021;FC-DE-100910;DE-S-00911;01.07.2025;München;PAK_004;Web;R-08;Kühlsendung kam warm an;2;gelöst;2;42,33
+DE-C-00074;FC-DE-100640;DE-S-00641;01.01.2025;Berlin;PAK_001;Filiale;R-13;Unangekündigte Zusatzkosten berechnet;1;gelöst;1;5,88
+DE-C-00055;FC-DE-100311;DE-S-00312;14.01.2025; Düsseldorf;PAK_006;Web;R-01;Paket kam drei Tage zu spät;2;gelöst;1;
+DE-C-00129;FC-DE-100063;DE-S-00064;01.10.2025;Köln;PAK_005;E-Mail;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;eskaliert;35;
+DE-C-00084;FC-DE-100849;DE-S-00850;02.07.2025;Berlin;PAK_004;Filiale;R-08;Kühlsendung kam warm an;3;geschlossen;2;83,87
+DE-C-00073;FC-DE-100870;DE-S-00871;10.08.2025;BERLIN;PAK_005;Telefon;R-10;Der Kundenservice ist nicht erreichbar;1;in Bearbeitung;21;
+DE-C-00018;FC-DE-101081;DE-S-01082;11.04.2025;Düsseldorf;PAK_006;E-Mail;R-09;Zwei Artikel fehlen im Paket;2;geschlossen;3;8,05
+DE-C-00166;FC-DE-100648;DE-S-00649;04.02.2025;Berlin;PAK_004;Web;R-08;Kühlsendung kam warm an;2;gelöst;1;42,12
+DE-C-00206;FC-DE-100855;DE-S-00856;;Stuttgart;PAK_002;E-Mail;R-04;Der Zusteller war an der Tür unhöflich;2;in Bearbeitung;35;
+DE-C-00093;FC-DE-100447;DE-S-00448;20.07.2025;Frankfurt;PAK_002;Telefon;R-13;Unangekündigte Zusatzkosten berechnet;1;gelöst;2;4,43
+DE-C-00004;FC-DE-100055;DE-S-00056;03.07.2025;Leipzig;PAK_001;Web;R-13;Unangekündigte Zusatzkosten berechnet;1;gelöst;1;5,51
+DE-C-00162;FC-DE-100605;DE-S-00606;15.07.2025;Stuttgart;PAK_002;Telefon;R-01;Paket kam drei Tage zu spät;1;geschlossen;3;
+DE-C-00169;FC-DE-100045;DE-S-00046;25.06.2025;Frankfurt;PAK_003;Telefon;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;offen;30;
+DE-C-00207;FC-DE-100947;DE-S-00948;25.05.2025;Düsseldorf;PAK_005;Filiale;R-01;Paket kam drei Tage zu spät;1;gelöst;4;
+DE-C-00101;FC-DE-100777;DE-S-00778;04.05.2025;FRANKFURT;PAK_001;Web;R-10;Der Kundenservice ist nicht erreichbar;2;in Bearbeitung;22;
+DE-C-00038;FC-DE-100378;DE-S-00379;19.05.2025;München;PAK_002;E-Mail;;Zusteller ist im gebuchten Zeitfenster nicht erschienen;2;in Bearbeitung;19;
+DE-C-00083;FC-DE-101492;;26.06.2025;Stuttgart;PAK_004;Telefon;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;offen;9;
+DE-C-00077;FC-DE-100817;DE-S-00818;24.01.2025;Frankfurt;PAK_003;Web;R-09;Zwei Artikel fehlen im Paket;1;in Bearbeitung;11;
+DE-C-00146;FC-DE-100372;DE-S-00373;27.01.2025;München;PAK_006;Telefon;R-10;Der Kundenservice ist nicht erreichbar;1;geschlossen;1;
+DE-C-00010;FC-DE-100248;DE-S-00249;19.08.2025;München;PAK_003;E-Mail;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;offen;30;
+DE-C-00058;FC-DE-100169;DE-S-00170;31.03.2025;Berlin;PAK_005;Filiale;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;in Bearbeitung;13;
+DE-C-00182;FC-DE-100355;DE-S-00356;02.03.2025;Berlin;PAK_002;Filiale;R-04;Der Zusteller war an der Tür unhöflich;2;gelöst;2;
+DE-C-00011;FC-DE-100036;DE-S-00037;28.08.2025;Hamburg;PAK_002;Telefon;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;eskaliert;8;
+DE-C-00014;FC-DE-101065;DE-S-01066;12.05.2025;Leipzig;PAK_002;Filiale;R-09;Zwei Artikel fehlen im Paket;2;in Bearbeitung;25;
+DE-C-00092;FC-DE-101048;DE-S-01049;02.03.2025;Leipzig;PAK_006;Filiale;R-09;Zwei Artikel fehlen im Paket;1;in Bearbeitung;19;
+DE-C-00199;FC-DE-100330;DE-S-00331;01.08.2025;Köln;PAK_001;Filiale;R-12;Falsche Auskunft zum Liefertermin erhalten;1;gelöst;1;
+DE-C-00164;FC-DE-100697;DE-S-00698;19.01.2025;Hamburg;PAK_001;Web;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;gelöst;3;16,65
+DE-C-00047;FC-DE-100706;DE-S-00707;20.05.2025;Köln;PAK_005;E-Mail;r-10;Der Kundenservice ist nicht erreichbar;2;gelöst;1;
+DE-C-00024;FC-DE-100319;DE-S-00320;08.01.2025;Köln;PAK_006;E-Mail;R-04;Der Zusteller war an der Tür unhöflich;1;offen;11;
+DE-C-00117;FC-DE-100891;DE-S-00892;21.01.2025;Köln;PAK_006;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;2;gelöst;6;9,73
+DE-C-00148;FC-DE-100136;DE-S-00137;30.08.2025;Hamburg;PAK_003;E-Mail;R-01;Paket kam drei Tage zu spät;2;in Bearbeitung;39;
+DE-C-00067;FC-DE-100419;DE-S-00420;13.03.2025;Leipzig;PAK_001;Web;R-07;Karton eingedrückt, Inhalt beschädigt;1;gelöst;3;6,70
+DE-C-00197;FC-DE-100571;DE-S-00572;19.09.2025;Stuttgart;PAK_001;Web;R-07;Karton eingedrückt, Inhalt beschädigt;2;offen;22;
+DE-C-00190;FC-DE-100332;DE-S-00333;28.08.2025;Hamburg;PAK_006;E-Mail;R-09;Zwei Artikel fehlen im Paket;2;gelöst;2;36,61
+DE-C-00056;FC-DE-100559;DE-S-00560;08.01.2025; Köln;PAK_003;Web;R-04;Der Zusteller war an der Tür unhöflich;2;gelöst;3;
+DE-C-00154;FC-DE-100938;DE-S-00939;15.03.2025;Köln;PAK_001;Web;R-01;Paket kam drei Tage zu spät;2;in Bearbeitung;39;
+DE-C-00061;FC-DE-100239;DE-S-00240;12.09.2025;Berlin;PAK_001;E-Mail;R-01;Paket kam drei Tage zu spät;2;in Bearbeitung;23;
+DE-C-00144;FC-DE-100254;DE-S-00255;20.01.2025;Berlin;PAK_001;Filiale;R-07;Karton eingedrückt, Inhalt beschädigt;1;gelöst;2;6,96
+DE-C-00098;FC-DE-100656;DE-S-00657;03.06.2025;KÖLN;PAK_003;Filiale;A_CLASSER;Karton eingedrückt, Inhalt beschädigt;2;gelöst;2;18,23
+DE-C-00124;FC-DE-100152;DE-S-00153;07.10.2025;Köln;PAK_005;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;2;geschlossen;4;43,32
+DE-C-00104;FC-DE-100418;DE-S-00419;20.05.2025;Frankfurt;PAK_005;E-Mail;R-03;Paket nie angekommen, Sendungsverfolgung steht still;2;gelöst;4;42,55
+DE-C-00191;FC-DE-101071;DE-S-01072;15.08.2025;Hamburg;PAK_006;Web;R-01;Paket kam drei Tage zu spät;1;geschlossen;1;
+DE-C-00034;FC-DE-100702;DE-S-00703;02.08.2025;Frankfurt;PAK_001;Telefon;R-02;Zusteller ist im gebuchten Zeitfenster nicht erschienen;2;in Bearbeitung;20;
+DE-C-00179;FC-DE-100492;DE-S-00493;29.03.2025;München;PAK_001;Web;R-09;Zwei Artikel fehlen im Paket;1;gelöst;2;6,04
+DE-C-00033;FC-DE-100130;DE-S-00131;18.05.2025;Frankfurt;PAK_002;Web;R-04;Der Zusteller war an der Tür unhöflich;2;in Bearbeitung;41;
+DE-C-00070;FC-DE-100688;DE-S-00689;20.01.2025;Düsseldorf;PAK_006;Filiale;R-03;Paket nie angekommen, Sendungsverfolgung steht still;2;offen;22;
+DE-C-00079;FC-DE-100895;DE-S-00896;19.04.2025;Berlin;PAK_004;E-Mail;R-04;Der Zusteller war an der Tür unhöflich;2;offen;21;
+DE-C-00054;FC-DE-101069;DE-S-01070;22.06.2025;München;PAK_001;E-Mail;R-01;Paket kam drei Tage zu spät;2;offen;16;
+DE-C-00184;FC-DE-100131;DE-S-00132;11.01.2025;Düsseldorf;PAK_006;Web;R-12;Falsche Auskunft zum Liefertermin erhalten;1;offen;7;
+DE-C-00043;FC-DE-100862;DE-S-00863;02.09.2025;Köln;PAK_001;Filiale;R-01;Paket kam drei Tage zu spät;1;offen;18;
+DE-C-00022;FC-DE-100719;DE-S-00720;07.05.2025;München;PAK_001;Filiale;R-12;Falsche Auskunft zum Liefertermin erhalten;1;gelöst;1;
+DE-C-00187;FC-DE-100502;DE-S-00503;23.06.2025; Leipzig;PAK_006;Telefon;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;in Bearbeitung;27;
+DE-C-00158;FC-DE-100495;DE-S-00496;02.03.2025;Hamburg;PAK_001;E-Mail;R-07;Karton eingedrückt, Inhalt beschädigt;2;geschlossen;3;15,49
+DE-C-00139;FC-DE-100984;DE-S-00985;19.10.2025;Hamburg;PAK_006;E-Mail;R-07;Karton eingedrückt, Inhalt beschädigt;1;gelöst;1;3,55
+DE-C-00003;FC-DE-100483;DE-S-00484;14.07.2025;München;PAK_004;Web;R-08;Kühlsendung kam warm an;2;gelöst;1;13,61
+DE-C-00041;FC-DE-100981;DE-S-00982;07.06.2025;KÖLN;PAK_006;Telefon;???;Erstattung wird seit Wochen nicht bearbeitet;1;in Bearbeitung;27;
+DE-C-00071;FC-DE-100598;DE-S-00599;03.01.2025;Hamburg;PAK_005;Filiale;R-04;Der Zusteller war an der Tür unhöflich;1;gelöst;1;
+DE-C-00168;FC-DE-100481;DE-S-00482;27.09.2025;Stuttgart;PAK_003;Telefon;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;gelöst;4;4,71
+DE-C-00020;FC-DE-100560;DE-S-00561;03.08.2025;Frankfurt;PAK_004;Filiale;R-07;Karton eingedrückt, Inhalt beschädigt;2;in Bearbeitung;40;
+DE-C-00156;FC-DE-100593;DE-S-00594;27.08.2025;Stuttgart;PAK_001;Web;R-01;Paket kam drei Tage zu spät;2;in Bearbeitung;15;
+DE-C-00133;FC-DE-100512;DE-S-00513;07.10.2025;Frankfurt;PAK_006;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;2;offen;20;
+DE-C-00017;FC-DE-100229;DE-S-00230;11.02.2025;Köln;PAK_004;Web;R-01;Paket kam drei Tage zu spät;2;gelöst;3;
+DE-C-00150;FC-DE-100236;DE-S-00237;16.09.2025;München;PAK_004;Telefon;R-06;Paket wurde an der falschen Adresse abgegeben;2;gelöst;3;11,73
+DE-C-00060;FC-DE-100122;DE-S-00123;16.05.2025;KÖLN;PAK_001;Web;R-07;Karton eingedrückt, Inhalt beschädigt;1;offen;37;
+DE-C-00192;FC-DE-100196;DE-S-00197;01.01.2025;Berlin;PAK_006;Filiale;R-02;Zusteller ist im gebuchten Zeitfenster nicht erschienen;1;geschlossen;4;
+DE-C-00172;FC-DE-100929;DE-S-00930;14.05.2025;Frankfurt;PAK_005;Telefon;R-04;Der Zusteller war an der Tür unhöflich;1;eskaliert;34;
+DE-C-00151;FC-DE-100562;DE-S-00563;10.08.2025;Frankfurt;PAK_001;Filiale;R-12;Falsche Auskunft zum Liefertermin erhalten;1;eskaliert;34;
+DE-C-00170;FC-DE-101070;DE-S-01071;29.07.2025;Stuttgart;PAK_004;Filiale;R-06;Paket wurde an der falschen Adresse abgegeben;2;gelöst;6;9,69
+DE-C-00100;FC-DE-100205;DE-S-00206;01.01.2025;Düsseldorf;PAK_006;Filiale;R-04;Der Zusteller war an der Tür unhöflich;2;eskaliert;23;
+DE-C-00048;FC-DE-100823;DE-S-00824;25.05.2025;Köln;PAK_002;E-Mail;R-13;Unangekündigte Zusatzkosten berechnet;1;gelöst;3;4,42
+DE-C-00149;FC-DE-100355;DE-S-00356;25.02.2025;Berlin;PAK_002;Filiale;???;Paket kam drei Tage zu spät;2;eskaliert;15;
+DE-C-00026;FC-DE-100512;DE-S-00513;05.10.2025;Frankfurt;PAK_006;Telefon;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;eskaliert;11;
+DE-C-00001;FC-DE-100611;DE-S-00612;08.09.2025;Berlin;PAK_003;E-Mail;R-01;Paket kam drei Tage zu spät;1;gelöst;3;
+DE-C-00029;FC-DE-100528;DE-S-00529;29.09.2025;Berlin;PAK_006;Web;R-13;Unangekündigte Zusatzkosten berechnet;2;in Bearbeitung;8;
+DE-C-00008;FC-DE-100195;DE-S-00196;04.08.2025;München;PAK_004;Web;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;gelöst;4;
+DE-C-00032;FC-DE-100106;DE-S-00107;29.08.2025;Leipzig;PAK_006;Filiale;R-09;Zwei Artikel fehlen im Paket;2;offen;19;
+DE-C-00152;FC-DE-101143;;28.08.2025;Köln;PAK_006;Telefon;R-13;Unangekündigte Zusatzkosten berechnet;1;geschlossen;3;5,97
+DE-C-00161;FC-DE-100078;DE-S-00079;15.08.2025;München;PAK_004;Filiale;R-01;Paket kam drei Tage zu spät;2;in Bearbeitung;26;
+DE-C-00006;FC-DE-100147;DE-S-00148;26.09.2025;Düsseldorf;PAK_003;Web;R-06;Paket wurde an der falschen Adresse abgegeben;2;in Bearbeitung;44;
+DE-C-00128;FC-DE-100875;DE-S-00876;17.10.2025;Leipzig;PAK_002;E-Mail;R-04;Der Zusteller war an der Tür unhöflich;2;eskaliert;24;
+DE-C-00130;FC-DE-100219;DE-S-00220;29.04.2025;LEIPZIG;PAK_006;Web;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;gelöst;2;
+DE-C-00118;FC-DE-101009;DE-S-01010;12.08.2025;MÜNCHEN;PAK_003;Web;R-07;Karton eingedrückt, Inhalt beschädigt;2;offen;26;
+DE-C-00063;FC-DE-100364;DE-S-00365;22.07.2025;Köln;PAK_005;E-Mail;R-12;Falsche Auskunft zum Liefertermin erhalten;1;geschlossen;3;
+DE-C-00002;FC-DE-100008;DE-S-00009;03.08.2025;Hamburg;PAK_006;E-Mail;R-09;Zwei Artikel fehlen im Paket;1;offen;31;
+DE-C-00145;FC-DE-100131;DE-S-00132;11.01.2025;Düsseldorf;PAK_006;E-Mail;R-04;Der Zusteller war an der Tür unhöflich;2;gelöst;6;
+DE-C-00090;FC-DE-101015;DE-S-01016;10.10.2025;Köln;PAK_001;Telefon;R-01;Paket kam drei Tage zu spät;2;gelöst;3;
+DE-C-00138;FC-DE-100450;DE-S-00451;07.06.2025;Stuttgart;PAK_005;Web;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;1;geschlossen;1;
+DE-C-00194;FC-DE-100507;DE-S-00508;24.07.2025;München;PAK_004;Filiale;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;offen;29;
+DE-C-00107;FC-DE-100728;DE-S-00729;11.05.2025;Hamburg;PAK_005;Telefon;R-04;Der Zusteller war an der Tür unhöflich;2;gelöst;5;
+DE-C-00040;FC-DE-100238;DE-S-00239;15.07.2025;Hamburg;PAK_005;E-Mail;R-07;Karton eingedrückt, Inhalt beschädigt;2;geschlossen;3;9,84
+DE-C-00103;FC-DE-100571;DE-S-00572;15.09.2025;Stuttgart;PAK_001;E-Mail;R-10;Der Kundenservice ist nicht erreichbar;2;in Bearbeitung;24;
+DE-C-00116;FC-DE-100915;DE-S-00916;27.06.2025;DÜSSELDORF;PAK_002;Filiale;R-04;Der Zusteller war an der Tür unhöflich;2;geschlossen;6;
+DE-C-00202;FC-DE-100061;DE-S-00062;18.07.2025;München;PAK_006;Web;R-04;Der Zusteller war an der Tür unhöflich;1;gelöst;1;
+DE-C-00105;FC-DE-100633;DE-S-00634;25.03.2025;Stuttgart;PAK_006;Telefon;R-04;Der Zusteller war an der Tür unhöflich;2;gelöst;4;
+DE-C-00125;FC-DE-100135;DE-S-00136;01.05.2025;Köln;PAK_003;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;2;gelöst;1;11,35
+DE-C-00136;FC-DE-101097;DE-S-01098;01.01.2025;Stuttgart;PAK_004;Web;R-09;Zwei Artikel fehlen im Paket;2;gelöst;4;17,87
+DE-C-00132;FC-DE-100590;DE-S-00591;13.03.2025;München;PAK_006;Filiale;r-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;gelöst;3;
+DE-C-00097;FC-DE-100449;DE-S-00450;24.05.2025;München;PAK_005;Web;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;gelöst;3;
+DE-C-00178;FC-DE-100501;DE-S-00502;12.03.2025;Köln;PAK_004;Web;R-07;Karton eingedrückt, Inhalt beschädigt;1;gelöst;5;7,32
+DE-C-00110;FC-DE-100875;DE-S-00876;19.10.2025;Leipzig;PAK_002;E-Mail; R-12 ;Falsche Auskunft zum Liefertermin erhalten;1;gelöst;3;
+DE-C-00153;FC-DE-100744;DE-S-00745;29.08.2025;Frankfurt;PAK_006;Web;r-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;gelöst;3;
+DE-C-00046;FC-DE-100959;DE-S-00960;06.08.2025;KÖLN;PAK_001;E-Mail;???;Zwei Artikel fehlen im Paket;2;gelöst;5;15,57
+DE-C-00126;FC-DE-100085;DE-S-00086;01.05.2025;Düsseldorf;PAK_003;Web; R-01 ;Paket kam drei Tage zu spät;2;in Bearbeitung;30;
+DE-C-00035;FC-DE-100425;DE-S-00426;07.09.2025;Stuttgart;PAK_003;Filiale;r-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;geschlossen;4;
+DE-C-00160;FC-DE-100475;DE-S-00476;10.06.2025;Düsseldorf;PAK_005;Web;R-07;Karton eingedrückt, Inhalt beschädigt;2;geschlossen;2;11,33
+DE-C-00085;FC-DE-100462;DE-S-00463;17.08.2025;Leipzig;PAK_002;Telefon;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;offen;22;
+DE-C-00009;FC-DE-100170;DE-S-00171;01.01.2025;Leipzig;PAK_005;Filiale;R-07;Karton eingedrückt, Inhalt beschädigt;2;gelöst;5;14,63
+DE-C-00135;FC-DE-100114;DE-S-00115;12.01.2025;Düsseldorf;PAK_001;Filiale;R-07;Karton eingedrückt, Inhalt beschädigt;1;eskaliert;44;
+DE-C-00189;FC-DE-100222;DE-S-00223;21.09.2025;Stuttgart;PAK_002;Filiale;r-04;Der Zusteller war an der Tür unhöflich;2;gelöst;1;
+DE-C-00081;FC-DE-101025;DE-S-01026;08.02.2025;Köln;PAK_001;Web;R-04;Der Zusteller war an der Tür unhöflich;2;geschlossen;6;
+DE-C-00201;FC-DE-100078;DE-S-00079;05.08.2025;München;PAK_004;Filiale;R-12;Falsche Auskunft zum Liefertermin erhalten;1;gelöst;3;
+DE-C-00106;FC-DE-101176;;07.08.2025;Berlin;PAK_006;E-Mail;R-04;Der Zusteller war an der Tür unhöflich;1;in Bearbeitung;23;
+DE-C-00115;FC-DE-100864;DE-S-00865;07.05.2025;Leipzig;PAK_005;Filiale;R-09;Zwei Artikel fehlen im Paket;1;in Bearbeitung;43;
+DE-C-00012;FC-DE-101268;;02.07.2025;Berlin;PAK_004;E-Mail;R-08;Kühlsendung kam warm an;3;geschlossen;2;83,87
+DE-C-00102;FC-DE-100216;DE-S-00217;23.09.2025;Berlin;PAK_005;Telefon;R-01;Paket kam drei Tage zu spät;2;eskaliert;37;
+DE-C-00157;FC-DE-100782;DE-S-00783;11.04.2025;LEIPZIG;PAK_005;Web;R-06;Paket wurde an der falschen Adresse abgegeben;2;geschlossen;2;11,26
+DE-C-00108;FC-DE-100352;DE-S-00353;01.03.2025;Frankfurt;PAK_002;Telefon;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;1;gelöst;1;
+DE-C-00072;FC-DE-100003;DE-S-00004;04.07.2025; München;PAK_003;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;1;gelöst;3;7,36
+DE-C-00095;FC-DE-100927;DE-S-00928;17.10.2025;Köln;PAK_004;E-Mail;R-02;Zusteller ist im gebuchten Zeitfenster nicht erschienen;2;eskaliert;32;
+DE-C-00045;FC-DE-101065;DE-S-01066;14.05.2025;Leipzig;PAK_002;E-Mail;r-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;in Bearbeitung;35;
+DE-C-00109;FC-DE-101019;DE-S-01020;19.10.2025;Hamburg;PAK_002;Web;R-10;Der Kundenservice ist nicht erreichbar;2;offen;15;
+DE-C-00019;FC-DE-100155;DE-S-00156;18.03.2025;Berlin;PAK_001;E-Mail;R-10;Der Kundenservice ist nicht erreichbar;2;in Bearbeitung;30;
+DE-C-00159;FC-DE-100558;DE-S-00559;07.09.2025;Stuttgart;PAK_004;E-Mail;R-08;Kühlsendung kam warm an;3;gelöst;4;90,65
+DE-C-00005;FC-DE-101186;;14.05.2025;Leipzig;PAK_002;Filiale;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;2;in Bearbeitung;35;
+DE-C-00188;FC-DE-100511;DE-S-00512;07.06.2025;Frankfurt;PAK_006;E-Mail;R-09;Zwei Artikel fehlen im Paket;2;in Bearbeitung;28;
+DE-C-00127;FC-DE-101039;DE-S-01040;01.07.2025;München;PAK_005;Filiale;R-11;Erstattung wird seit Wochen nicht bearbeitet;2;in Bearbeitung;14;
+DE-C-00195;FC-DE-100079;DE-S-00080;05.02.2025;Stuttgart;PAK_001;E-Mail;R-13;Unangekündigte Zusatzkosten berechnet;1;offen;27;
+DE-C-00031;FC-DE-100157;DE-S-00158;23.08.2025;Düsseldorf;PAK_004;Telefon;R-05;Zusteller ist ohne zu klingeln wieder weggefahren;1;geschlossen;5;
+DE-C-00200;FC-DE-100777;DE-S-00778;13.05.2025;Frankfurt;PAK_001;Telefon;R-07;Karton eingedrückt, Inhalt beschädigt;2;offen;30;
+DE-C-00030;FC-DE-100208;DE-S-00209;26.06.2025;Stuttgart;PAK_004;Filiale;R-11;Erstattung wird seit Wochen nicht bearbeitet;1;offen;9;
+DE-C-00066;FC-DE-100946;DE-S-00947;22.05.2025;München;PAK_006;Filiale;A_CLASSER;Paket kam drei Tage zu spät;1;gelöst;3;

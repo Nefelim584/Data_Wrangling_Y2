@@ -1,0 +1,5 @@
+mode_transport,segment_count,total_distance_km,total_ton_km,total_emissions_kgco2e,emissions_share_pct,intensity_gco2e_per_tkm,avg_kgco2e_per_km
+LCV,2739,34011.8,156.31,10577.67,76.64,67671.1,0.311
+AIR_FREIGHT,329,922041.6,4514.11,2257.06,16.35,500.0,0.0024
+HEAVY_TRUCK,883,2644343.0,11745.46,966.65,7.0,82.3,0.0004
+BICYCLE,1370,14897.0,68.91,0.0,0.0,0.0,0.0

@@ -1,0 +1,10 @@
+# Global product reference. One row per product the business sells.
+# product_key is owned by the platform, not by any country.
+product_key,product_name,product_name_fr,requires_cold_chain,is_insured
+PRD_STD,Standard,Standard,false,false
+PRD_EXP,Express,Express,false,false
+PRD_FRG,Fragile,Fragile,false,false
+PRD_CLD,Refrigerated,Réfrigéré,true,false
+PRD_LRG,Large,Volumineux,false,false
+PRD_VAL,Valuable,Valeur déclarée,false,true
+PRD_UNK,Unknown,Inconnu,false,false

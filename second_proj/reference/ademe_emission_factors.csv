@@ -1,0 +1,7 @@
+mode_transport,vehicle_type,unit,emission_factor,ademe_identifier,source_reference,notes
+LCV,LCV_DIESEL,kgCO2e/km,0.311,ADEME-FR-LCV-01,ADEME Base Empreinte 2024 - VUL Diesel moyen,Light commercial vehicle delivery van (<3.5t)
+HEAVY_TRUCK,HEAVY_TRUCK_ARTICULATED,kgCO2e/t.km,0.0823,ADEME-FR-TRUCK-02,ADEME Base Empreinte 2024 - Poids lourd articule >32t,Articulated long-haul heavy freight truck
+AIR_FREIGHT,AIR_CARGO_FREIGHT,kgCO2e/t.km,0.5,ADEME-FR-AIR-03,ADEME Base Empreinte 2024 - Fret aerien moyen courrier,Medium-haul dedicated cargo air freight
+BICYCLE,CARGO_BIKE_ELECTRIC,kgCO2e/km,0.0,ADEME-FR-BIKE-04,ADEME Base Empreinte 2024 - Velo cargo mecanique / electrique,Active zero-carbon last-mile micro-mobility
+ELECTRIC_LCV,LCV_ELECTRIC,kgCO2e/km,0.065,ADEME-FR-ELCV-05,ADEME Base Empreinte 2024 - VUL 100% electrique,Used for eco-routing modal shift simulation
+RAIL_FREIGHT,FREIGHT_TRAIN_ELECTRIC,kgCO2e/t.km,0.018,ADEME-FR-RAIL-06,ADEME Base Empreinte 2024 - Train de fret traction electrique,Used for air-to-rail modal shift simulation

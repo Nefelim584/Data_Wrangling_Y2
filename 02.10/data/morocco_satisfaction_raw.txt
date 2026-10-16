@@ -1,0 +1,913 @@
+id_enquete|numero_colis|date_reponse|ville|code_produit|type_produit|commentaire_client|canal|langue_saisie
+MA-S-00138|FC-MA-100137|27/08/2025|Marrakech|MAR_STD|Standard|Service client difficile à joindre|Agence|Darija
+MA-S-00501|FC-MA-100500|12/09/2025|CASABLANCA|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00586|FC-MA-100585|08/09/2025|Oujda|MAR_STD|Standard|الكرتونة مخسرة شوية|WhatsApp|AR
+MA-S-00451|FC-MA-100450|25/10/2025|Casablanca|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00082|FC-MA-100081|18/05/2025|Marrakech|MAR_LRG|Large|Service client difficile à joindre|Téléphone|AR
+MA-S-00894|FC-MA-100893|29/03/2025|Fès|MAR_EXP|Express|RAS, tout s'est bien passé|Web|AR
+MA-S-00392|FC-MA-100391|03/04/2025|Fès| MAR_FRG |Refrigerated|wsel f lwe9t, merci|Agence|Darija
+MA-S-00654|FC-MA-100653|21/06/2025|Meknès|MAR_LRG|Large|Service client difficile à joindre|Agence|AR
+MA-S-00890|FC-MA-100889|09/10/2025|Tanger|MAR_CLD|Refrigerated|Service client difficile à joindre|Téléphone|FR
+MA-S-00696|FC-MA-100695|27/07/2025|Rabat|MAR_EXP|Express|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00736|FC-MA-100735|08/03/2025|Fès|MAR_LRG|Large|Très satisfait, livraison à l'heure|Téléphone|FR
+MA-S-00205|FC-MA-100204|07/05/2025|Rabat |MAR_CLD|Refrigerated|خدمة الزبناء ما كيجاوبوش|Agence|AR
+MA-S-00044|FC-MA-100043|23/01/2025|Agadir|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|Darija
+MA-S-00084|FC-MA-100083|26/10/2025|Oujda|MAR_LRG|Large|wsel f lwe9t, merci|WhatsApp|AR
+MA-S-00716|FC-MA-100715|06/04/2025|Marrakech|INCONNU|Large|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00849|FC-MA-100848|01/09/2025|Casablanca|MAR_STD|Standard|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00200|FC-MA-100199|10/07/2025|Casablanca|MAR_VAL|Valuable|service client ma kayjawbch|Agence|FR
+MA-S-00485|FC-MA-100484|31/01/2025|Rabat |MAR_CLD|Refrigerated|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00304|FC-MA-100303|24/02/2025|Oujda|MAR_EXP|Express|Très satisfait, livraison à l'heure|Web|AR
+MA-S-00091|FC-MA-100090|20/06/2025|Fès|MAR_LRG|Large|colis m5ser chwya|Web|FR
+MA-S-00748|FC-MA-100747|17/08/2025|Agadir|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00493|FC-MA-100492|10/01/2025|Casablanca|MAR_CLD|Refrigerated|colis m5ser chwya|Web|Darija
+MA-S-00546|FC-MA-100545|20/02/2025|Fès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00332|FC-MA-100331|11/03/2025|Agadir|MAR_EXP|Express|Colis arrivé endommagé|Agence|FR
+MA-S-00651|FC-MA-100650|23/01/2025|Rabat|MAR_CLD|Refrigerated|الكرتونة مخسرة شوية|Téléphone|FR
+MA-S-00018|FC-MA-100017|03/09/2025|Casablanca|MAR_FRG|Fragile|Colis arrivé endommagé|Web|FR
+MA-S-00314|FC-MA-100313|18/07/2025|Oujda|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00847|FC-MA-100846|05/05/2025|Oujda|MAR_CLD|Refrigerated|Colis arrivé endommagé|Agence|AR
+MA-S-00578|FC-MA-100577|26/03/2025|Meknès|MAR_STD|Standard|RAS, tout s'est bien passé|Web|FR
+MA-S-00432|FC-MA-100431|09/02/2025|Meknès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00128|FC-MA-100127|11/06/2025|Fès|MAR_STD|Standard|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00538|FC-MA-100537|04/06/2025|Fès|MAR_FRG|Fragile|خدمة الزبناء ما كيجاوبوش|WhatsApp|AR
+MA-S-00265|FC-MA-100264|03/10/2025|Agadir|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00349|FC-MA-100348|22/10/2025|Agadir|MAR_EXP|Express|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00621|FC-MA-100620|04/10/2025|Marrakech|MAR_VAL|Valuable|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|Darija
+MA-S-00133|FC-MA-100132|26/07/2025|Fès|MAR_EXP|Express|Service client difficile à joindre|Téléphone|FR
+MA-S-00842|FC-MA-100841|16/06/2025|Agadir|MAR_STD|Standard|service client ma kayjawbch|Agence|FR
+MA-S-00395|FC-MA-100394|11/10/2025|Rabat|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00399|FC-MA-100398|28/10/2025|Rabat|MAR_FRG|Fragile|Colis arrivé endommagé|Web|Darija
+MA-S-00476|FC-MA-100475|22/08/2025|Agadir|MAR_CLD|Refrigerated|colis m5ser chwya|Téléphone|Darija
+MA-S-00430|FC-MA-100429|14/03/2025|Meknès|MAR_LRG|Large|RAS, tout s'est bien passé|Agence|AR
+MA-S-00211|FC-MA-100210|27/08/2025|Fès|MAR_CLD|Refrigerated|colis m5ser chwya|WhatsApp|FR
+MA-S-00899|FC-MA-100898|06/08/2025|Fès|MAR_VAL|Valuable|kolchi mzyan, livreur محترم|WhatsApp|AR
+MA-S-00164|FC-MA-100163|27/05/2025|Oujda|MAR_LRG|Large|wsel f lwe9t, merci|Agence|AR
+MA-S-00508|FC-MA-100507|20/09/2025|Casablanca|MAR_LRG|Large||Agence|FR
+MA-S-00478|FC-MA-100477|28/05/2025|Meknès|MAR_STD|Standard|wsel f lwe9t, merci|Agence|AR
+MA-S-00077|FC-MA-100076|09/10/2025|Marrakech|MAR_VAL|Valuable|Colis arrivé endommagé|Web|Darija
+MA-S-00356|FC-MA-100355|23/03/2025|Agadir|MAR_STD|Standard|Colis arrivé endommagé|Web|FR
+MA-S-00320|FC-MA-100319|09/01/2025|Fès|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00040|FC-MA-100039|05/01/2025|Fès|MAR_LRG|Large|livraison mzyana walakin retard bzaf|WhatsApp|FR
+MA-S-00079|FC-MA-100078|19/08/2025|Casablanca|MAR_EXP|Express|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00664|FC-MA-100663|12/03/2025|Meknès|MAR_STD|Standard|Service client difficile à joindre|Agence|Darija
+MA-S-00875|FC-MA-100874|02/05/2025|Agadir|MAR_CLD|Refrigerated|وصل فالوقت وكلشي مزيان|Web|FR
+MA-S-00171|FC-MA-100170|08/02/2025|Casablanca|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Téléphone|FR
+MA-S-00242|FC-MA-100241|23/07/2025|Fès|MAR_VAL|Valuable|livraison mzyana walakin retard bzaf|WhatsApp|FR
+MA-S-00403|FC-MA-100402|13/07/2025|Meknès|MAR_EXP|Express|kolchi mzyan, livreur محترم|WhatsApp|FR
+MA-S-00550|FC-MA-100549|02/02/2025|Agadir|MAR_STD|Standard|colis m5ser chwya|Téléphone|FR
+MA-S-00715|FC-MA-100714|28/06/2025|Marrakech|MAR_FRG|Fragile|colis m5ser chwya|Web|AR
+MA-S-00068|FC-MA-100067|22/02/2025|Meknès|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Téléphone|Darija
+MA-S-00779|FC-MA-100778|16/04/2025|Meknès|MAR_STD|Standard|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00548|FC-MA-100547|13/09/2025|Agadir|MAR_VAL|Valuable|livraison mzyana walakin retard bzaf|WhatsApp|FR
+MA-S-00706|FC-MA-100705|28/03/2025|Rabat|MAR_EXP|Express|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00087|FC-MA-100086|23/07/2025|Casablanca|MAR_STD|Standard|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00234|FC-MA-100233|01/05/2025|Agadir|MAR_EXP|Express|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00835|FC-MA-100834|06/08/2025|Oujda|MAR_LRG|Large|colis m5ser chwya|Web|FR
+MA-S-00429|FC-MA-100428|31/07/2025|Oujda|MAR_CLD|Refrigerated|kolchi mzyan, livreur محترم|Web|FR
+MA-S-00814|FC-MA-100813|16/06/2025|Tanger|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00666|FC-MA-100665|22/10/2025|Agadir|MAR_EXP|Express|colis m5ser chwya|Agence|FR
+MA-S-00174|FC-MA-100173|22/06/2025|Meknès|MAR_FRG|Fragile|Service client difficile à joindre|Web|Darija
+MA-S-00682|FC-MA-100681|18/09/2025|Agadir|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00262|FC-MA-100261|23/04/2025|Tanger|MAR_FRG|Fragile|الكولي وصل مزيان والخدمة زوينة|Téléphone|FR
+MA-S-00324|FC-MA-100323|06/01/2025|Rabat|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00790|FC-MA-100789|20/01/2025|Fès|MAR_CLD|Refrigerated|Service client difficile à joindre|WhatsApp|FR
+MA-S-00461|FC-MA-100460|23/04/2025|Tanger|MAR_FRG|Fragile|Colis arrivé endommagé|Web|FR
+MA-S-00037|FC-MA-100036|20/01/2025|Casablanca|MAR_FRG|Fragile|wsel f lwe9t, merci|WhatsApp|Darija
+MA-S-00101|FC-MA-100100|11/06/2025|Meknès|MAR_STD|Standard|livraison mzyana walakin retard bzaf|Agence|FR
+MA-S-00351|FC-MA-100350|04/02/2025|Marrakech|MAR_LRG|Large|Service client difficile à joindre|Agence|FR
+MA-S-00510|FC-MA-100509|20/05/2025|Tanger|MAR_LRG|Large|wsel f lwe9t, merci|Agence|AR
+MA-S-00705|FC-MA-100704|11/08/2025|Casablanca|MAR_FRG|Fragile|RAS, tout s'est bien passé|Téléphone|AR
+MA-S-00151|FC-MA-100150|17/01/2025|Fès|MAR_EXP|Express|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00600|FC-MA-100599|18/10/2025|Agadir|MAR_STD|Standard|service client ma kayjawbch|Web|AR
+MA-S-00468|FC-MA-100467|04/03/2025|Agadir|MAR_FRG|Fragile|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00892|FC-MA-100891|18/10/2025|Oujda|MAR_CLD|Refrigerated|wsel f lwe9t, merci|Téléphone|FR
+MA-S-00775|FC-MA-100774|05/08/2025|Agadir|MAR_VAL|Valuable|service client ma kayjawbch|Téléphone|Darija
+MA-S-00599|FC-MA-100598|27/05/2025|Casablanca|MAR_CLD|Refrigerated|Service client difficile à joindre|WhatsApp|FR
+MA-S-00343|FC-MA-100342|20/08/2025|Marrakesh|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00606|FC-MA-100605|05/03/2025|Marrakech|MAR_EXP|Express|وصل فالوقت وكلشي مزيان|Agence|AR
+MA-S-00047|FC-MA-100046|12/08/2025|Fès|MAR_VAL|Valuable|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00181|FC-MA-100180|04/09/2025|Meknès|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|FR
+MA-S-00150|FC-MA-100149|07/09/2025|Meknès|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00140|FC-MA-100139|27/05/2025|Marrakech|MAR_LRG|Large|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00757|FC-MA-100756|18/10/2025|Agadir|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00457|FC-MA-100456|28/01/2025|Agadir|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00340|FC-MA-100339|09/01/2025|Meknès|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|FR
+MA-S-00094|FC-MA-100093|21/05/2025|Tanger|MAR_CLD|Refrigerated|colis m5ser chwya|Agence|Darija
+MA-S-00640|FC-MA-100639|03/08/2025|Tanger|MAR_FRG|Fragile|service client ma kayjawbch|WhatsApp|AR
+MA-S-00648|FC-MA-100647|06/09/2025|Meknès|MAR_EXP|Express|Colis arrivé endommagé|Web|Darija
+MA-S-00238|FC-MA-100237|22/03/2025|Oujda|MAR_LRG|Large||Web|AR
+MA-S-00623|FC-MA-100622|03/04/2025|Tanger|MAR_VAL|Valuable|Colis arrivé endommagé|Agence|AR
+MA-S-00585|FC-MA-100584|03/04/2025|Marrakech|MAR_LRG|Large|وصل فالوقت وكلشي مزيان|Téléphone|FR
+MA-S-00346|FC-MA-100345|29/05/2025|Meknès|MAR_FRG|Fragile|wsel f lwe9t, merci|Téléphone|FR
+MA-S-00121|FC-MA-100120|09/10/2025|Meknès|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|Web|FR
+MA-S-00885|FC-MA-100884|24/08/2025|Fès|MAR_CLD|Refrigerated|الكولي وصل مزيان والخدمة زوينة|WhatsApp|FR
+MA-S-00030|FC-MA-100029|12/04/2025|Meknès|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|WhatsApp|AR
+MA-S-00765|FC-MA-100764|09/09/2025|Tanger|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Agence|Darija
+MA-S-00898|FC-MA-100897|14/04/2025|Marrakech|MAR_STD|Standard|الكولي وصل مزيان والخدمة زوينة|Téléphone|Darija
+MA-S-00668|FC-MA-100667|10/03/2025|Agadir|MAR_EXP|Express|Service client difficile à joindre|Web|Darija
+MA-S-00712|FC-MA-100711|13/10/2025|Casablanca|MAR_STD|Standard|livraison mzyana walakin retard bzaf|Téléphone|Darija
+MA-S-00564|FC-MA-100563|27/07/2025|Rabat|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Web|Darija
+MA-S-00545|FC-MA-100544|16/05/2025|Marrakech|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Téléphone|AR
+MA-S-00313|FC-MA-100312|28/03/2025|Tanger|MAR_EXP|Express|wsel f lwe9t, merci|Web|AR
+MA-S-00097|FC-MA-100096|13/10/2025|Meknès|MAR_VAL|Valuable|kolchi mzyan, livreur محترم|WhatsApp|FR
+MA-S-00327|FC-MA-100326|29/03/2025|Meknès|MAR_EXP|Express|الكولي وصل مزيان والخدمة زوينة|Web|FR
+MA-S-00698|FC-MA-100697|06/06/2025|Agadir|MAR_VAL|Valuable|kolchi mzyan, livreur محترم|Agence|Darija
+MA-S-00663|FC-MA-100662|07/10/2025|Oujda|MAR_VAL|Valuable|الكولي وصل مزيان والخدمة زوينة|Web|AR
+MA-S-00298|FC-MA-100297|01/04/2025|Oujda|MAR_STD|Standard|وصل فالوقت وكلشي مزيان|Téléphone|FR
+MA-S-00677|FC-MA-100676|07/07/2025|Casablanca|MAR_VAL|Valuable|الكرتونة مخسرة شوية|Téléphone|AR
+MA-S-00193|FC-MA-100192|11/06/2025|Rabat|MAR_EXP|Express|livraison mzyana walakin retard bzaf|Agence|Darija
+MA-S-00791|FC-MA-100790|07/04/2025|Fès|MAR_LRG|Large|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00102|FC-MA-100101|11/03/2025|Fès|MAR_CLD|Refrigerated|wsel f lwe9t, merci|WhatsApp|Darija
+MA-S-00649|FC-MA-100648|16/08/2025|Fès|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00846|FC-MA-100845|16/03/2025|Agadir|MAR_STD|Standard|Très satisfait, livraison à l'heure|Téléphone|Darija
+MA-S-00863|FC-MA-100862|14/09/2025|Agadir|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00618|FC-MA-100617|10/01/2025|Tanger|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Web|Darija
+MA-S-00433|FC-MA-100432|09/06/2025|Agadir|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|WhatsApp|AR
+MA-S-00153|FC-MA-100152|19/07/2025|Rabat|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00491|FC-MA-100490|30/01/2025|Oujda|MAR_LRG|Large|wsel f lwe9t, merci|Téléphone|FR
+MA-S-00007|FC-MA-100006|17/07/2025|Oujda|MAR_FRG|Fragile|kolchi mzyan, livreur محترم|Web|FR
+MA-S-00496|FC-MA-100495|19/04/2025|Marrakech|MAR_FRG|Fragile||Agence|FR
+MA-S-00071|FC-MA-100070|18/09/2025|Fès|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00804|FC-MA-100803|21/09/2025|Tanger|MAR_LRG|Large|colis m5ser chwya|Téléphone|FR
+MA-S-00554|FC-MA-100553|04/09/2025|Casablanca|MAR_EXP|Express|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00247|FC-MA-100246|21/02/2025|Casablanca|MAR_LRG|Large|RAS, tout s'est bien passé|Web|FR
+MA-S-00221|FC-MA-100220|14/05/2025|Agadir|MAR_VAL|Valuable||Téléphone|Darija
+MA-S-00264|FC-MA-100263|09/09/2025|Oujda|MAR_LRG|Large|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00162|FC-MA-100161|21/02/2025|Marrakech|MAR_EXP|Express||Agence|AR
+MA-S-00176|FC-MA-100175|20/02/2025|Marrakech|MAR_FRG|Fragile|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00587|FC-MA-100586|21/01/2025|Casablanca|MAR_STD|Standard|service client ma kayjawbch|Web|Darija
+MA-S-00442|FC-MA-100441|20/08/2025|Marrakech|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|AR
+MA-S-00388|FC-MA-100387|18/01/2025|Casablanca|MAR_LRG|Large|livraison mzyana walakin retard bzaf|Agence|Darija
+MA-S-00513|FC-MA-100512|13/03/2025|Tanger|MAR_CLD|Refrigerated|colis m5ser chwya|WhatsApp|FR
+MA-S-00035|FC-MA-100034|16/03/2025|Meknès|MAR_FRG|Fragile||Téléphone|FR
+MA-S-00597|FC-MA-100596|01/07/2025|Casablanca|MAR_LRG|Large|Colis arrivé endommagé|Agence|AR
+MA-S-00126|FC-MA-100125|05/06/2025|Fès|MAR_VAL|Valuable|الكرتونة مخسرة شوية|WhatsApp|AR
+MA-S-00387|FC-MA-100386|20/09/2025|Agadir|MAR_LRG|Large|Très satisfait, livraison à l'heure|Téléphone|Darija
+MA-S-00897|FC-MA-100896|04/01/2025|Agadir|MAR_CLD|Refrigerated|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00760|FC-MA-100759|09/10/2025|Agadir|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00868|FC-MA-100867|04/07/2025|Tanger|MAR_LRG|Large|RAS, tout s'est bien passé|Téléphone|Darija
+MA-S-00145|FC-MA-100144|08/10/2025|Fès|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|WhatsApp|FR
+MA-S-00604|FC-MA-100603|02/06/2025|Rabat|MAR_VAL|Valuable|service client ma kayjawbch|Téléphone|FR
+MA-S-00742|FC-MA-100741|15/10/2025|Casablanca|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Agence|FR
+MA-S-00616|FC-MA-100615|24/01/2025|Meknès|MAR_LRG|Large|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00065|FC-MA-100064|24/03/2025|Casablanca|MAR_STD|Standard|Colis arrivé endommagé|Web|AR
+MA-S-00326|FC-MA-100325|19/06/2025|Oujda|MAR_CLD|Refrigerated|Service client difficile à joindre|WhatsApp|AR
+MA-S-00069|FC-MA-100068|14/08/2025|Meknès|MAR_LRG|Large|Colis arrivé endommagé|Web|FR
+MA-S-00294|FC-MA-100293|26/09/2025|Rabat|MAR_LRG|Large|livraison mzyana walakin retard bzaf|Web|FR
+MA-S-00497|FC-MA-100496|18/08/2025|Agadir|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|Web|AR
+MA-S-00617|FC-MA-100616|13/07/2025|Rabat|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00056|FC-MA-100055|21/03/2025|Oujda|MAR_VAL|Valuable|wsel f lwe9t, merci|Téléphone|Darija
+MA-S-00261|FC-MA-100260|19/01/2025|Meknès|MAR_LRG|Large|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00473|FC-MA-100472|28/04/2025|Marrakech|MAR_VAL|Valuable|خدمة الزبناء ما كيجاوبوش|Téléphone|AR
+MA-S-00747|FC-MA-100746|12/01/2025|Marrakech|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00213|FC-MA-100212|03/06/2025|Casablanca|MAR_EXP|Express|الكولي وصل مزيان والخدمة زوينة|Agence|Darija
+MA-S-00469|FC-MA-100468|15/07/2025|Casablanca|MAR_LRG|Large|Très satisfait, livraison à l'heure|Téléphone|FR
+MA-S-00236|FC-MA-100235|23/10/2025|Fès|MAR_LRG|Large|وصل فالوقت وكلشي مزيان|Téléphone|AR
+MA-S-00859|FC-MA-100858|06/10/2025|Tanger|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Web|FR
+MA-S-00341|FC-MA-100340|25/03/2025|Oujda|MAR_STD|Standard|colis m5ser chwya|Téléphone|FR
+MA-S-00437|FC-MA-100436|26/10/2025|Marrakech|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00360|FC-MA-100359|30/01/2025|Rabat|MAR_LRG|Large|الكرتونة مخسرة شوية|Web|Darija
+MA-S-00878|FC-MA-100877|23/07/2025|Casablanca|MAR_STD|Standard|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00608|FC-MA-100607|11/09/2025|Agadir|MAR_STD|Standard||Téléphone|AR
+MA-S-00749|FC-MA-100748|19/02/2025|Meknès|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00034|FC-MA-100033|04/09/2025|Marrakech|MAR_FRG|Fragile|wsel f lwe9t, merci|Web|AR
+MA-S-00622|FC-MA-100621|01/09/2025|Meknès|MAR_LRG|Large|وصل فالوقت وكلشي مزيان|Web|FR
+MA-S-00583|FC-MA-100582|03/06/2025|Rabat|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00484|FC-MA-100483|18/10/2025|Oujda|MAR_STD|Standard||WhatsApp|Darija
+MA-S-00591|FC-MA-100590|06/03/2025|Tanger|MAR_LRG|Large|service client ma kayjawbch|Téléphone|Darija
+MA-S-00016|FC-MA-100015|06/03/2025|Rabat|MAR_STD|Standard|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00719|FC-MA-100718|24/07/2025|Marrakech|MAR_LRG|Large|Service client difficile à joindre|Web|FR
+MA-S-00766|FC-MA-100765|28/08/2025|Fès|MAR_CLD|Refrigerated|Colis arrivé endommagé|Téléphone|FR
+MA-S-00895|FC-MA-100894|14/08/2025|Fès|MAR_LRG|Large|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00882|FC-MA-100881|08/04/2025|Fès|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00754|FC-MA-100753|18/05/2025|Casablanca|MAR_LRG|Large|Service client difficile à joindre|Agence|FR
+MA-S-00888|FC-MA-100887|28/10/2025|Fès|MAR_LRG|Large|RAS, tout s'est bien passé|Web|FR
+MA-S-00730|FC-MA-100729|10/01/2025|Oujda|MAR_FRG|Fragile|colis m5ser chwya|Agence|FR
+MA-S-00721|FC-MA-100720|12/10/2025|Meknès|MAR_EXP|Express|وصل فالوقت وكلشي مزيان|Téléphone|FR
+MA-S-00670|FC-MA-100669|15/06/2025|Marrakech|MAR_VAL|Valuable|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00785|FC-MA-100784|20/10/2025|Casablanca|INCONNU|Standard|service client ma kayjawbch|Téléphone|Darija
+MA-S-00671|FC-MA-100670|11/03/2025|Oujda|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00248|FC-MA-100247|03/10/2025|Marrakech|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00787|FC-MA-100786|23/01/2025|Tanger|MAR_FRG|Fragile|Colis arrivé endommagé|Agence|Darija
+MA-S-00692|FC-MA-100691|17/03/2025|Meknès|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00778|FC-MA-100777|28/08/2025|Casablanca|MAR_FRG|Fragile|Service client difficile à joindre|Téléphone|AR
+MA-S-00796|FC-MA-100795|15/06/2025|Agadir|MAR_LRG|Large|RAS, tout s'est bien passé|Web|FR
+MA-S-00167|FC-MA-100166|22/05/2025|Marrakech|MAR_CLD|Refrigerated|Service client difficile à joindre|Téléphone|FR
+MA-S-00802|FC-MA-100801|23/02/2025|Rabat|MAR_FRG|Fragile|التوصيل كان مزيان ولكن وصل متأخر|Agence|Darija
+MA-S-00302|FC-MA-100301|17/07/2025|Marrakech|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Téléphone|AR
+MA-S-00843|FC-MA-100842|29/06/2025|Meknès|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Web|FR
+MA-S-00386|FC-MA-100385|02/10/2025|Meknès|MAR_LRG|Large|الكولي وصل مزيان والخدمة زوينة|WhatsApp|Darija
+MA-S-00738|FC-MA-100737|02/05/2025|Meknès|MAR_VAL|Valuable|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00417|FC-MA-100416|05/03/2025|Rabat|MAR_VAL|Valuable||Web|Darija
+MA-S-00215|FC-MA-100214|24/09/2025|Tanger|MAR_FRG|Fragile|التوصيل كان مزيان ولكن وصل متأخر|WhatsApp|FR
+MA-S-00838|FC-MA-100837|07/07/2025|Oujda|MAR-STD|Standard|وصل فالوقت وكلشي مزيان|WhatsApp|FR
+MA-S-00348|FC-MA-100347|12/06/2025|Meknès|MAR_CLD|Refrigerated|وصل فالوقت وكلشي مزيان|WhatsApp|Darija
+MA-S-00330|FC-MA-100329|14/05/2025|Casablanca|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00118|FC-MA-100117|08/01/2025|Marrakech|MAR_LRG|Large|وصل فالوقت وكلشي مزيان|WhatsApp|FR
+MA-S-00228|FC-MA-100227|11/10/2025|Rabat|MAR_LRG|Large|Colis arrivé endommagé|WhatsApp|Darija
+MA-S-00076|FC-MA-100075|23/10/2025|Marrakech|MAR_EXP|Express|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00656|FC-MA-100655|29/05/2025|Meknès|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00900|FC-MA-100899|29/08/2025|Marrakech|MAR_CLD|Refrigerated|service client ma kayjawbch|WhatsApp|FR
+MA-S-00821|FC-MA-100820|14/04/2025|Fès|MAR_STD|Standard|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00357|FC-MA-100356|28/07/2025|Tanger|MAR_LRG|Large|service client ma kayjawbch|Web|FR
+MA-S-00833|FC-MA-100832|25/01/2025|Casablanca|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|Darija
+MA-S-00629|FC-MA-100628|29/09/2025|Meknès|MAR_LRG|Large|RAS, tout s'est bien passé|Web|FR
+MA-S-00782|FC-MA-100781|08/07/2025|Tanger|MAR_FRG|Fragile||Téléphone|FR
+MA-S-00799|FC-MA-100798|11/01/2025|Fès|MAR_EXP|Express|Colis arrivé endommagé|Web|FR
+MA-S-00684|FC-MA-100683|05/09/2025|Casablanca|MAR_STD|Standard|Très satisfait, livraison à l'heure|Agence|AR
+MA-S-00610|FC-MA-100609|13/10/2025|Casablanca|MAR_STD|Standard|wsel f lwe9t, merci|Téléphone|FR
+MA-S-00588|FC-MA-100587|18/08/2025|Oujda|MAR_FRG|Fragile|Service client difficile à joindre|Agence|FR
+MA-S-00214|FC-MA-100213|13/08/2025|Oujda|MAR_EXP|Express|RAS, tout s'est bien passé|Agence|FR
+MA-S-00511|FC-MA-100510|04/07/2025|Fès|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00723|FC-MA-100722|06/06/2025|Oujda|MAR_FRG|Fragile||Web|AR
+MA-S-00686|FC-MA-100685|18/04/2025|Oujda|MAR_EXP|Express|Très satisfait, livraison à l'heure|Téléphone|FR
+MA-S-00212|FC-MA-100211|19/02/2025|Agadir|MAR_FRG|Fragile|kolchi mzyan, livreur محترم|Web|FR
+MA-S-00422|FC-MA-100421|26/05/2025|Tanger|MAR_STD|Standard|service client ma kayjawbch|Téléphone|Darija
+MA-S-00404|FC-MA-100403|20/01/2025|Meknès|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Téléphone|Darija
+MA-S-00893|FC-MA-100892|30/09/2025|Oujda|MAR_LRG|Large|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00163|FC-MA-100162|30/03/2025|Meknès|MAR_VAL|Valuable|livraison mzyana walakin retard bzaf|Téléphone|Darija
+MA-S-00157|FC-MA-100156|23/09/2025|Marrakech|MAR_LRG|Large|الكرتونة مخسرة شوية|Agence|FR
+MA-S-00122|FC-MA-100121|31/08/2025|Oujda|MAR_LRG|Large|kolchi mzyan, livreur محترم|Web|FR
+MA-S-00201|FC-MA-100200|06/03/2025|Agadir|MAR_FRG|Fragile|RAS, tout s'est bien passé|Web|AR
+MA-S-00115|FC-MA-100114|21/03/2025|Marrakech|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00015|FC-MA-100014|13/09/2025|Meknès|MAR_LRG|Large||Téléphone|FR
+MA-S-00627|FC-MA-100626|28/07/2025|Oujda|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|WhatsApp|AR
+MA-S-00426|FC-MA-100425|04/03/2025|Agadir|MAR_VAL|Valuable|Service client difficile à joindre|Agence|AR
+MA-S-00436|FC-MA-100435|29/08/2025|Oujda|MAR_LRG|Large|Colis arrivé endommagé|Web|FR
+MA-S-00500|FC-MA-100499|24/06/2025|Meknès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00750|FC-MA-100749|25/04/2025|Rabat|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Agence|FR
+MA-S-00335|FC-MA-100334|25/06/2025|Fès|MAR_EXP|Express|الكرتونة مخسرة شوية|Agence|Darija
+MA-S-00078|FC-MA-100077|15/07/2025|Marrakech|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00107|FC-MA-100106|25/03/2025|Fès|MAR_LRG|Large|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00566|FC-MA-100565|02/06/2025|Marrakech|MAR_STD|Standard|wsel f lwe9t, merci|Téléphone|AR
+MA-S-00293|FC-MA-100292|20/06/2025|Tanger|MAR_LRG|Large|colis m5ser chwya|Agence|FR
+MA-S-00528|FC-MA-100527|27/01/2025|Rabat|MAR_CLD|Refrigerated|colis m5ser chwya|Agence|Darija
+MA-S-00111|FC-MA-100110|31/08/2025|Casablanca|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|WhatsApp|AR
+MA-S-00743|FC-MA-100742|09/05/2025|Meknès|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Téléphone|Darija
+MA-S-00830|FC-MA-100829|09/09/2025|Meknès|MAR_FRG|Fragile|الكولي وصل مزيان والخدمة زوينة|WhatsApp|Darija
+MA-S-00828|FC-MA-100827|05/02/2025|Tanger|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00464|FC-MA-100463|11/08/2025|Casablanca|MAR_LRG|Large|service client ma kayjawbch|Agence|AR
+MA-S-00378|FC-MA-100377|24/06/2025|Casablanca|MAR_CLD|Refrigerated|colis m5ser chwya|Téléphone|AR
+MA-S-00631|FC-MA-100630|18/10/2025|Casablanca|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|WhatsApp|AR
+MA-S-00022|FC-MA-100021|10/04/2025|Fès|MAR_LRG|Large|Colis arrivé endommagé|WhatsApp|Darija
+MA-S-00208|FC-MA-100207|28/03/2025|Casablanca|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|Darija
+MA-S-00615|FC-MA-100614|11/07/2025|Rabat|MAR_EXP|Express|Colis arrivé endommagé|Téléphone|AR
+MA-S-00544|FC-MA-100543|29/06/2025|Agadir|MAR_VAL|Valuable|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00275|FC-MA-100274|12/02/2025|Agadir|MAR_VAL|Valuable|colis m5ser chwya|WhatsApp|AR
+MA-S-00093|FC-MA-100092|04/04/2025|Agadir|MAR_EXP|Express|Colis arrivé endommagé|Agence|FR
+MA-S-00840|FC-MA-100839|11/03/2025|Fès|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|FR
+MA-S-00488|FC-MA-100487|15/02/2025|Tanger|MAR_STD|Standard|wsel f lwe9t, merci|Téléphone|AR
+MA-S-00307|FC-MA-100306|08/10/2025|Tanger|MAR_EXP|Express|service client ma kayjawbch|Téléphone|Darija
+MA-S-00256|FC-MA-100255|03/05/2025|Marrakech|MAR_EXP|Express|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00695|FC-MA-100694|04/06/2025|Fès|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00711|FC-MA-100710|26/07/2025|Tanger|MAR_STD|Standard|Livraison en retard mais livreur professionnel|WhatsApp|AR
+MA-S-00652|FC-MA-100651|04/06/2025|Fès|MAR_FRG|Fragile|الكولي وصل مزيان والخدمة زوينة|Web|AR
+MA-S-00402|FC-MA-100401|18/05/2025|Fès|MAR_STD|Standard|خدمة الزبناء ما كيجاوبوش|Agence|FR
+MA-S-00283|FC-MA-100282|08/06/2025|Tanger|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00866|FC-MA-100865|03/08/2025|Casablanca|MAR_VAL|Valuable|colis m5ser chwya|Web|FR
+MA-S-00481|FC-MA-100480|28/04/2025|Tanger|MAR_EXP|Express|Colis arrivé endommagé|Agence|FR
+MA-S-00051|FC-MA-100050|03/03/2025|Casablanca|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00045|FC-MA-100044|27/07/2025|Meknès|MAR_STD|Standard|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00222|FC-MA-100221|15/01/2025|Marrakech|MAR_EXP|Express|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00296|FC-MA-100295|28/04/2025|Meknès|MAR_EXP|Express|Très satisfait, livraison à l'heure|Agence|Darija
+MA-S-00777|FC-MA-100776|13/06/2025|Oujda|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Téléphone|FR
+MA-S-00060|FC-MA-100059|08/05/2025|Fès|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Téléphone|Darija
+MA-S-00143|FC-MA-100142|02/04/2025|Tanger|MAR_LRG|Large|Service client difficile à joindre|WhatsApp|AR
+MA-S-00879|FC-MA-100878|05/07/2025|Rabat|MAR_LRG|Large|وصل فالوقت وكلشي مزيان|WhatsApp|FR
+MA-S-00551|FC-MA-100550|14/08/2025|Agadir|MAR_STD|Standard||Téléphone|FR
+MA-S-00852|FC-MA-100851|19/02/2025|Oujda|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00438|FC-MA-100437|19/01/2025|Casablanca|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|Téléphone|AR
+MA-S-00880|FC-MA-100879|24/09/2025|Tanger|MAR_LRG|Large|Service client difficile à joindre|WhatsApp|FR
+MA-S-00529|FC-MA-100528|24/08/2025|Tanger|MAR_VAL|Valuable|Service client difficile à joindre|WhatsApp|AR
+MA-S-00291|FC-MA-100290|15/05/2025|Casablanca|MAR_STD|Standard|Service client difficile à joindre|WhatsApp|FR
+MA-S-00853|FC-MA-100852|27/01/2025|Tanger|MAR_STD|Standard|Service client difficile à joindre|Agence|FR
+MA-S-00704|FC-MA-100703|30/09/2025|Fès|MAR_EXP|Express|kolchi mzyan, livreur محترم|Agence|FR
+MA-S-00853|FC-MA-100852|27/01/2025|Tanger|MAR_STD|Standard|Service client difficile à joindre|Agence|FR
+MA-S-00216|FC-MA-100215|13/10/2025|Casablanca|MAR_CLD|Refrigerated|Service client difficile à joindre|Téléphone|FR
+MA-S-00887|FC-MA-100886|14/02/2025|Agadir|MAR_LRG|Large|الكرتونة مخسرة شوية|WhatsApp|Darija
+MA-S-00697|FC-MA-100696|10/09/2025|Marrakech|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00569|FC-MA-100568|14/01/2025|Agadir|MAR_VAL|Valuable|service client ma kayjawbch|Agence|FR
+MA-S-00661|FC-MA-100660|30/06/2025|Casablanca|MAR_LRG|Large|Colis arrivé endommagé|Agence|AR
+MA-S-00080|FC-MA-100079|25/09/2025|Fès|MAR_FRG|Fragile|خدمة الزبناء ما كيجاوبوش|Web|FR
+MA-S-00492|FC-MA-100491|13/08/2025|Casablanca|MAR_VAL|Valuable|RAS, tout s'est bien passé|Web|FR
+MA-S-00198|FC-MA-100197|24/06/2025|Rabat|MAR_CLD|Refrigerated|Service client difficile à joindre|Web|Darija
+MA-S-00477|FC-MA-100476|28/06/2025|Fès|MAR_STD|Standard|kolchi mzyan, livreur محترم|Web|Darija
+MA-S-00024|FC-MA-100023|25/01/2025|Casablanca|MAR_STD|Standard|Colis arrivé endommagé|Web|AR
+MA-S-00083|FC-MA-100082|14/01/2025|Agadir|MAR_FRG|Fragile|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00565|FC-MA-100564|29/03/2025|Agadir|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00553|FC-MA-100552|15/07/2025|Rabat|MAR_LRG|Large|service client ma kayjawbch|Téléphone|Darija
+MA-S-00717|FC-MA-100716|17/09/2025|Fès|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00808|FC-MA-100807|11/01/2025|Casablanca|MAR_STD|Standard|Service client difficile à joindre|Agence|FR
+MA-S-00072|FC-MA-100071|04/06/2025|Marrakech|MAR_EXP|Express||Web|FR
+MA-S-00734|FC-MA-100733|30/06/2025|Agadir|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Téléphone|AR
+MA-S-00829|FC-MA-100828|27/09/2025|Meknès|MAR_LRG|Large|Service client difficile à joindre|Agence|FR
+MA-S-00758|FC-MA-100757|20/05/2025|Meknès|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00112|FC-MA-100111|01/04/2025|Oujda|MAR_LRG|Large|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00761|FC-MA-100760|10/05/2025|Tanger|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00148|FC-MA-100147|29/05/2025|Tanger|MAR_STD|Standard|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00891|FC-MA-100890|16/03/2025|Marrakech|MAR_CLD|Refrigerated|Service client difficile à joindre|Agence|FR
+MA-S-00014|FC-MA-100013|13/03/2025|Casablanca|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00096|FC-MA-100095|08/05/2025|Rabat|MAR_LRG|Large|colis m5ser chwya|Agence|Darija
+MA-S-00321|FC-MA-100320|17/06/2025|Meknès|MAR_LRG|Large|Colis arrivé endommagé|Téléphone|FR
+MA-S-00768|FC-MA-100767|28/09/2025|Meknès|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00867|FC-MA-100866|07/10/2025|Tanger|MAR_STD|Standard|livraison mzyana walakin retard bzaf|Agence|FR
+MA-S-00226|FC-MA-100225|06/01/2025|Oujda|MAR_EXP|Express|colis m5ser chwya|Agence|FR
+MA-S-00052|FC-MA-100051|19/06/2025|Agadir|MAR_EXP|Express|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00353|FC-MA-100352|13/04/2025|Oujda|MAR_CLD|Refrigerated|Service client difficile à joindre|Agence|FR
+MA-S-00244|FC-MA-100243|13/09/2025|Agadir|MAR_STD|Standard|Colis arrivé endommagé|Téléphone|AR
+MA-S-00303|FC-MA-100302|09/07/2025|Agadir|MAR_VAL|Valuable|kolchi mzyan, livreur محترم|Agence|AR
+MA-S-00446|FC-MA-100445|04/01/2025|Rabat|MAR_EXP|Express|Service client difficile à joindre|Agence|FR
+MA-S-00489|FC-MA-100488|17/07/2025|Meknès|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|Darija
+MA-S-00609|FC-MA-100608|21/02/2025|Oujda|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|AR
+MA-S-00170|FC-MA-100169|21/03/2025|Tanger|MAR_STD|Standard|التوصيل كان مزيان ولكن وصل متأخر|Web|Darija
+MA-S-00612|FC-MA-100611|12/02/2025|Agadir|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Téléphone|Darija
+MA-S-00146|FC-MA-100145|18/09/2025|Meknès|MAR_STD|Standard|Colis arrivé endommagé|Téléphone|AR
+MA-S-00288|FC-MA-100287|21/05/2025|Meknès|MAR_LRG|Large|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00186|FC-MA-100185|08/06/2025|Oujda|MAR_LRG|Large|الكولي وصل مزيان والخدمة زوينة|Téléphone|FR
+MA-S-00815|FC-MA-100814|21/08/2025|Casablanca|MAR_STD|Standard|kolchi mzyan, livreur محترم|Agence|FR
+MA-S-00241|FC-MA-100240|18/06/2025|Rabat|MAR_FRG|Fragile|service client ma kayjawbch|WhatsApp|FR
+MA-S-00345|FC-MA-100344|03/01/2025|Casablanca|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|Agence|FR
+MA-S-00772|FC-MA-100771|25/10/2025|Marrakech|MAR_STD|Standard|kolchi mzyan, livreur محترم|Agence|Darija
+MA-S-00774|FC-MA-100773|13/05/2025|CASABLANCA|MAR_STD|Standard|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|FR
+MA-S-00764|FC-MA-100763|01/06/2025|Oujda|MAR_EXP|Express|Colis arrivé endommagé|WhatsApp|Darija
+MA-S-00540|FC-MA-100539|27/09/2025|Casablanca|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|FR
+MA-S-00011|FC-MA-100010|10/10/2025|Rabat|MAR_LRG|Large|وصل فالوقت وكلشي مزيان|WhatsApp|Darija
+MA-S-00839|FC-MA-100838|15/09/2025|Tanger|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00333|FC-MA-100332|28/01/2025|Oujda|MAR_CLD|Refrigerated|وصل فالوقت وكلشي مزيان|Agence|FR
+MA-S-00289|FC-MA-100288|18/09/2025|Casablanca|MAR_LRG|Large|RAS, tout s'est bien passé|Agence|AR
+MA-S-00728|FC-MA-100727|06/06/2025|Rabat|MAR_FRG|Fragile|service client ma kayjawbch|Agence|Darija
+MA-S-00568|FC-MA-100567|27/01/2025|Tanger|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Agence|Darija
+MA-S-00729|FC-MA-100728|27/10/2025|Fès|MAR_STD|Standard|الكولي وصل مزيان والخدمة زوينة|Agence|Darija
+MA-S-00556|FC-MA-100555|16/04/2025|Casablanca|MAR_STD|Standard|وصل فالوقت وكلشي مزيان|WhatsApp|FR
+MA-S-00763|FC-MA-100762|02/06/2025|Oujda|MAR_LRG|Large|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00142|FC-MA-100141|02/08/2025|Fès|MAR_LRG|Large|Colis arrivé endommagé|Téléphone|FR
+MA-S-00665|FC-MA-100664|06/04/2025|Oujda|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Agence|Darija
+MA-S-00537|FC-MA-100536|26/05/2025|Rabat|MAR_EXP|Express|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00533|FC-MA-100532|04/06/2025|Marrakech|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Agence|AR
+MA-S-00110|FC-MA-100109|23/01/2025|Casablanca|MAR_EXP|Express|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00860|FC-MA-100859|08/08/2025|Fès|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00008|FC-MA-100007|02/02/2025|Casablanca|MAR_CLD|Refrigerated||Agence|AR
+MA-S-00308|FC-MA-100307|16/01/2025|Rabat|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00752|FC-MA-100751|31/07/2025|Marrakech|MAR_EXP|Express|Livraison en retard mais livreur professionnel|WhatsApp|Darija
+MA-S-00516|FC-MA-100515|04/04/2025|Rabat|MAR_EXP|Express|Colis arrivé endommagé|WhatsApp|AR
+MA-S-00199|FC-MA-100198|22/07/2025|Casablanca|MAR_STD|Standard|Colis arrivé endommagé|Téléphone|FR
+MA-S-00389|FC-MA-100388|28/05/2025|Oujda|MAR_STD|Standard|service client ma kayjawbch|Téléphone|FR
+MA-S-00230|FC-MA-100229|04/09/2025|Agadir|MAR_LRG|Large|Colis arrivé endommagé|Agence|Darija
+MA-S-00359|FC-MA-100358|28/06/2025|Tanger|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00561|FC-MA-100560|26/03/2025|Rabat | MAR_FRG |Valuable|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00352|FC-MA-100351|28/10/2025|Agadir|MAR_CLD|Refrigerated|colis m5ser chwya|Web|AR
+MA-S-00776|FC-MA-100775|19/07/2025|Oujda|MAR_EXP|Express|الكرتونة مخسرة شوية|Agence|FR
+MA-S-00440|FC-MA-100439|15/03/2025|Fès|MAR_VAL|Valuable|خدمة الزبناء ما كيجاوبوش|Agence|FR
+MA-S-00155|FC-MA-100154|05/09/2025|Casablanca|MAR_LRG|Large|colis m5ser chwya|WhatsApp|Darija
+MA-S-00290|FC-MA-100289|05/06/2025|Meknès|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00573|FC-MA-100572|22/03/2025|Marrakech|MAR_STD|Standard|Colis arrivé endommagé|Agence|AR
+MA-S-00655|FC-MA-100654|02/08/2025|Casablanca|MAR_EXP|Express|الكولي وصل مزيان والخدمة زوينة|Agence|FR
+MA-S-00049|FC-MA-100048|21/07/2025|Oujda|MAR_LRG|Large|RAS, tout s'est bien passé|Web|FR
+MA-S-00475|FC-MA-100474|07/09/2025|Rabat|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00872|FC-MA-100871|12/08/2025|Fès|MAR_STD|Standard|Service client difficile à joindre|WhatsApp|AR
+MA-S-00592|FC-MA-100591|10/10/2025|Casablanca|MAR_LRG|Large|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00851|FC-MA-100850|27/01/2025|Rabat|MAR_EXP|Express|Service client difficile à joindre|WhatsApp|AR
+MA-S-00690|FC-MA-100689|03/04/2025|Tanger|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00688|FC-MA-100687|02/04/2025|Oujda|MAR_STD|Standard|Très satisfait, livraison à l'heure|Agence|Darija
+MA-S-00504|FC-MA-100503|19/02/2025|Rabat|MAR_EXP|Express|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00571|FC-MA-100570|06/10/2025|Oujda|MAR_EXP|Express|kolchi mzyan, livreur محترم|Web|Darija
+MA-S-00507|FC-MA-100506|28/10/2025|Tanger|MAR_CLD|Refrigerated|خدمة الزبناء ما كيجاوبوش|WhatsApp|FR
+MA-S-00405|FC-MA-100404|09/01/2025|Fès|MAR_VAL|Valuable|Service client difficile à joindre|Agence|Darija
+MA-S-00531|FC-MA-100530|14/06/2025|Tanger|MAR_STD|Standard|wsel f lwe9t, merci|Téléphone|AR
+MA-S-00192|FC-MA-100191|16/07/2025|Marrakech|MAR_FRG|Fragile|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00331|FC-MA-100330|24/01/2025|Fès|MAR_CLD|Refrigerated|Colis arrivé endommagé|Web|AR
+MA-S-00263|FC-MA-100262|17/10/2025|Fès|MAR_VAL|Valuable|Service client difficile à joindre|Agence|Darija
+MA-S-00744|FC-MA-100743|06/03/2025|Tanger|MAR_STD|Standard|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00095|FC-MA-100094|11/03/2025|Fès|MAR_CLD|Refrigerated|الكولي وصل مزيان والخدمة زوينة|WhatsApp|FR
+MA-S-00479|FC-MA-100478|25/10/2025|Oujda|MAR_LRG|Large|Service client difficile à joindre|Web|FR
+MA-S-00206|FC-MA-100205|18/02/2025|Meknès|MAR_FRG|Fragile|RAS, tout s'est bien passé|Web|AR
+MA-S-00312|FC-MA-100311|19/07/2025|Agadir|MAR_FRG|Fragile|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00106|FC-MA-100105|23/10/2025|Casablanca|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|WhatsApp|FR
+MA-S-00131|FC-MA-100130|07/07/2025|Marrakech|MAR_LRG|Large|wsel f lwe9t, merci|WhatsApp|AR
+MA-S-00001|FC-MA-100000|07/10/2025|Oujda|MAR_FRG|Fragile|kolchi mzyan, livreur محترم|WhatsApp|FR
+MA-S-00023|FC-MA-100022|07/02/2025|Marrakech|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00755|FC-MA-100754|25/10/2025|Agadir|mar_exp|Express||WhatsApp|Darija
+MA-S-00195|FC-MA-100194|25/03/2025|Agadir|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00563|FC-MA-100562|27/08/2025|Agadir|MAR_VAL|Valuable|service client ma kayjawbch|Téléphone|AR
+MA-S-00642|FC-MA-100641|03/08/2025|Oujda|MAR_STD|Standard|Service client difficile à joindre|Téléphone|AR
+MA-S-00250|FC-MA-100249|20/01/2025|Oujda|MAR_FRG|Fragile|Service client difficile à joindre|WhatsApp|FR
+MA-S-00852|FC-MA-100851|19/02/2025|Oujda|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00886|FC-MA-100885|19/05/2025|Agadir|MAR_STD|Standard|livraison mzyana walakin retard bzaf|Agence|FR
+MA-S-00542|FC-MA-100541|15/05/2025|Fès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00026|FC-MA-100025|17/06/2025|Fès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00217|FC-MA-100216|16/10/2025|Fès|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|Darija
+MA-S-00541|FC-MA-100540|27/10/2025|Agadir|MAR_EXP|Express|وصل فالوقت وكلشي مزيان|Téléphone|AR
+MA-S-00194|FC-MA-100193|20/01/2025|Fès|MAR_STD|Standard|Colis arrivé endommagé|Web|Darija
+MA-S-00753|FC-MA-100752|29/07/2025|Fès|MAR_VAL|Valuable|Service client difficile à joindre|Téléphone|AR
+MA-S-00006|FC-MA-100005|28/05/2025|Meknès|MAR_STD|Standard|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00116|FC-MA-100115|27/04/2025|Tanger|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00373|FC-MA-100372|13/10/2025|Rabat|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Téléphone|FR
+MA-S-00733|FC-MA-100732|31/07/2025|Casablanca|MAR_STD|Standard|service client ma kayjawbch|Téléphone|AR
+MA-S-00702|FC-MA-100701|12/09/2025|Rabat|MAR_LRG|Large|Colis arrivé endommagé|WhatsApp|AR
+MA-S-00494|FC-MA-100493|11/10/2025|Oujda|MAR_STD|Standard|خدمة الزبناء ما كيجاوبوش|WhatsApp|Darija
+MA-S-00524|FC-MA-100523|04/10/2025|Oujda|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Web|Darija
+MA-S-00518|FC-MA-100517|25/05/2025|Meknès|MAR_VAL|Valuable|RAS, tout s'est bien passé|Téléphone|AR
+MA-S-00207|FC-MA-100206|29/08/2025|Oujda|MAR_VAL|Valuable|التوصيل كان مزيان ولكن وصل متأخر|Web|FR
+MA-S-00809|FC-MA-100808|18/09/2025|Marrakech|MAR_VAL|Valuable|colis m5ser chwya|Agence|AR
+MA-S-00444|FC-MA-100443|04/07/2025|Agadir|MAR_EXP|Express|Livraison en retard mais livreur professionnel|WhatsApp|Darija
+MA-S-00463|FC-MA-100462|24/03/2025|Marrakech|MAR_EXP|Express|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00246|FC-MA-100245|03/06/2025|Agadir|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Agence|FR
+MA-S-00813|FC-MA-100812|07/03/2025|Casablanca|MAR_STD|Standard|الكرتونة مخسرة شوية|Agence|FR
+MA-S-00005|FC-MA-100004|13/10/2025|Marrakech|MAR_EXP|Express|Service client difficile à joindre|Agence|Darija
+MA-S-00017|FC-MA-100016|11/08/2025|Fès|MAR_CLD|Refrigerated|wsel f lwe9t, merci|Téléphone|AR
+MA-S-00700|FC-MA-100699|08/03/2025|Tanger|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00369|FC-MA-100368|03/09/2025|Agadir|MAR_STD|Standard|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00784|FC-MA-100783|22/10/2025|Fès|MAR_VAL|Valuable|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00693|FC-MA-100692|17/08/2025|Marrakech|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00336|FC-MA-100335|04/04/2025|Agadir|MAR_LRG|Large|Service client difficile à joindre|Téléphone|FR
+MA-S-00536|FC-MA-100535|16/06/2025|Casablanca|MAR_FRG|Fragile|خدمة الزبناء ما كيجاوبوش|Téléphone|AR
+MA-S-00041|FC-MA-100040|05/06/2025|Tanger|MAR_LRG|Large|Colis arrivé endommagé|Téléphone|FR
+MA-S-00558|FC-MA-100557|20/02/2025|Meknès|MAR_LRG|Large|kolchi mzyan, livreur محترم|Agence|FR
+MA-S-00474|FC-MA-100473|23/09/2025|Marrakech|MAR_FRG|Fragile||WhatsApp|Darija
+MA-S-00435|FC-MA-100434|02/08/2025|Casablanca|MAR_FRG|Fragile|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|Darija
+MA-S-00881|FC-MA-100880|04/04/2025|Fès|MAR_LRG|Large|Service client difficile à joindre|Web|FR
+MA-S-00871|FC-MA-100870|11/03/2025|Tanger|MAR_EXP|Express|Colis arrivé endommagé|Téléphone|FR
+MA-S-00260|FC-MA-100259|10/04/2025|Fès|MAR_CLD|Refrigerated|wsel f lwe9t, merci|WhatsApp|Darija
+MA-S-00737|FC-MA-100736|29/08/2025|Casablanca|MAR_STD|Standard|RAS, tout s'est bien passé|Web|FR
+MA-S-00148|FC-MA-100147|29/05/2025|Tanger|MAR_STD|Standard|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00364|FC-MA-100363|01/07/2025|Meknès|MAR_EXP|Express|Très satisfait, livraison à l'heure|Téléphone|Darija
+MA-S-00523|FC-MA-100522|22/08/2025|Marrakech|MAR_VAL|Valuable|colis m5ser chwya|WhatsApp|AR
+MA-S-00272|FC-MA-100271|03/06/2025|Agadir|MAR_EXP|Express|Colis arrivé endommagé|Agence|AR
+MA-S-00235|FC-MA-100234|31/01/2025|Fès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00449|FC-MA-100448|13/04/2025|Rabat|MAR_LRG|Large|livraison mzyana walakin retard bzaf|Agence|Darija
+MA-S-00505|FC-MA-100504|07/05/2025|Meknès|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Web|AR
+MA-S-00127|FC-MA-100126|22/05/2025|Marrakech|MAR_VAL|Valuable|خدمة الزبناء ما كيجاوبوش|WhatsApp|FR
+MA-S-00865|FC-MA-100864|10/07/2025|Tanger|MAR_STD|Standard|خدمة الزبناء ما كيجاوبوش|Téléphone|FR
+MA-S-00147|FC-MA-100146|03/08/2025|Oujda|MAR_FRG|Fragile|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00530|FC-MA-100529|08/03/2025|Meknès|MAR_STD|Standard|Très satisfait, livraison à l'heure|Agence|Darija
+MA-S-00678|FC-MA-100677|27/07/2025|Agadir|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00745|FC-MA-100744|23/02/2025|Marrakech|MAR_VAL|Valuable|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00189|FC-MA-100188|07/03/2025|Oujda|MAR_LRG|Large|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00570|FC-MA-100569|22/01/2025|Oujda|MAR_CLD|Refrigerated|kolchi mzyan, livreur محترم|Agence|FR
+MA-S-00643|FC-MA-100642|29/01/2025|Casablanca|MAR_FRG|Fragile|Service client difficile à joindre|Téléphone|FR
+MA-S-00876|FC-MA-100875|05/06/2025|Oujda|MAR_CLD|Refrigerated|Colis arrivé endommagé|Agence|FR
+MA-S-00517|FC-MA-100516|27/05/2025|Agadir|MAR_FRG|Fragile|kolchi mzyan, livreur محترم|Web|Darija
+MA-S-00306|FC-MA-100305|23/07/2025|Tanger|MAR_STD|Standard|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00132|FC-MA-100131|12/06/2025|Oujda|MAR_STD|Standard|Colis arrivé endommagé|Téléphone|FR
+MA-S-00619|FC-MA-100618|25/09/2025|Fès|MAR_FRG|Fragile|وصل فالوقت وكلشي مزيان|Téléphone|AR
+MA-S-00555|FC-MA-100554|09/03/2025|Marrakech|MAR_STD|Standard|service client ma kayjawbch|Téléphone|AR
+MA-S-00200|FC-MA-100199|10/07/2025|Casablanca|MAR_VAL|Valuable|service client ma kayjawbch|Agence|FR
+MA-S-00136|FC-MA-100135|14/04/2025|Oujda|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Agence|FR
+MA-S-00722|FC-MA-100721|10/07/2025|Casablanca|MAR_VAL|Valuable|service client ma kayjawbch|Agence|Darija
+MA-S-00183|FC-MA-100182|07/03/2025|Fès|MAR_LRG|Large|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00197|FC-MA-100196|18/02/2025|Rabat|MAR_FRG|Fragile|kolchi mzyan, livreur محترم|Agence|AR
+MA-S-00602|FC-MA-100601|12/03/2025|Casablanca|MAR_LRG|Large|livraison mzyana walakin retard bzaf|Agence|Darija
+MA-S-00338|FC-MA-100337|11/05/2025|Agadir|MAR_EXP|Express|RAS, tout s'est bien passé|Web|Darija
+MA-S-00579|FC-MA-100578|15/04/2025|Casablanca|MAR_STD|Standard|Colis arrivé endommagé|Web|FR
+MA-S-00529|FC-MA-100528|24/08/2025|Tanger|MAR_VAL|Valuable|Service client difficile à joindre|WhatsApp|AR
+MA-S-00559|FC-MA-100558|09/05/2025|Fès|MAR_FRG|Fragile|Colis arrivé endommagé|Téléphone|FR
+MA-S-00223|FC-MA-100222|25/05/2025|Meknès|MAR_EXP|Express|Service client difficile à joindre|Web|FR
+MA-S-00220|FC-MA-100219|12/06/2025|Tanger|MAR_EXP|Express|wsel f lwe9t, merci|WhatsApp|FR
+MA-S-00792|FC-MA-100791|05/02/2025|Oujda|MAR_FRG|Fragile|Service client difficile à joindre|Agence|AR
+MA-S-00503|FC-MA-100502|08/03/2025|Rabat|MAR_LRG|Large|service client ma kayjawbch|Téléphone|FR
+MA-S-00059|FC-MA-100058|21/01/2025|Meknès|MAR_CLD|Refrigerated|خدمة الزبناء ما كيجاوبوش|WhatsApp|FR
+MA-S-00658|FC-MA-100657|16/03/2025|Marrakech|MAR_VAL|Valuable|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00311|FC-MA-100310|30/07/2025|Rabat|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00134|FC-MA-100133|16/06/2025|Fès|MAR_EXP|Express|Service client difficile à joindre|Agence|FR
+MA-S-00416|FC-MA-100415|08/07/2025|Casablanca|MAR_LRG|Large||Web|FR
+MA-S-00638|FC-MA-100637|16/09/2025|Casablanca|MAR_FRG|Fragile|وصل فالوقت وكلشي مزيان|Agence|AR
+MA-S-00112|FC-MA-100111|01/04/2025|Oujda|MAR_LRG|Large|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00845|FC-MA-100844|09/09/2025|Tanger|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Agence|Darija
+MA-S-00580|FC-MA-100579|03/10/2025|Marrakech|MAR_CLD|Refrigerated|Colis arrivé endommagé|Web|FR
+MA-S-00362|FC-MA-100361|01/01/2025|Fès|MAR_FRG|Fragile|RAS, tout s'est bien passé|Web|FR
+MA-S-00739|FC-MA-100738|13/06/2025|Marrakech|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|WhatsApp|AR
+MA-S-00526|FC-MA-100525|24/03/2025|Oujda|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00300|FC-MA-100299|10/05/2025|Oujda|MAR_VAL|Valuable|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00633|FC-MA-100632|07/09/2025|Tanger|MAR_LRG|Large||WhatsApp|AR
+MA-S-00811|FC-MA-100810|26/02/2025|Agadir|MAR_STD|Standard|Service client difficile à joindre|Téléphone|FR
+MA-S-00038|FC-MA-100037|13/06/2025|Agadir|MAR_VAL|Valuable|Colis arrivé endommagé|Agence|FR
+MA-S-00119|FC-MA-100118|05/02/2025|Marrakech|MAR_FRG|Fragile||Web|FR
+MA-S-00756|FC-MA-100755|10/05/2025|Oujda|MAR_STD|Standard||Téléphone|Darija
+MA-S-00073|FC-MA-100072|28/06/2025|Rabat|MAR_EXP|Express|livraison mzyana walakin retard bzaf|WhatsApp|Darija
+MA-S-00812|FC-MA-100811|28/05/2025|Rabat|MAR_CLD|Refrigerated|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00428|FC-MA-100427|15/07/2025|Agadir|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00625|FC-MA-100624|05/04/2025|Casablanca|MAR_STD|Standard|خدمة الزبناء ما كيجاوبوش|Téléphone|FR
+MA-S-00039|FC-MA-100038|14/03/2025|Oujda|MAR_EXP|Express|Colis arrivé endommagé|Web|AR
+MA-S-00687|FC-MA-100686|02/04/2025|Agadir|MAR_VAL|Valuable|Colis arrivé endommagé|Agence|FR
+MA-S-00125|FC-MA-100124|29/05/2025|Marrakech|MAR_EXP|Express||Téléphone|FR
+MA-S-00639|FC-MA-100638|23/07/2025|Fès|MAR_CLD|Refrigerated|الكولي وصل مزيان والخدمة زوينة|Web|Darija
+MA-S-00701|FC-MA-100700|27/10/2025|Marrakech|MAR_STD|Standard|RAS, tout s'est bien passé|Web|FR
+MA-S-00746|FC-MA-100745|18/01/2025|Marrakech|MAR_VAL|Valuable|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00413|FC-MA-100412|24/02/2025|Agadir|MAR_STD|Standard|خدمة الزبناء ما كيجاوبوش|WhatsApp|FR
+MA-S-00204|FC-MA-100203|08/08/2025|Tanger|MAR_VAL|Valuable|RAS, tout s'est bien passé|Web|FR
+MA-S-00483|FC-MA-100482|04/06/2025|Marrakech|MAR_CLD|Refrigerated|Colis arrivé endommagé|Agence|Darija
+MA-S-00368|FC-MA-100367|12/09/2025|Tanger|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00344|FC-MA-100343|21/10/2025|Rabat|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Agence|FR
+MA-S-00081|FC-MA-100080|28/04/2025|Marrakech|MAR_LRG|Large|Service client difficile à joindre|Téléphone|FR
+MA-S-00223|FC-MA-100222|25/05/2025|Meknès|MAR_EXP|Express|Service client difficile à joindre|Web|FR
+MA-S-00502|FC-MA-100501|15/09/2025|Tanger|MAR_CLD|Refrigerated|وصل فالوقت وكلشي مزيان|WhatsApp|AR
+MA-S-00453|FC-MA-100452|05/01/2025|Meknès|MAR_EXP|Express|Livraison en retard mais livreur professionnel|WhatsApp|Darija
+MA-S-00731|FC-MA-100730|03/07/2025|Fès|MAR_CLD|Refrigerated|Colis arrivé endommagé|Téléphone|Darija
+MA-S-00254|FC-MA-100253|02/07/2025|Marrakech|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|FR
+MA-S-00854|FC-MA-100853|29/06/2025|Oujda|MAR_LRG|Large|الكرتونة مخسرة شوية|Téléphone|FR
+MA-S-00149|FC-MA-100148|10/03/2025|Rabat|MAR_CLD|Refrigerated|service client ma kayjawbch|Web|FR
+MA-S-00109|FC-MA-100108|09/09/2025|Oujda|MAR_CLD|Refrigerated|وصل فالوقت وكلشي مزيان|Agence|FR
+MA-S-00562|FC-MA-100561|20/02/2025|Fès|MAR_LRG|Large|Colis arrivé endommagé|Agence|Darija
+MA-S-00584|FC-MA-100583|21/04/2025|Marrakech|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|WhatsApp|Darija
+MA-S-00864|FC-MA-100863|12/04/2025|Tanger|MAR_STD|Standard|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00874|FC-MA-100873|30/08/2025|Rabat|MAR_FRG|Fragile|الكرتونة مخسرة شوية|Agence|FR
+MA-S-00443|FC-MA-100442|23/03/2025|Marrakech|MAR_STD|Standard|خدمة الزبناء ما كيجاوبوش|WhatsApp|FR
+MA-S-00409|FC-MA-100408|22/05/2025|Oujda|MAR_FRG|Fragile|wsel f lwe9t, merci|Web|Darija
+MA-S-00848|FC-MA-100847|04/02/2025|Agadir|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00576|FC-MA-100575|09/05/2025|Tanger|MAR_EXP|Express|Service client difficile à joindre|Agence|Darija
+MA-S-00374|FC-MA-100373|20/10/2025|Casablanca|MAR_VAL|Valuable|وصل فالوقت وكلشي مزيان|Téléphone|FR
+MA-S-00036|FC-MA-100035|06/03/2025|Agadir|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Agence|FR
+MA-S-00020|FC-MA-100019|05/01/2025|Tanger|MAR_EXP|Express|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00160|FC-MA-100159|18/06/2025|Oujda|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|Téléphone|AR
+MA-S-00634|FC-MA-100633|09/07/2025|Agadir|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00053|FC-MA-100052|01/06/2025|Oujda|MAR_FRG|Fragile|Service client difficile à joindre|Agence|AR
+MA-S-00323|FC-MA-100322|06/06/2025|Tanger|MAR_FRG|Fragile|Colis arrivé endommagé|WhatsApp|Darija
+MA-S-00672|FC-MA-100671|14/02/2025|Agadir|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|WhatsApp|FR
+MA-S-00431|FC-MA-100430|08/09/2025|Fès|mar_exp|Fragile||WhatsApp|FR
+MA-S-00676|FC-MA-100675|11/04/2025|Rabat|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|AR
+MA-S-00534|FC-MA-100533|25/06/2025|Agadir|MAR_VAL|Valuable|wsel f lwe9t, merci|WhatsApp|FR
+MA-S-00322|FC-MA-100321|18/09/2025|Meknès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00870|FC-MA-100869|10/06/2025|Marrakech|MAR_LRG|Large|وصل فالوقت وكلشي مزيان|Agence|FR
+MA-S-00355|FC-MA-100354|18/10/2025|Marrakech|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00725|FC-MA-100724|01/05/2025|Agadir|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00896|FC-MA-100895|30/06/2025|Marrakech|MAR_EXP|Express|Service client difficile à joindre|Téléphone|Darija
+MA-S-00337|FC-MA-100336|10/01/2025|Fès|MAR_STD|Standard|Service client difficile à joindre|WhatsApp|FR
+MA-S-00120|FC-MA-100119|26/01/2025|Rabat|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Agence|FR
+MA-S-00179|FC-MA-100178|05/09/2025|Tanger|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00154|FC-MA-100153|19/02/2025|Tanger|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|Web|FR
+MA-S-00856|FC-MA-100855|01/01/2025|Oujda|MAR_LRG|Large|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00660|FC-MA-100659|21/06/2025|Rabat|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|Web|Darija
+MA-S-00452|FC-MA-100451|18/01/2025|Tanger|MAR_CLD|Refrigerated|wsel f lwe9t, merci|Web|AR
+MA-S-00003|FC-MA-100002|12/07/2025|Casablanca|MAR_EXP|Express|wsel f lwe9t, merci|Web|FR
+MA-S-00575|FC-MA-100574|21/07/2025|Agadir|MAR_FRG|Fragile|wsel f lwe9t, merci|Téléphone|AR
+MA-S-00070|FC-MA-100069|25/02/2025|Tanger|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00720|FC-MA-100719|28/06/2025|Marrakech|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|FR
+MA-S-00184|FC-MA-100183|16/06/2025|Agadir|MAR_LRG|Large|Très satisfait, livraison à l'heure|Téléphone|AR
+MA-S-00376|FC-MA-100375|29/07/2025|Fès|MAR_STD|Standard|Très satisfait, livraison à l'heure|Agence|AR
+MA-S-00819|FC-MA-100818|06/07/2025|Fès|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|FR
+MA-S-00646|FC-MA-100645|28/02/2025|Rabat|MAR_LRG|Large|Colis arrivé endommagé|Téléphone|FR
+MA-S-00467|FC-MA-100466|02/06/2025|Meknès|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00271|FC-MA-100270|05/08/2025|Oujda|mar_exp|Large|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00190|FC-MA-100189|03/04/2025|Marrakech|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Agence|Darija
+MA-S-00185|FC-MA-100184|19/07/2025|Agadir|MAR_EXP|Express|خدمة الزبناء ما كيجاوبوش|Agence|FR
+MA-S-00385|FC-MA-100384|20/08/2025|Rabat|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Agence|Darija
+MA-S-00499|FC-MA-100498|12/01/2025|Tanger|MAR_LRG|Large|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00620|FC-MA-100619|01/09/2025|Rabat|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00253|FC-MA-100252|26/06/2025|Meknès|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00771|FC-MA-100770|12/06/2025|Rabat|MAR_STD|Standard||WhatsApp|Darija
+MA-S-00883|FC-MA-100882|23/02/2025|Meknès|MAR_VAL|Valuable|Service client difficile à joindre|Agence|Darija
+MA-S-00419|FC-MA-100418|25/03/2025|Oujda|MAR_VAL|Valuable|colis m5ser chwya|Web|FR
+MA-S-00877|FC-MA-100876|29/04/2025|Oujda|INCONNU|Large||Web|FR
+MA-S-00010|FC-MA-100009|19/04/2025|Meknès|MAR_EXP|Express|Service client difficile à joindre|Téléphone|FR
+MA-S-00074|FC-MA-100073|17/07/2025|Fès|MAR_CLD|Refrigerated|wsel f lwe9t, merci|Web|FR
+MA-S-00173|FC-MA-100172|05/05/2025|Agadir|mar_exp|Large|وصل فالوقت وكلشي مزيان|Agence|FR
+MA-S-00152|FC-MA-100151|12/05/2025|Meknès|MAR_EXP|Express|Colis arrivé endommagé|WhatsApp|AR
+MA-S-00662|FC-MA-100661|17/05/2025|Marrakech|MAR_EXP|Express|service client ma kayjawbch|Agence|FR
+MA-S-00325|FC-MA-100324|01/06/2025|Fès|MAR_VAL|Valuable|Colis arrivé endommagé|Web|Darija
+MA-S-00086|FC-MA-100085|28/10/2025|Meknès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00577|FC-MA-100576|03/07/2025|Rabat|MAR_FRG|Fragile||WhatsApp|FR
+MA-S-00837|FC-MA-100836|04/04/2025|Tanger|MAR_LRG|Large|Service client difficile à joindre|Téléphone|FR
+MA-S-00046|FC-MA-100045|13/06/2025|Tanger|MAR_LRG|Large|Service client difficile à joindre|Téléphone|FR
+MA-S-00130|FC-MA-100129|05/02/2025|Rabat|INCONNU|Valuable|kolchi mzyan, livreur محترم|Agence|AR
+MA-S-00795|FC-MA-100794|27/07/2025|Meknès|MAR_CLD|Refrigerated|RAS, tout s'est bien passé|Téléphone|AR
+MA-S-00342|FC-MA-100341|19/05/2025|Casablanca|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Agence|Darija
+MA-S-00317|FC-MA-100316|22/02/2025|Tanger|MAR_FRG|Fragile|service client ma kayjawbch|Web|Darija
+MA-S-00552|FC-MA-100551|10/10/2025|Casablanca|MAR_STD|Standard|service client ma kayjawbch|WhatsApp|AR
+MA-S-00309|FC-MA-100308|13/04/2025|Tanger|MAR_STD|Standard|Livraison en retard mais livreur professionnel|WhatsApp|AR
+MA-S-00498|FC-MA-100497|17/08/2025|Fès|MAR_VAL|Valuable|الكرتونة مخسرة شوية|Téléphone|Darija
+MA-S-00178|FC-MA-100177|29/08/2025|Fès|MAR_EXP|Express|Service client difficile à joindre|Téléphone|FR
+MA-S-00365|FC-MA-100364|21/03/2025|Meknès|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00279|FC-MA-100278|19/10/2025|Rabat|MAR_FRG|Fragile|خدمة الزبناء ما كيجاوبوش|WhatsApp|Darija
+MA-S-00100|FC-MA-100099|01/05/2025|Meknès|MAR_FRG|Fragile|Service client difficile à joindre|Agence|FR
+MA-S-00889|FC-MA-100888|20/02/2025|Oujda|MAR_STD|Standard|Colis arrivé endommagé|WhatsApp|AR
+MA-S-00225|FC-MA-100224|05/01/2025|Rabat|MAR_STD|Standard|wsel f lwe9t, merci|Téléphone|FR
+MA-S-00832|FC-MA-100831|13/07/2025|Tanger|MAR_CLD|Refrigerated|service client ma kayjawbch|Web|AR
+MA-S-00117|FC-MA-100116|27/02/2025|Rabat|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00396|FC-MA-100395|04/04/2025|Tanger|MAR_LRG|Large|وصل فالوقت وكلشي مزيان|Web|Darija
+MA-S-00480|FC-MA-100479|18/08/2025|Oujda|MAR_VAL|Valuable|wsel f lwe9t, merci|WhatsApp|Darija
+MA-S-00318|FC-MA-100317|11/04/2025|Oujda|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Web|AR
+MA-S-00726|FC-MA-100725|20/08/2025|Oujda|MAR_LRG|Large||Web|FR
+MA-S-00042|FC-MA-100041|18/06/2025|Agadir|MAR_FRG|Fragile|wsel f lwe9t, merci|Web|FR
+MA-S-00450|FC-MA-100449|18/08/2025|Meknès|MAR_VAL|Valuable|Service client difficile à joindre|WhatsApp|FR
+MA-S-00786|FC-MA-100785|17/01/2025|Fès|MAR_LRG|Large|colis m5ser chwya|Web|FR
+MA-S-00613|FC-MA-100612|03/04/2025|Marrakech|MAR_EXP|Express|Service client difficile à joindre|WhatsApp|AR
+MA-S-00653|FC-MA-100652|18/08/2025|Agadir|MAR_EXP|Express|service client ma kayjawbch|WhatsApp|FR
+MA-S-00607|FC-MA-100606|09/05/2025|Oujda|MAR_VAL|Valuable|Colis arrivé endommagé|Agence|FR
+MA-S-00740|FC-MA-100739|24/08/2025|Casablanca|MAR_LRG|Large|Colis arrivé endommagé|Téléphone|FR
+MA-S-00836|FC-MA-100835|01/01/2025|Agadir|MAR_LRG|Large|خدمة الزبناء ما كيجاوبوش|WhatsApp|AR
+MA-S-00161|FC-MA-100160|08/10/2025|Tanger|MAR_EXP|Express|Colis arrivé endommagé|Téléphone|AR
+MA-S-00218|FC-MA-100217|31/05/2025|Agadir|MAR_VAL|Valuable|Colis arrivé endommagé|Téléphone|FR
+MA-S-00735|FC-MA-100734|03/07/2025|Casa|MAR_FRG|Fragile|Colis arrivé endommagé|Téléphone|Darija
+MA-S-00410|FC-MA-100409|31/08/2025|Oujda| MAR_FRG |Refrigerated|RAS, tout s'est bien passé|Téléphone|AR
+MA-S-00270|FC-MA-100269|06/02/2025|Casablanca|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00384|FC-MA-100383|01/07/2025|Rabat|MAR_STD|Standard|colis m5ser chwya|WhatsApp|FR
+MA-S-00519|FC-MA-100518|19/07/2025|Agadir|MAR_CLD|Refrigerated|Colis arrivé endommagé|Web|AR
+MA-S-00232|FC-MA-100231|19/09/2025|Fès|MAR_EXP|Express|service client ma kayjawbch|Web|FR
+MA-S-00400|FC-MA-100399|08/05/2025|Rabat|MAR_CLD|Refrigerated|خدمة الزبناء ما كيجاوبوش|Agence|AR
+MA-S-00420|FC-MA-100419|16/06/2025|Tanger|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Agence|FR
+MA-S-00266|FC-MA-100265|19/03/2025|Casablanca|MAR_FRG|Fragile|الكرتونة مخسرة شوية|Téléphone|FR
+MA-S-00363|FC-MA-100362|25/06/2025|Oujda|MAR_STD|Standard|RAS, tout s'est bien passé|Web|AR
+MA-S-00375|FC-MA-100374|03/10/2025|Meknès|MAR_LRG|Large|RAS, tout s'est bien passé|Téléphone|AR
+MA-S-00066|FC-MA-100065|29/09/2025|Oujda|MAR_VAL|Valuable|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00797|FC-MA-100796|19/10/2025|Tanger|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00827|FC-MA-100826|05/10/2025|Meknès|MAR_STD|Standard|RAS, tout s'est bien passé|Web|AR
+MA-S-00372|FC-MA-100371|24/02/2025|Fès|INCONNU|Large|Service client difficile à joindre|Web|FR
+MA-S-00567|FC-MA-100566|30/07/2025|Tanger|MAR_LRG|Large|Service client difficile à joindre|Téléphone|FR
+MA-S-00869|FC-MA-100868|14/03/2025|Meknès|MAR_CLD|Refrigerated|Service client difficile à joindre|Téléphone|AR
+MA-S-00732|FC-MA-100731|13/07/2025|Marrakech|MAR_LRG|Large|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00641|FC-MA-100640|23/04/2025|Marrakech|MAR_STD|Standard||Agence|FR
+MA-S-00801|FC-MA-100800|10/10/2025|Casablanca|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00158|FC-MA-100157|27/02/2025|Casablanca|MAR_FRG|Fragile|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00560|FC-MA-100559|25/08/2025|Rabat|MAR_CLD|Refrigerated|الكرتونة مخسرة شوية|Web|FR
+MA-S-00285|FC-MA-100284|10/10/2025|Oujda|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00482|FC-MA-100481|07/02/2025|Marrakech|MAR_EXP|Express|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00088|FC-MA-100087|13/03/2025|Meknès|MAR_CLD|Refrigerated|خدمة الزبناء ما كيجاوبوش|Web|FR
+MA-S-00328|FC-MA-100327|25/03/2025|Fès|MAR_STD|Standard|Colis arrivé endommagé|Agence|Darija
+MA-S-00884|FC-MA-100883|19/03/2025|Tanger|MAR_FRG|Fragile||WhatsApp|Darija
+MA-S-00751|FC-MA-100750|29/09/2025|Fès|MAR_EXP|Express|Service client difficile à joindre|Téléphone|Darija
+MA-S-00582|FC-MA-100581|28/09/2025|Casablanca|MAR_LRG|Large|Service client difficile à joindre|Téléphone|AR
+MA-S-00441|FC-MA-100440|27/05/2025|Meknès|MAR_FRG|Fragile|الكولي وصل مزيان والخدمة زوينة|Agence|AR
+MA-S-00203|FC-MA-100202|16/05/2025|Fès|MAR_VAL|Valuable|kolchi mzyan, livreur محترم|WhatsApp|FR
+MA-S-00595|FC-MA-100594|22/04/2025|Agadir|MAR_EXP|Express|Service client difficile à joindre|Web|AR
+MA-S-00831|FC-MA-100830|16/06/2025|Rabat|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Agence|FR
+MA-S-00032|FC-MA-100031|26/07/2025|Marrakech|MAR_FRG|Fragile|RAS, tout s'est bien passé|Web|AR
+MA-S-00277|FC-MA-100276|13/09/2025|Oujda|MAR_EXP|Express|Très satisfait, livraison à l'heure|Agence|Darija
+MA-S-00703|FC-MA-100702|08/10/2025|Oujda|MAR_FRG|Fragile|وصل فالوقت وكلشي مزيان|Agence|FR
+MA-S-00470|FC-MA-100469|29/04/2025|Meknès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Téléphone|AR
+MA-S-00424|FC-MA-100423|29/09/2025|Marrakech|MAR_FRG|Fragile|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00794|FC-MA-100793|27/06/2025|Fès|MAR_STD|Standard|RAS, tout s'est bien passé|Web|FR
+MA-S-00287|FC-MA-100286|08/09/2025|Marrakech|MAR_EXP|Express|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00252|FC-MA-100251|06/04/2025|Rabat|MAR_STD|Standard|kolchi mzyan, livreur محترم|Web|Darija
+MA-S-00380|FC-MA-100379|23/04/2025|Meknès|MAR_FRG|Fragile|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00789|FC-MA-100788|04/01/2025|Rabat|MAR_LRG|Large|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00823|FC-MA-100822|07/02/2025|Rabat|MAR_CLD|Refrigerated|وصل فالوقت وكلشي مزيان|Agence|FR
+MA-S-00281|FC-MA-100280|20/04/2025|Oujda|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|WhatsApp|FR
+MA-S-00407|FC-MA-100406|01/08/2025|Tanger|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00240|FC-MA-100239|18/03/2025|Tanger|MAR_LRG|Large|Service client difficile à joindre|WhatsApp|FR
+MA-S-00689|FC-MA-100688|05/01/2025|Rabat |MAR_EXP|Express||Web|FR
+MA-S-00630|FC-MA-100629|30/07/2025|Casablanca|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00466|FC-MA-100465|16/02/2025|Casablanca|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Téléphone|FR
+MA-S-00028|FC-MA-100027|22/09/2025|Fès|MAR_STD|Standard|RAS, tout s'est bien passé|Agence|FR
+MA-S-00834|FC-MA-100833|13/09/2025|Tanger|MAR_VAL|Valuable|colis m5ser chwya|Agence|AR
+MA-S-00462|FC-MA-100461|07/08/2025|Fès|MAR_LRG|Large|Service client difficile à joindre|Web|Darija
+MA-S-00386|FC-MA-100385|02/10/2025|Meknès|MAR_LRG|Large|الكولي وصل مزيان والخدمة زوينة|WhatsApp|Darija
+MA-S-00861|FC-MA-100860|14/05/2025|Tanger|MAR_VAL|Valuable|Colis arrivé endommagé|Web|FR
+MA-S-00237|FC-MA-100236|28/07/2025|Oujda|MAR_CLD|Refrigerated|خدمة الزبناء ما كيجاوبوش|WhatsApp|AR
+MA-S-00773|FC-MA-100772|05/07/2025|Tanger|MAR_FRG|Fragile|Colis arrivé endommagé|Agence|FR
+MA-S-00509|FC-MA-100508|20/01/2025|Casablanca|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|WhatsApp|AR
+MA-S-00085|FC-MA-100084|18/03/2025|Casablanca|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|FR
+MA-S-00062|FC-MA-100061|17/08/2025|Rabat |MAR_CLD|Refrigerated|Colis arrivé endommagé|Téléphone|FR
+MA-S-00295|FC-MA-100294|21/01/2025|Meknès|MAR_STD|Standard|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00292|FC-MA-100291|28/06/2025|Rabat|mar_exp|Large|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00114|FC-MA-100113|22/01/2025|Rabat|MAR_CLD|Refrigerated|colis m5ser chwya|Agence|Darija
+MA-S-00209|FC-MA-100208|19/01/2025|Agadir|MAR_LRG|Large|Colis arrivé endommagé|Agence|FR
+MA-S-00257|FC-MA-100256|14/08/2025|Rabat|MAR_CLD|Refrigerated|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00460|FC-MA-100459|16/07/2025|Casablanca|MAR_LRG|Large|الكولي وصل مزيان والخدمة زوينة|WhatsApp|FR
+MA-S-00667|FC-MA-100666|12/05/2025|Oujda|MAR_EXP|Express|Colis arrivé endommagé|WhatsApp|AR
+MA-S-00367|FC-MA-100366|14/04/2025|Agadir|MAR_LRG|Large|الكرتونة مخسرة شوية|Web|FR
+MA-S-00783|FC-MA-100782|04/09/2025|Fès|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00418|FC-MA-100417|06/02/2025|Oujda|MAR_STD|Standard|Colis arrivé endommagé|Téléphone|FR
+MA-S-00259|FC-MA-100258|29/04/2025|Casablanca|MAR_EXP|Express|Service client difficile à joindre|Téléphone|FR
+MA-S-00135|FC-MA-100134|14/07/2025|Oujda|MAR_EXP|Express|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00129|FC-MA-100128|28/01/2025|Rabat|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Web|Darija
+MA-S-00486|FC-MA-100485|03/08/2025|Agadir|MAR_FRG|Fragile|Colis arrivé endommagé|WhatsApp|AR
+MA-S-00124|FC-MA-100123|18/09/2025|Meknès|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00013|FC-MA-100012|03/04/2025|Tanger|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00694|FC-MA-100693|23/05/2025|Fès|MAR_CLD|Refrigerated|colis m5ser chwya|Web|Darija
+MA-S-00673|FC-MA-100672|22/04/2025|Oujda|MAR_STD|Standard|Service client difficile à joindre|WhatsApp|AR
+MA-S-00873|FC-MA-100872|10/03/2025|Fès|MAR_LRG|Large|service client ma kayjawbch|Téléphone|FR
+MA-S-00390|FC-MA-100389|26/09/2025|Agadir|MAR_FRG|Fragile|Colis arrivé endommagé|Téléphone|Darija
+MA-S-00803|FC-MA-100802|22/10/2025|Tanger|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00547|FC-MA-100546|01/04/2025|Marrakech|MAR_FRG|Fragile|service client ma kayjawbch|Agence|FR
+MA-S-00691|FC-MA-100690|05/01/2025|Meknès|MAR_CLD|Refrigerated|Colis arrivé endommagé|Agence|FR
+MA-S-00067|FC-MA-100066|04/02/2025|Casablanca|MAR_EXP|Express|RAS, tout s'est bien passé|Téléphone|Darija
+MA-S-00282|FC-MA-100281|07/04/2025|Agadir|MAR_EXP|Express|Service client difficile à joindre|Téléphone|FR
+MA-S-00139|FC-MA-100138|28/08/2025|Agadir|MAR_LRG|Large|service client ma kayjawbch|Web|AR
+MA-S-00549|FC-MA-100548|20/04/2025|Marrakech|MAR_STD|Standard|livraison mzyana walakin retard bzaf|Web|FR
+MA-S-00598|FC-MA-100597|27/05/2025|Meknès|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00319|FC-MA-100318|19/08/2025|Casablanca|MAR_CLD|Refrigerated|الكرتونة مخسرة شوية|Téléphone|FR
+MA-S-00227|FC-MA-100226|22/06/2025|Tanger|INCONNU|Valuable|التوصيل كان مزيان ولكن وصل متأخر|Agence|AR
+MA-S-00002|FC-MA-100001|09/08/2025|Meknès|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00632|FC-MA-100631|26/08/2025|Casablanca|MAR_LRG|Large|Livraison en retard mais livreur professionnel|WhatsApp|AR
+MA-S-00398|FC-MA-100397|15/07/2025|Marrakech|MAR_VAL|Valuable|Service client difficile à joindre|WhatsApp|FR
+MA-S-00033|FC-MA-100032|25/01/2025|Marrakech|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00169|FC-MA-100168|28/09/2025|Tanger|MAR_FRG|Fragile|Service client difficile à joindre|Agence|FR
+MA-S-00245|FC-MA-100244|19/06/2025|Agadir|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00515|FC-MA-100514|03/09/2025|Oujda|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00818|FC-MA-100817|03/01/2025|Casablanca|MAR_LRG|Large|colis m5ser chwya|Web|FR
+MA-S-00202|FC-MA-100201|15/04/2025|Rabat|MAR_LRG|Large|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00099|FC-MA-100098|16/05/2025|Marrakech|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00681|FC-MA-100680|23/10/2025|Casablanca|MAR_CLD|Refrigerated|wsel f lwe9t, merci|Agence|AR
+MA-S-00862|FC-MA-100861|29/07/2025|Meknès|MAR_STD|Standard|RAS, tout s'est bien passé|WhatsApp|FR
+MA-S-00788|FC-MA-100787|13/10/2025|Rabat|MAR_LRG|Large|service client ma kayjawbch|WhatsApp|AR
+MA-S-00806|FC-MA-100805|26/08/2025|Marrakech|MAR_STD|Standard|service client ma kayjawbch|Web|AR
+MA-S-00108|FC-MA-100107|11/05/2025|Tanger|MAR_EXP|Express|خدمة الزبناء ما كيجاوبوش|Web|AR
+MA-S-00605|FC-MA-100604|23/06/2025|Marrakech|MAR_STD|Standard|service client ma kayjawbch|Téléphone|AR
+MA-S-00714|FC-MA-100713|09/04/2025|Casablanca|MAR_EXP|Express|colis m5ser chwya|Web|Darija
+MA-S-00626|FC-MA-100625|14/06/2025|Agadir|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00525|FC-MA-100524|22/10/2025|Rabat|MAR_LRG|Large|التوصيل كان مزيان ولكن وصل متأخر|Web|FR
+MA-S-00472|FC-MA-100471|27/06/2025|Meknès|MAR_VAL|Valuable|colis m5ser chwya|Téléphone|FR
+MA-S-00243|FC-MA-100242|12/08/2025|Tanger|MAR_LRG|Large|Colis arrivé endommagé|Agence|FR
+MA-S-00210|FC-MA-100209|05/03/2025|Rabat|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|Agence|FR
+MA-S-00414|FC-MA-100413|19/07/2025|Oujda|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00249|FC-MA-100248|05/01/2025|Casablanca|MAR_FRG|Fragile|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00487|FC-MA-100486|27/04/2025|Agadir|MAR_EXP|Express||Téléphone|AR
+MA-S-00459|FC-MA-100458|30/01/2025|Tanger|MAR_CLD|Refrigerated|Service client difficile à joindre|Web|Darija
+MA-S-00050|FC-MA-100049|20/10/2025|Casablanca|MAR_EXP|Express|colis m5ser chwya|WhatsApp|FR
+MA-S-00391|FC-MA-100390|09/07/2025|Tanger|MAR_EXP|Express|RAS, tout s'est bien passé|Web|FR
+MA-S-00141|FC-MA-100140|27/02/2025|Casablanca|MAR_LRG|Large|Service client difficile à joindre|Téléphone|FR
+MA-S-00800|FC-MA-100799|19/04/2025|Meknès|MAR_STD|Standard|livraison mzyana walakin retard bzaf|Web|FR
+MA-S-00258|FC-MA-100257|31/01/2025|Agadir|MAR_EXP|Express|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00448|FC-MA-100447|05/02/2025|Marrakech|MAR_FRG|Fragile|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00299|FC-MA-100298|23/01/2025|Casablanca|MAR_VAL|Valuable|التوصيل كان مزيان ولكن وصل متأخر|Web|AR
+MA-S-00366|FC-MA-100365|18/05/2025|Casablanca|MAR_STD|Standard|الكولي وصل مزيان والخدمة زوينة|Agence|FR
+MA-S-00276|FC-MA-100275|04/10/2025|Rabat|MAR_CLD|Refrigerated|التوصيل كان مزيان ولكن وصل متأخر|WhatsApp|FR
+MA-S-00144|FC-MA-100143|20/05/2025|Fès|MAR_FRG|Fragile|wsel f lwe9t, merci|WhatsApp|Darija
+MA-S-00679|FC-MA-100678|24/08/2025|Casablanca|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|Web|Darija
+MA-S-00371|FC-MA-100370|05/08/2025|Oujda|MAR_VAL|Valuable|kolchi mzyan, livreur محترم|Agence|FR
+MA-S-00329|FC-MA-100328|30/01/2025|Casablanca|MAR_EXP|Express|Très satisfait, livraison à l'heure|Agence|AR
+MA-S-00058|FC-MA-100057|18/05/2025|Oujda|MAR_EXP|Express|الكرتونة مخسرة شوية|WhatsApp|Darija
+MA-S-00741|FC-MA-100740|25/09/2025|Agadir|MAR_CLD|Refrigerated|Colis arrivé endommagé|Agence|Darija
+MA-S-00850|FC-MA-100849|22/01/2025|Agadir|MAR_STD|Standard|wsel f lwe9t, merci|Web|Darija
+MA-S-00412|FC-MA-100411|02/06/2025|Tanger|MAR_STD|Standard|Service client difficile à joindre|Web|Darija
+MA-S-00229|FC-MA-100228|30/06/2025|Marrakech|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Téléphone|Darija
+MA-S-00297|FC-MA-100296|07/10/2025|Agadir|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00393|FC-MA-100392|09/02/2025|Fès|MAR_EXP|Express|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00423|FC-MA-100422|22/07/2025|Rabat|MAR_VAL|Valuable|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00377|FC-MA-100376|25/06/2025|Tanger|MAR_FRG|Fragile|service client ma kayjawbch|Web|Darija
+MA-S-00188|FC-MA-100187|11/06/2025|Fès|MAR_STD|Standard|وصل فالوقت وكلشي مزيان|Téléphone|FR
+MA-S-00379|FC-MA-100378|23/02/2025|Fès|MAR_STD|Standard|livraison mzyana walakin retard bzaf|WhatsApp|AR
+MA-S-00572|FC-MA-100571|27/09/2025|Fès|MAR_FRG|Fragile|Service client difficile à joindre|Téléphone|Darija
+MA-S-00382|FC-MA-100381|24/02/2025|Agadir|MAR_STD|Standard|Livraison en retard mais livreur professionnel|WhatsApp|Darija
+MA-S-00415|FC-MA-100414|03/10/2025|Meknès|MAR_LRG|Large|Colis arrivé endommagé|Agence|FR
+MA-S-00089|FC-MA-100088|05/09/2025|Fès|MAR_FRG|Fragile|RAS, tout s'est bien passé|Web|FR
+MA-S-00172|FC-MA-100171|25/09/2025|Agadir|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|Agence|FR
+MA-S-00709|FC-MA-100708|22/01/2025|Fès|MAR_LRG|Large|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00055|FC-MA-100054|16/06/2025|Rabat|MAR_EXP|Express|livraison mzyana walakin retard bzaf|Web|FR
+MA-S-00092|FC-MA-100091|02/08/2025|Oujda|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Téléphone|Darija
+MA-S-00439|FC-MA-100438|20/06/2025|Casablanca|MAR_VAL|Valuable|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00841|FC-MA-100840|18/07/2025|Oujda|MAR_STD|Standard|colis m5ser chwya|Téléphone|Darija
+MA-S-00027|FC-MA-100026|07/03/2025|Fès|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00817|FC-MA-100816|06/08/2025|Tanger|MAR_VAL|Valuable|وصل فالوقت وكلشي مزيان|Web|FR
+MA-S-00273|FC-MA-100272|19/05/2025|Fès|MAR_VAL|Valuable|Colis arrivé endommagé|Web|FR
+MA-S-00490|FC-MA-100489|09/09/2025|Marrakech|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|WhatsApp|AR
+MA-S-00105|FC-MA-100104|18/06/2025|Rabat|MAR_EXP|Express|خدمة الزبناء ما كيجاوبوش|Agence|FR
+MA-S-00645|FC-MA-100644|13/02/2025|Oujda|MAR_STD|Standard|الكولي وصل مزيان والخدمة زوينة|Téléphone|FR
+MA-S-00350|FC-MA-100349|09/07/2025|Meknès|MAR_FRG|Fragile|kolchi mzyan, livreur محترم|Téléphone|AR
+MA-S-00425|FC-MA-100424|07/09/2025|Fès|MAR_CLD|Refrigerated|Colis arrivé endommagé|Web|FR
+MA-S-00009|FC-MA-100008|04/10/2025|CASABLANCA|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00826|FC-MA-100825|11/07/2025|Marrakesh|MAR_LRG|Large|Très satisfait, livraison à l'heure|WhatsApp|AR
+MA-S-00820|FC-MA-100819|01/09/2025|Meknès|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00759|FC-MA-100758|05/01/2025|Oujda|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00370|FC-MA-100369|12/04/2025|Meknès|MAR_STD|Standard|RAS, tout s'est bien passé|Agence|AR
+MA-S-00628|FC-MA-100627|09/07/2025|Tanger|MAR_STD|Standard|Service client difficile à joindre|WhatsApp|AR
+MA-S-00361|FC-MA-100360|22/06/2025|Agadir|MAR_VAL|Valuable|الكرتونة مخسرة شوية|WhatsApp|Darija
+MA-S-00031|FC-MA-100030|09/04/2025|Tanger|MAR_EXP|Express|wsel f lwe9t, merci|Agence|Darija
+MA-S-00123|FC-MA-100122|27/09/2025|Rabat|MAR_FRG|Fragile|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00683|FC-MA-100682|30/09/2025|Marrakech|MAR_STD|Standard|kolchi mzyan, livreur محترم|Agence|FR
+MA-S-00043|FC-MA-100042|08/07/2025|Agadir|MAR_FRG|Fragile|خدمة الزبناء ما كيجاوبوش|WhatsApp|FR
+MA-S-00315|FC-MA-100314|09/02/2025|Tanger|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00098|FC-MA-100097|12/09/2025|Meknès|MAR_CLD|Refrigerated|Colis arrivé endommagé|WhatsApp|Darija
+MA-S-00527|FC-MA-100526|04/09/2025|Tanger|MAR_CLD|Refrigerated|Colis arrivé endommagé|Web|Darija
+MA-S-00301|FC-MA-100300|10/09/2025|Agadir|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00012|FC-MA-100011|13/10/2025|Casablanca|MAR_STD|Standard|wsel f lwe9t, merci|Web|FR
+MA-S-00590|FC-MA-100589|10/04/2025|Marrakech|MAR_EXP|Express|خدمة الزبناء ما كيجاوبوش|Téléphone|AR
+MA-S-00182|FC-MA-100181|06/03/2025|Oujda|MAR_STD|Standard|colis m5ser chwya|Agence|FR
+MA-S-00310|FC-MA-100309|17/03/2025|Agadir|MAR_CLD|Refrigerated|Service client difficile à joindre|WhatsApp|FR
+MA-S-00812|FC-MA-100811|28/05/2025|Rabat|MAR_CLD|Refrigerated|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00601|FC-MA-100600|13/07/2025|Agadir|MAR_VAL|Valuable|RAS, tout s'est bien passé|Web|AR
+MA-S-00822|FC-MA-100821|28/03/2025|Agadir|MAR_CLD|Refrigerated|wsel f lwe9t, merci|Agence|Darija
+MA-S-00188|FC-MA-100187|11/06/2025|Fès|MAR_STD|Standard|وصل فالوقت وكلشي مزيان|Téléphone|FR
+MA-S-00844|FC-MA-100843|29/06/2025|Tanger|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|AR
+MA-S-00274|FC-MA-100273|07/02/2025|Fès|MAR_EXP|Express|Service client difficile à joindre|Téléphone|AR
+MA-S-00177|FC-MA-100176|29/06/2025|Rabat|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Téléphone|Darija
+MA-S-00165|FC-MA-100164|08/02/2025|Oujda|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Téléphone|FR
+MA-S-00269|FC-MA-100268|02/08/2025|Casablanca|MAR_FRG|Fragile|wsel f lwe9t, merci|Web|FR
+MA-S-00857|FC-MA-100856|25/07/2025|Oujda|MAR_FRG|Fragile|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00137|FC-MA-100136|19/08/2025|Fès|MAR_CLD|Refrigerated|وصل فالوقت وكلشي مزيان|Web|FR
+MA-S-00593|FC-MA-100592|12/05/2025|Meknès|MAR_VAL|Valuable|الكرتونة مخسرة شوية|WhatsApp|AR
+MA-S-00506|FC-MA-100505|24/04/2025|Tanger|MAR_FRG|Fragile||Web|FR
+MA-S-00019|FC-MA-100018|10/08/2025|Meknès|MAR_VAL|Valuable|colis m5ser chwya|WhatsApp|FR
+MA-S-00064|FC-MA-100063|11/02/2025|Oujda|MAR_STD|Standard|Très satisfait, livraison à l'heure|Agence|AR
+MA-S-00685|FC-MA-100684|22/02/2025|Casablanca|MAR_LRG|Large|Service client difficile à joindre|WhatsApp|FR
+MA-S-00699|FC-MA-100698|01/03/2025|Tanger|MAR_VAL|Valuable||WhatsApp|AR
+MA-S-00408|FC-MA-100407|07/07/2025|Casablanca|MAR_STD|Standard|Très satisfait, livraison à l'heure|Téléphone|Darija
+MA-S-00025|FC-MA-100024|23/03/2025|Meknès|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|WhatsApp|Darija
+MA-S-00168|FC-MA-100167|16/05/2025|Agadir|MAR_STD|Standard|wsel f lwe9t, merci|WhatsApp|AR
+MA-S-00219|FC-MA-100218|02/08/2025|Casablanca|MAR_EXP|Express|الكرتونة مخسرة شوية|Téléphone|FR
+MA-S-00231|FC-MA-100230|21/01/2025|Casablanca|MAR_VAL|Valuable|Colis arrivé endommagé|Agence|FR
+MA-S-00520|FC-MA-100519|09/06/2025|Agadir|MAR_STD|Standard|خدمة الزبناء ما كيجاوبوش|Téléphone|AR
+MA-S-00824|FC-MA-100823|03/05/2025|Meknès|MAR_EXP|Express|وصل فالوقت وكلشي مزيان|Agence|Darija
+MA-S-00411|FC-MA-100410|14/03/2025|Fès|MAR_STD|Standard|Service client difficile à joindre|WhatsApp|AR
+MA-S-00456|FC-MA-100455|18/03/2025|Oujda|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|Téléphone|Darija
+MA-S-00104|FC-MA-100103|28/04/2025|Fès|MAR_STD|Standard|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00514|FC-MA-100513|30/04/2025|Fès|MAR_EXP|Express|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00029|FC-MA-100028|30/05/2025|Marrakech|MAR_EXP|Express|الكولي وصل مزيان والخدمة زوينة|Web|FR
+MA-S-00339|FC-MA-100338|02/03/2025|Tanger|MAR_EXP|Express|kolchi mzyan, livreur محترم|WhatsApp|Darija
+MA-S-00255|FC-MA-100254|16/10/2025|Oujda|MAR_VAL|Valuable|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00798|FC-MA-100797|29/07/2025|Meknès|MAR_VAL|Valuable|Colis arrivé endommagé|WhatsApp|AR
+MA-S-00825|FC-MA-100824|28/06/2025|Casablanca|MAR_LRG|Large|الكرتونة مخسرة شوية|Agence|Darija
+MA-S-00614|FC-MA-100613|17/06/2025|Marrakech|MAR_VAL|Valuable|التوصيل كان مزيان ولكن وصل متأخر|Agence|FR
+MA-S-00807|FC-MA-100806|04/01/2025|Agadir|MAR_CLD|Refrigerated|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00574|FC-MA-100573|17/05/2025|Fès|MAR_LRG|Large|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00557|FC-MA-100556|12/06/2025|Fès|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00397|FC-MA-100396|25/05/2025|Casablanca|MAR_LRG|Large|Livraison en retard mais livreur professionnel|WhatsApp|FR
+MA-S-00657|FC-MA-100656|29/04/2025|Rabat|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00381|FC-MA-100380|27/04/2025|Oujda|MAR_LRG|Large|Colis arrivé endommagé|WhatsApp|FR
+MA-S-00268|FC-MA-100267|06/08/2025|Oujda|MAR_VAL|Valuable|Service client difficile à joindre|Web|Darija
+MA-S-00522|FC-MA-100521|25/02/2025|Tanger|MAR_EXP|Express|وصل فالوقت وكلشي مزيان|Web|AR
+MA-S-00057|FC-MA-100056|26/09/2025|Oujda|MAR_CLD|Refrigerated|الكرتونة مخسرة شوية|Téléphone|Darija
+MA-S-00191|FC-MA-100190|04/07/2025|Oujda|MAR_EXP|Express||Agence|FR
+MA-S-00521|FC-MA-100520|10/06/2025|Agadir|MAR_STD|Standard|service client ma kayjawbch|WhatsApp|AR
+MA-S-00103|FC-MA-100102|20/01/2025|Rabat|MAR_EXP|Express|kolchi mzyan, livreur محترم|Téléphone|AR
+MA-S-00454|FC-MA-100453|23/04/2025|Rabat|MAR_CLD|Refrigerated|colis m5ser chwya|Web|AR
+MA-S-00810|FC-MA-100809|22/04/2025|Rabat| MAR_FRG |Valuable|livraison mzyana walakin retard bzaf|Téléphone|Darija
+MA-S-00267|FC-MA-100266|13/01/2025|Agadir|MAR_FRG|Fragile|wsel f lwe9t, merci|WhatsApp|FR
+MA-S-00347|FC-MA-100346|27/03/2025|Casa|MAR_LRG|Large|Colis arrivé endommagé|Web|FR
+MA-S-00421|FC-MA-100420|09/03/2025|Agadir|INCONNU|Express|التوصيل كان مزيان ولكن وصل متأخر|Agence|Darija
+MA-S-00251|FC-MA-100250|15/10/2025|Marrakech|MAR_LRG|Large|Livraison en retard mais livreur professionnel|Web|FR
+MA-S-00543|FC-MA-100542|06/09/2025|Oujda|MAR_VAL|Valuable|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00284|FC-MA-100283|07/06/2025|Oujda|MAR_EXP|Express|RAS, tout s'est bien passé|Web|Darija
+MA-S-00855|FC-MA-100854|21/03/2025|Rabat|MAR_FRG|Fragile|الكرتونة مخسرة شوية|WhatsApp|Darija
+MA-S-00241|FC-MA-100240|18/06/2025|Rabat|MAR_FRG|Fragile|service client ma kayjawbch|WhatsApp|FR
+MA-S-00048|FC-MA-100047|07/04/2025|Oujda|mar_exp|Standard|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00427|FC-MA-100426|07/02/2025|Fès|MAR_CLD|Refrigerated|Colis arrivé endommagé|Web|Darija
+MA-S-00316|FC-MA-100315|16/07/2025|Agadir|MAR_EXP|Express|colis m5ser chwya|Téléphone|Darija
+MA-S-00713|FC-MA-100712|22/08/2025|Casablanca|MAR_STD|Standard|livraison mzyana walakin retard bzaf|Agence|Darija
+MA-S-00434|FC-MA-100433|05/05/2025|Meknès|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|FR
+MA-S-00769|FC-MA-100768|26/03/2025|Meknès|MAR_STD|Standard|Service client difficile à joindre|WhatsApp|AR
+MA-S-00793|FC-MA-100792|06/03/2025|Oujda|MAR_FRG|Fragile|wsel f lwe9t, merci|Téléphone|FR
+MA-S-00636|FC-MA-100635|19/05/2025|Rabat|MAR_LRG|Large|خدمة الزبناء ما كيجاوبوش|WhatsApp|FR
+MA-S-00383|FC-MA-100382|11/01/2025|Tanger|MAR_FRG|Fragile|Colis arrivé endommagé|Web|AR
+MA-S-00447|FC-MA-100446|19/08/2025|Rabat|MAR_EXP|Express|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00780|FC-MA-100779|03/07/2025|Fès|MAR_FRG|Fragile|RAS, tout s'est bien passé|WhatsApp|AR
+MA-S-00535|FC-MA-100534|27/04/2025|Oujda|MAR_STD|Standard|Livraison en retard mais livreur professionnel|Agence|AR
+MA-S-00603|FC-MA-100602|28/10/2025|Oujda|MAR_LRG|Large|Service client difficile à joindre|Téléphone|Darija
+MA-S-00406|FC-MA-100405|23/09/2025|Fès|MAR_EXP|Express|Service client difficile à joindre|Téléphone|FR
+MA-S-00445|FC-MA-100444|30/01/2025|Meknès|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|Darija
+MA-S-00805|FC-MA-100804|07/09/2025|Marrakech|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Agence|FR
+MA-S-00647|FC-MA-100646|08/04/2025|Rabat|MAR_FRG|Fragile|خدمة الزبناء ما كيجاوبوش|WhatsApp|FR
+MA-S-00166|FC-MA-100165|25/02/2025|Fès|MAR_VAL|Valuable|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00858|FC-MA-100857|11/04/2025|Agadir|MAR_STD|Standard|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00075|FC-MA-100074|02/02/2025|Rabat|MAR_STD|Standard|RAS, tout s'est bien passé|Téléphone|Darija
+MA-S-00710|FC-MA-100709|10/07/2025|Marrakech|MAR_LRG|Large||WhatsApp|FR
+MA-S-00539|FC-MA-100538|13/09/2025|Meknès|MAR_EXP|Express|الكولي وصل مزيان والخدمة زوينة|Web|AR
+MA-S-00063|FC-MA-100062|19/08/2025|Casablanca|MAR_LRG|Large|Colis arrivé endommagé|Web|FR
+MA-S-00471|FC-MA-100470|02/02/2025|Rabat|MAR_STD|Standard|Colis arrivé endommagé|WhatsApp|AR
+MA-S-00650|FC-MA-100649|25/08/2025|Fès|MAR_LRG|Large|service client ma kayjawbch|WhatsApp|AR
+MA-S-00180|FC-MA-100179|03/10/2025|Oujda|MAR_VAL|Valuable|kolchi mzyan, livreur محترم|WhatsApp|FR
+MA-S-00159|FC-MA-100158|18/01/2025|Tanger|MAR_VAL|Valuable|وصل فالوقت وكلشي مزيان|Web|AR
+MA-S-00394|FC-MA-100393|25/07/2025|Casablanca|MAR_VAL|Valuable|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00458|FC-MA-100457|23/09/2025|Meknès|MAR_EXP|Express|Service client difficile à joindre|WhatsApp|Darija
+MA-S-00239|FC-MA-100238|25/03/2025|Fès|MAR_VAL|Valuable|RAS, tout s'est bien passé|Web|FR
+MA-S-00286|FC-MA-100285|20/09/2025|Casablanca|MAR_VAL|Valuable|colis m5ser chwya|Agence|AR
+MA-S-00334|FC-MA-100333|19/05/2025|Fès|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Téléphone|AR
+MA-S-00589|FC-MA-100588|21/01/2025|Meknès| MAR_FRG |Standard|wsel f lwe9t, merci|Téléphone|AR
+MA-S-00280|FC-MA-100279|21/06/2025|Rabat|MAR_LRG|Large|Service client difficile à joindre|Web|FR
+MA-S-00644|FC-MA-100643|01/10/2025|Rabat|MAR_CLD|Refrigerated|وصل فالوقت وكلشي مزيان|Web|AR
+MA-S-00637|FC-MA-100636|09/06/2025|Meknès|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|Téléphone|AR
+MA-S-00004|FC-MA-100003|23/01/2025|Meknès|MAR_FRG|Fragile|livraison mzyana walakin retard bzaf|Web|FR
+MA-S-00455|FC-MA-100454|24/02/2025|Marrakech|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|AR
+MA-S-00767|FC-MA-100766|03/10/2025|Fès|MAR_EXP|Express|وصل فالوقت وكلشي مزيان|WhatsApp|Darija
+MA-S-00532|FC-MA-100531|05/03/2025|Fès|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00465|FC-MA-100464|22/02/2025|Agadir|MAR_LRG|Large|kolchi mzyan, livreur محترم|Téléphone|FR
+MA-S-00669|FC-MA-100668|27/02/2025|Fès|MAR_LRG|Large|الكولي وصل مزيان والخدمة زوينة|WhatsApp|FR
+MA-S-00708|FC-MA-100707|08/04/2025|Tanger|MAR_CLD|Refrigerated|الكرتونة مخسرة شوية|Téléphone|Darija
+MA-S-00512|FC-MA-100511|20/09/2025|Marrakech|MAR_LRG|Large|colis m5ser chwya|Agence|FR
+MA-S-00061|FC-MA-100060|03/08/2025|Oujda|MAR_VAL|Valuable|التوصيل كان مزيان ولكن وصل متأخر|Web|Darija
+MA-S-00624|FC-MA-100623|09/04/2025|Agadir|MAR_FRG|Fragile|RAS, tout s'est bien passé|Agence|AR
+MA-S-00156|FC-MA-100155|25/05/2025|Fès|MAR_VAL|Valuable|RAS, tout s'est bien passé|Web|AR
+MA-S-00727|FC-MA-100726|25/02/2025|Tanger|MAR_LRG|Large|الكولي وصل مزيان والخدمة زوينة|Agence|FR
+MA-S-00659|FC-MA-100658|16/05/2025|Agadir|MAR_LRG|Large|Service client difficile à joindre|Agence|Darija
+MA-S-00596|FC-MA-100595|04/04/2025|Agadir|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Téléphone|AR
+MA-S-00187|FC-MA-100186|06/06/2025|Fès|INCONNU|Fragile|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00718|FC-MA-100717|21/05/2025|Fès|MAR_EXP|Express|Colis arrivé endommagé|Agence|Darija
+MA-S-00635|FC-MA-100634|21/08/2025|Agadir|MAR_VAL|Valuable|colis m5ser chwya|Agence|AR
+MA-S-00594|FC-MA-100593|23/09/2025|Meknès|MAR_VAL|Valuable|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00707|FC-MA-100706|26/01/2025|Oujda|MAR_STD|Standard|Colis arrivé endommagé|Web|FR
+MA-S-00724|FC-MA-100723|19/01/2025|Tanger|MAR_VAL|Valuable|Service client difficile à joindre|Web|FR
+MA-S-00278|FC-MA-100277|04/04/2025|Meknès|MAR_FRG|Fragile|Livraison en retard mais livreur professionnel|Web|AR
+MA-S-00762|FC-MA-100761|30/08/2025|Rabat|MAR_LRG|Large|التوصيل كان مزيان ولكن وصل متأخر|Agence|AR
+MA-S-00358|FC-MA-100357|19/07/2025|Meknès|MAR_VAL|Valuable|RAS, tout s'est bien passé|Téléphone|Darija
+MA-S-00674|FC-MA-100673|26/10/2025|Oujda|MAR_FRG|Fragile|RAS, tout s'est bien passé|Téléphone|FR
+MA-S-00177|FC-MA-100176|29/06/2025|Rabat|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Téléphone|Darija
+MA-S-00113|FC-MA-100112|05/03/2025|Tanger|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Agence|Darija
+MA-S-00175|FC-MA-100174|29/06/2025|Tanger|MAR_CLD|Refrigerated|colis m5ser chwya|Web|Darija
+MA-S-00770|FC-MA-100769|10/08/2025|Rabat|MAR_VAL|Valuable|RAS, tout s'est bien passé|Web|FR
+MA-S-00781|FC-MA-100780|04/03/2025|Tanger|MAR_LRG|Large|Très satisfait, livraison à l'heure|Web|Darija
+MA-S-00816|FC-MA-100815|01/10/2025|Marrakech|MAR_FRG|Fragile|خدمة الزبناء ما كيجاوبوش|Agence|AR
+MA-S-00495|FC-MA-100494|19/06/2025|Oujda|MAR_LRG|Large|RAS, tout s'est bien passé|WhatsApp|Darija
+MA-S-00354|FC-MA-100353|24/05/2025|Rabat|MAR_EXP|Express|Livraison en retard mais livreur professionnel|Web|Darija
+MA-S-00581|FC-MA-100580|03/09/2025|Fès|MAR_EXP|Express|livraison mzyana walakin retard bzaf|Web|FR
+MA-S-00233|FC-MA-100232|06/08/2025|Rabat|MAR_CLD|Refrigerated|livraison mzyana walakin retard bzaf|Téléphone|AR
+MA-S-00054|FC-MA-100053|16/10/2025|Meknès|MAR_STD|Standard|Service client difficile à joindre|Téléphone|FR
+MA-S-00680|FC-MA-100679|28/05/2025|Rabat|MAR_EXP|Express|التوصيل كان مزيان ولكن وصل متأخر|Téléphone|AR
+MA-S-00611|FC-MA-100610|01/02/2025|Marrakech|MAR_FRG|Fragile|Service client difficile à joindre|WhatsApp|FR
+MA-S-00021|FC-MA-100020|07/09/2025|Meknès|MAR_LRG|Large|RAS, tout s'est bien passé|Web|FR
+MA-S-00401|FC-MA-100400|08/05/2025|Tanger|MAR_LRG|Large|خدمة الزبناء ما كيجاوبوش|Web|AR
+MA-S-00224|FC-MA-100223|30/06/2025|Oujda|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|WhatsApp|FR
+MA-S-00675|FC-MA-100674|09/10/2025|Tanger|MAR_CLD|Refrigerated|Très satisfait, livraison à l'heure|Web|AR
+MA-S-00305|FC-MA-100304|23/01/2025|Tanger|MAR_EXP|Express|service client ma kayjawbch|WhatsApp|AR
+MA-S-00196|FC-MA-100195|11/10/2025|Marrakech|MAR_CLD|Refrigerated|service client ma kayjawbch|Web|Darija
+MA-S-00090|FC-MA-100089|28/05/2025|Marrakech|MAR_VAL|Valuable|Service client difficile à joindre|WhatsApp|AR

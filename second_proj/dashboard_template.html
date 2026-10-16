@@ -1,0 +1,1355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Logistics — Parcel Carbon Footprint & Simulator</title>
+<style>
+  :root {
+    --bg: #eef1f6;
+    --card: #ffffff;
+    --ink: #16202e;
+    --muted: #6b7a8d;
+    --line: #dde3ec;
+    --accent: #1f9d6b;
+    --accent-blue: #2f6df6;
+    --warn: #e0533d;
+    --air: #e0533d;
+    --truck: #e8a33d;
+    --lcv: #2f6df6;
+    --bike: #1f9d6b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header { margin-bottom: 20px; }
+  h1 { margin: 0; font-size: 24px; letter-spacing: -0.3px; display: flex; align-items: center; gap: 10px; }
+  .badge-tag {
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #e8f7ee;
+    color: #1f9d6b;
+    border: 1px solid #1f9d6b;
+  }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  h2 { margin: 0 0 14px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .filters { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end; margin-bottom: 18px; }
+  .filter-group { display: flex; flex-direction: column; gap: 8px; }
+  .filter-group > span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); font-weight: 600; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    border: 1px solid var(--line);
+    background: #f7f9fc;
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 5px 13px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .chip.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .chip:hover:not(.on) { border-color: var(--ink); color: var(--ink); }
+  select, button, input[type="text"] {
+    font: inherit;
+    padding: 6px 11px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    outline: none;
+  }
+  input[type="text"]:focus, select:focus { border-color: var(--accent-blue); }
+  button { cursor: pointer; font-weight: 500; }
+  button:hover { border-color: var(--accent-blue); }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-bottom: 18px; }
+  .kpi .value { font-size: 28px; font-weight: 600; letter-spacing: -0.5px; }
+  .kpi .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
+  .kpi .note { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px; }
+  .wide { grid-column: 1 / -1; }
+  .bar { display: grid; grid-template-columns: 140px 1fr 85px; align-items: center; gap: 10px; padding: 4px 0; }
+  .bar.clickable { cursor: pointer; }
+  .bar.clickable:hover .name { color: var(--accent-blue); font-weight: 600; }
+  .bar.off { opacity: 0.35; }
+  .bar .name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .track { background: #eef1f6; border-radius: 6px; height: 20px; overflow: hidden; }
+  .fill { height: 100%; border-radius: 6px; transition: width 0.3s ease; }
+  .bar .score { text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+  .bar .score small { color: var(--muted); font-size: 11px; font-weight: normal; margin-left: 3px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+  th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .heat td.cell { text-align: center; color: #fff; font-weight: 600; border-radius: 5px; }
+  .heat td.rate { text-align: center; font-weight: 600; border-radius: 5px; font-variant-numeric: tabular-nums; }
+  .scroll { max-height: 310px; overflow-y: auto; }
+  .scroll-x { overflow-x: auto; }
+  .tabs { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+  .tab {
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 7px 18px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .tab.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .tab:hover:not(.on) { border-color: var(--ink); color: var(--ink); }
+  .legend { margin-top: 8px; font-size: 12px; }
+  .legend span { font-weight: 600; margin-right: 14px; display: inline-flex; align-items: center; gap: 4px; }
+  .empty { color: var(--muted); padding: 30px 0; text-align: center; }
+  footer { margin-top: 24px; color: var(--muted); font-size: 12px; }
+  .insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 18px; }
+  .insight {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--warn);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .insight.accent { border-left-color: var(--accent); }
+  .insight.blue { border-left-color: var(--accent-blue); }
+  .insight .kicker { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); margin-bottom: 6px; }
+  .insight p { margin: 0; }
+
+  /* Simulator Specific Styles */
+  .sim-panel { display: grid; grid-template-columns: 1.25fr 1fr; gap: 20px; }
+  @media (max-width: 900px) { .sim-panel { grid-template-columns: 1fr; } }
+  .sim-control { margin-bottom: 20px; }
+  .sim-control label { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .sim-slider { width: 100%; height: 6px; background: #dde3ec; border-radius: 3px; outline: none; -webkit-appearance: none; }
+  .sim-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--accent); cursor: pointer; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.25); }
+  .sim-savings-card { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 22px; text-align: center; display: flex; flex-direction: column; justify-content: center; }
+  .sim-big-num { font-size: 44px; font-weight: 800; color: #166534; margin: 6px 0; letter-spacing: -1px; }
+
+  /* Journey Inspector & Timeline */
+  .journey-timeline { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; position: relative; }
+  .journey-timeline::before { content: ""; position: absolute; top: 12px; bottom: 12px; left: 18px; width: 2px; background: var(--line); }
+  .timeline-item { display: flex; gap: 16px; position: relative; }
+  .timeline-icon { width: 38px; height: 38px; border-radius: 50%; background: #ffffff; border: 2px solid var(--accent-blue); display: flex; align-items: center; justify-content: center; font-size: 15px; z-index: 1; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .timeline-icon.air { border-color: var(--air); }
+  .timeline-icon.truck { border-color: var(--truck); }
+  .timeline-icon.lcv { border-color: var(--lcv); }
+  .timeline-icon.bike { border-color: var(--bike); }
+  .timeline-content { background: #f8fafc; border: 1px solid var(--line); padding: 12px 16px; border-radius: 10px; flex-grow: 1; }
+  .timeline-route { font-size: 14px; font-weight: 600; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; }
+  .timeline-meta { font-size: 12px; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; }
+  .meta-tag { background: #ffffff; border: 1px solid var(--line); padding: 2px 7px; border-radius: 4px; font-size: 11px; }
+  .pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .pagination-btns { display: flex; gap: 6px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Smart Logistics — International Parcel Carbon Footprint <span class="badge-tag">Deliverable 5</span></h1>
+  <p>Multi-modal carbon accounting, corridor flows, predictive ML estimation, and modal shift scenario simulator on 1,500 master shipments.</p>
+  <div class="tabs">
+    <button class="tab on" data-view="viewEmissions">Emissions Overview</button>
+    <button class="tab" data-view="viewSimulator">What-If Simulator</button>
+    <button class="tab" data-view="viewJourneys">Shipments & Journeys</button>
+    <button class="tab" data-view="viewML">ML Model & Analytics</button>
+  </div>
+</header>
+
+<div class="filters card">
+  <div class="filter-group">
+    <span>Origin Country</span>
+    <div class="chips" id="originChips"></div>
+  </div>
+  <div class="filter-group">
+    <span>Destination Country</span>
+    <div class="chips" id="destChips"></div>
+  </div>
+  <div class="filter-group">
+    <span>Transport Mode</span>
+    <div class="chips" id="modeChips"></div>
+  </div>
+  <div class="filter-group">
+    <span>From</span>
+    <select id="fromWeek"></select>
+  </div>
+  <div class="filter-group">
+    <span>To</span>
+    <select id="toWeek"></select>
+  </div>
+  <div class="filter-group">
+    <span>&nbsp;</span>
+    <div class="chips">
+      <button id="reset">Reset filters</button>
+      <button id="export">Export CSV</button>
+    </div>
+  </div>
+</div>
+
+<!-- VIEW 1: EMISSIONS OVERVIEW -->
+<section id="viewEmissions">
+  <div class="kpis" id="kpis"></div>
+  <div class="insights" id="insights"></div>
+
+  <div class="grid">
+    <div class="card"><h2>Emissions by Transport Mode</h2><div id="byMode"></div></div>
+    <div class="card"><h2>Top Carbon Corridors</h2><div id="byCorridor"></div></div>
+    <div class="card"><h2>Emissions by Parcel Weight Class</h2><div id="byWeight"></div></div>
+    <div class="card"><h2>Modal Carbon Intensity (gCO2e / t.km)</h2><div id="byIntensity"></div></div>
+    <div class="card wide"><h2>Weekly Emissions Trend</h2><div id="trend"></div></div>
+    <div class="card wide"><h2>Origin × Destination Corridor Matrix (Heatmap)</h2><div class="scroll-x" id="corridorHeatmap"></div></div>
+    <div class="card"><h2>Logistics Hubs & Depots Activity</h2><div class="scroll" id="byHub"></div></div>
+    <div class="card"><h2>Parcel Carbon Footprint Distribution</h2><div id="distribution"></div></div>
+  </div>
+</section>
+
+<!-- VIEW 2: MODAL SHIFT SIMULATOR -->
+<section id="viewSimulator" hidden>
+  <div class="sim-panel card wide" style="margin-bottom: 18px;">
+    <div>
+      <h2>🌱 Operational Modal Shift Parameters</h2>
+      <p style="color: var(--muted); font-size: 13px; margin: 0 0 18px;">
+        Adjust operational transport parameters to simulate real-world carbon abatement across the multi-modal logistics network.
+      </p>
+
+      <div class="sim-control">
+        <label>
+          <span>1. Replace Short-Haul Air Freight with Electric Rail / Road</span>
+          <span id="val-air-shift" style="color: var(--accent); font-weight: 700;">0%</span>
+        </label>
+        <input type="range" class="sim-slider" id="slider-air" min="0" max="100" value="0">
+        <div style="font-size: 11px; color: var(--muted); margin-top: 4px;">Air factor (0.50 kgCO2e/t.km) shifted to Electric Rail (0.018 kgCO2e/t.km) — 96.4% reduction</div>
+      </div>
+
+      <div class="sim-control">
+        <label>
+          <span>2. Electrify Urban Delivery (Diesel LCV → Electric LCV & Cargo Bike)</span>
+          <span id="val-lcv-shift" style="color: var(--accent); font-weight: 700;">0%</span>
+        </label>
+        <input type="range" class="sim-slider" id="slider-lcv" min="0" max="100" value="0">
+        <div style="font-size: 11px; color: var(--muted); margin-top: 4px;">Diesel LCV (0.311 kg/km) converted to Electric Van (0.065 kg/km) & Cargo Bike (0.00)</div>
+      </div>
+
+      <div class="sim-control">
+        <label>
+          <span>3. Fleet Route Consolidation & Load Factor Optimization</span>
+          <span id="val-load-shift" style="color: var(--accent); font-weight: 700;">0%</span>
+        </label>
+        <input type="range" class="sim-slider" id="slider-load" min="0" max="30" value="0">
+        <div style="font-size: 11px; color: var(--muted); margin-top: 4px;">Payload consolidation reducing overall vehicle-kilometers traveled by up to 30%</div>
+      </div>
+    </div>
+
+    <div class="sim-savings-card">
+      <div class="kpi-label" style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: #166534; font-weight: 600;">Simulated Network Abatement</div>
+      <div class="sim-big-num" id="sim-pct-saved">0.0%</div>
+      <div style="font-size: 15px; font-weight: 700; color: #15803d; margin-bottom: 16px;" id="sim-tons-saved">0.00 metric tons CO2e avoided</div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; text-align: left; margin-bottom: 16px;">
+        <div style="background: rgba(255,255,255,0.7); padding: 10px 12px; border-radius: 8px; border: 1px solid #bbf7d0;">
+          <div style="font-size: 10px; color: var(--muted); font-weight: 600; text-transform: uppercase;">Baseline Footprint</div>
+          <div style="font-size: 17px; font-weight: 700; color: var(--ink);">13.80 tCO2e</div>
+        </div>
+        <div style="background: rgba(255,255,255,0.7); padding: 10px 12px; border-radius: 8px; border: 1px solid #bbf7d0;">
+          <div style="font-size: 10px; color: var(--muted); font-weight: 600; text-transform: uppercase;">Simulated Footprint</div>
+          <div style="font-size: 17px; font-weight: 700; color: #166534;" id="sim-new-total">13.80 tCO2e</div>
+        </div>
+      </div>
+
+      <div style="font-size: 12px; color: #166534; line-height: 1.4;" id="sim-equivalence">
+        🌲 Equivalent to planting 0 mature trees annually or removing 0 passenger cars from roads for a year.
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Modal Emissions: Baseline vs Simulated Scenario</h2>
+      <div id="simModeBars"></div>
+    </div>
+    <div class="card">
+      <h2>Corridor Abatement Impact</h2>
+      <div class="scroll" id="simCorridorTable"></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIEW 3: SHIPMENTS & JOURNEY INSPECTOR -->
+<section id="viewJourneys" hidden>
+  <div class="card wide" style="margin-bottom: 18px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;">
+      <h2>Multi-Modal Journey Reconstruction Viewer</h2>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <button id="btnP001" style="background: #f0fdf4; border-color: var(--accent); color: #166534; font-weight: 600;">⭐ Inspect Benchmark P001</button>
+        <input type="text" id="parcelSearch" placeholder="Tracking ID (e.g. P001)" style="width: 170px;">
+        <button id="btnSearch">Inspect</button>
+      </div>
+    </div>
+
+    <div id="inspectorCard" style="display: none; background: #f8fafc; border: 1px solid var(--line); padding: 16px; border-radius: 10px; margin-bottom: 16px;"></div>
+    <div class="journey-timeline" id="journeyTimeline"></div>
+  </div>
+
+  <div class="card wide">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+      <h2>Master Parcel Dataset (10-Column Schema)</h2>
+      <input type="text" id="tableFilter" placeholder="Filter by ID, country..." style="width: 220px;">
+    </div>
+    <div class="scroll-x">
+      <table id="shipmentsTable">
+        <thead>
+          <tr>
+            <th>Tracking ID</th>
+            <th>First Scan Date</th>
+            <th>Corridor</th>
+            <th class="num">Weight (kg)</th>
+            <th class="num">Hubs</th>
+            <th class="num">Distance (km)</th>
+            <th>Modes</th>
+            <th class="num">Est. CO2 (kg)</th>
+            <th class="num">ML CO2 (kg)</th>
+            <th style="text-align: center;">Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <span id="pageInfo">Showing 0-0 of 0</span>
+      <div class="pagination-btns">
+        <button id="prevPage">Previous</button>
+        <button id="nextPage">Next</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIEW 4: ML PREDICTIVE MODEL -->
+<section id="viewML" hidden>
+  <div class="kpis" id="mlKpis"></div>
+
+  <div class="insights">
+    <div class="insight blue">
+      <div class="kicker">Deliverable 4 Application</div>
+      <p>When intermediate scan checkpoints are missing or unrecorded, direct empirical journey reconstruction is impossible. A <strong>Random Forest Regressor (30 estimators, max depth 7)</strong> ensures 100% accounting completeness by predicting parcel emissions from shipment attributes.</p>
+    </div>
+    <div class="insight accent">
+      <div class="kicker">Predictive Accuracy</div>
+      <p>Cross-validation yields <strong>R² = 0.825</strong> and <strong>MAE = 2.07 kgCO2e</strong> across 1,370 verified complete journeys. Feature importance is dominated by payload ton-kilometers and air freight routing potential.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Model Feature Importance (MDI)</h2>
+      <div id="mlFeatureImportance"></div>
+    </div>
+    <div class="card">
+      <h2>Calculated vs ML Predicted Emissions</h2>
+      <div id="mlParityComparison"></div>
+    </div>
+    <div class="card wide">
+      <h2>Prediction Error Analysis by Corridor</h2>
+      <div class="scroll-x" id="mlCorridorErrors"></div>
+    </div>
+  </div>
+</section>
+
+<footer>Click any country, mode, or corridor bar to filter the whole dashboard. The What-If Simulator allows testing real-world decarbonization policies. Standalone & self-contained.</footer>
+
+<script>
+const DATA = __DATA__;
+
+// Column offsets for DATA.parcels:
+// 0: tracking_id, 1: date, 2: orig_country, 3: dest_country, 4: weight, 5: volume,
+// 6: num_hubs, 7: dist, 8: mode_text, 9: factor_str, 10: est_co2, 11: ml_co2, 12: week_idx, 13: modes_list
+const P_ID = 0, P_DATE = 1, P_ORIGIN = 2, P_DEST = 3, P_WEIGHT = 4, P_VOLUME = 5,
+      P_HUBS = 6, P_DIST = 7, P_MODES_TEXT = 8, P_FACTOR = 9, P_EST_CO2 = 10,
+      P_ML_CO2 = 11, P_WEEK = 12, P_MODES_LIST = 13;
+
+const SERIES_COLORS = ["#2f6df6", "#e0533d", "#1f9d6b", "#e8a33d", "#9b59d0"];
+
+const state = {
+  origins: new Set(DATA.countries.map((_, i) => i)),
+  dests: new Set(DATA.countries.map((_, i) => i)),
+  modes: new Set(DATA.modes.map((_, i) => i)),
+  fromWeek: 0,
+  toWeek: DATA.weeks.length - 1,
+  view: "viewEmissions",
+  inspectedParcel: "P001",
+  tablePage: 0,
+  pageSize: 20,
+  tableQuery: ""
+};
+
+/* ---------- Helpers ---------- */
+
+function selectedParcels(ignoreMode = false) {
+  return DATA.parcels.filter(p => {
+    if (!state.origins.has(p[P_ORIGIN])) return false;
+    if (!state.dests.has(p[P_DEST])) return false;
+    if (p[P_WEEK] !== null && (p[P_WEEK] < state.fromWeek || p[P_WEEK] > state.toWeek)) return false;
+    if (!ignoreMode) {
+      if (p[P_MODES_LIST].length === 0) return true;
+      const hasMode = p[P_MODES_LIST].some(m => state.modes.has(m));
+      if (!hasMode) return false;
+    }
+    return true;
+  });
+}
+
+function average(rows, col) {
+  let sum = 0, n = 0;
+  for (const r of rows) {
+    if (r[col] !== null) { sum += r[col]; n++; }
+  }
+  return n ? sum / n : null;
+}
+
+function sumCol(rows, col) {
+  let sum = 0;
+  for (const r of rows) {
+    if (r[col] !== null) sum += r[col];
+  }
+  return sum;
+}
+
+function groupBy(rows, col) {
+  const map = new Map();
+  for (const r of rows) {
+    const key = r[col];
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(r);
+  }
+  return map;
+}
+
+function format(num, decimals = 2) {
+  return num === null || num === undefined || isNaN(num) ? "–" : num.toFixed(decimals);
+}
+
+function escapeHtml(str) {
+  return String(str || "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+function heatColor(ratio) {
+  const r = Math.max(0, Math.min(1, ratio));
+  // Warm coral gradient for emissions intensity
+  const lightness = Math.round(96 - r * 44);
+  const saturation = Math.round(30 + r * 60);
+  return `hsl(12, ${saturation}%, ${lightness}%)`;
+}
+
+function barChart(target, items, onClick) {
+  if (!items || !items.length) {
+    target.innerHTML = '<p class="empty">No shipments match the current filters.</p>';
+    return;
+  }
+  const maxVal = Math.max(...items.map(it => it.value ?? 0)) || 1;
+  target.innerHTML = items.map((item, i) => `
+    <div class="bar ${onClick ? "clickable" : ""} ${item.dimmed ? "off" : ""}" data-i="${i}">
+      <span class="name" title="${escapeHtml(item.label)}">${escapeHtml(item.label)}</span>
+      <div class="track">
+        <div class="fill" style="width: ${item.value === null ? 0 : Math.min(100, Math.max(0, (item.value / maxVal) * 100))}%; background: ${item.color || "var(--accent)"}"></div>
+      </div>
+      <span class="score">${item.scoreText || format(item.value)} <small>${item.note || ""}</small></span>
+    </div>
+  `).join("");
+
+  if (onClick) {
+    target.querySelectorAll(".bar").forEach(b => {
+      b.addEventListener("click", () => onClick(items[Number(b.dataset.i)]));
+    });
+  }
+}
+
+/* ---------- Rendering: Tab 1 Overview ---------- */
+
+function renderKpis(parcels) {
+  const totalKg = sumCol(parcels, P_EST_CO2);
+  const avgKg = average(parcels, P_EST_CO2);
+  const totalTons = totalKg / 1000.0;
+  const totalDist = sumCol(parcels, P_DIST);
+
+  // Calculate Ton-Km across filtered parcels
+  let totalTonKm = 0;
+  for (const p of parcels) {
+    if (p[P_DIST] && p[P_WEIGHT]) {
+      totalTonKm += (p[P_DIST] * (p[P_WEIGHT] / 1000.0));
+    }
+  }
+
+  // Top mode in selection
+  const modeCounts = [0, 0, 0, 0];
+  for (const p of parcels) {
+    for (const m of p[P_MODES_LIST]) modeCounts[m]++;
+  }
+  const topModeIdx = modeCounts.indexOf(Math.max(...modeCounts));
+  const topModeLabel = topModeIdx >= 0 ? DATA.mode_labels[topModeIdx] : "LCV";
+
+  const cards = [
+    { label: "Shipments", value: parcels.length.toLocaleString("en"), note: `${DATA.weeks[state.fromWeek]} → ${DATA.weeks[state.toWeek]}` },
+    { label: "Carbon Footprint", value: format(totalTons, 2) + " t", note: `${Math.round(totalKg).toLocaleString("en")} kgCO2e` },
+    { label: "Avg per Parcel", value: format(avgKg, 2) + " kg", note: "P50 median: 7.76 kg" },
+    { label: "Payload Ton-Km", value: Math.round(totalTonKm).toLocaleString("en"), note: `${Math.round(totalDist).toLocaleString("en")} total km` },
+    { label: "Dominant Mode", value: topModeLabel, note: `${modeCounts[topModeIdx]} shipments involved` },
+    { label: "Benchmark P001", value: "15.81 kg", note: "FR → ES (80th percentile)" }
+  ];
+
+  document.getElementById("kpis").innerHTML = cards.map(c => `
+    <div class="card kpi">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      <div class="note">${c.note}</div>
+    </div>
+  `).join("");
+}
+
+function renderInsights(parcels) {
+  const target = document.getElementById("insights");
+  if (!parcels.length) { target.innerHTML = ""; return; }
+
+  const totalKg = sumCol(parcels, P_EST_CO2) || 1;
+  const avgNetKg = average(parcels, P_EST_CO2) || 1;
+  const cards = [];
+
+  // 1. Corridor Hotspot
+  const corridorMap = new Map();
+  for (const p of parcels) {
+    const key = `${DATA.countries[p[P_ORIGIN]].code} → ${DATA.countries[p[P_DEST]].code}`;
+    if (!corridorMap.has(key)) corridorMap.set(key, { count: 0, sumKg: 0 });
+    const c = corridorMap.get(key);
+    c.count++;
+    c.sumKg += (p[P_EST_CO2] || 0);
+  }
+  const sortedCorridors = [...corridorMap.entries()].sort((a, b) => b[1].sumKg - a[1].sumKg);
+  if (sortedCorridors.length) {
+    const [cName, cData] = sortedCorridors[0];
+    const cAvg = cData.sumKg / cData.count;
+    cards.push({
+      kicker: "Corridor Hotspot",
+      cls: "",
+      text: `<strong>${cName}</strong> generates <strong>${format(cData.sumKg, 1)} kgCO2e</strong> across ${cData.count} parcels (${format(cAvg, 1)} kg/parcel) — ${(cAvg / avgNetKg).toFixed(1)}× the network average.`
+    });
+  }
+
+  // 2. Air Freight vs Surface
+  const airParcels = parcels.filter(p => p[P_MODES_LIST].includes(2)); // 2 = AIR_FREIGHT
+  const airKg = sumCol(airParcels, P_EST_CO2);
+  const airShare = (airKg / totalKg) * 100;
+  cards.push({
+    kicker: "Aviation Carbon Intensity",
+    cls: "accent",
+    text: `Air freight is involved in <strong>${airParcels.length}</strong> shipments but accounts for <strong>${airShare.toFixed(1)}%</strong> of emissions due to high factor (500 g/t.km vs 82.3 g/t.km for Heavy Trucks).`
+  });
+
+  // 3. International vs Domestic Gap
+  const domestic = parcels.filter(p => p[P_ORIGIN] === p[P_DEST]);
+  const intl = parcels.filter(p => p[P_ORIGIN] !== p[P_DEST]);
+  const avgDom = average(domestic, P_EST_CO2);
+  const avgIntl = average(intl, P_EST_CO2);
+  if (avgDom !== null && avgIntl !== null) {
+    cards.push({
+      kicker: "Cross-Border Footprint",
+      cls: "blue",
+      text: `International shipments average <strong>${format(avgIntl, 2)} kgCO2e</strong> compared to <strong>${format(avgDom, 2)} kgCO2e</strong> for domestic lanes — a ${(avgIntl / (avgDom || 1)).toFixed(1)}× gap.`
+    });
+  }
+
+  // 4. Urban Last-Mile Cargo Bikes
+  const bikeParcels = parcels.filter(p => p[P_MODES_LIST].includes(3)); // 3 = BICYCLE
+  cards.push({
+    kicker: "Active Urban Mobility",
+    cls: "accent",
+    text: `<strong>${bikeParcels.length}</strong> parcels (${((bikeParcels.length / parcels.length) * 100).toFixed(0)}%) utilized zero-emission <strong>Cargo Bikes</strong> for final-mile city delivery with 0.00 kgCO2e.`
+  });
+
+  target.innerHTML = cards.map(c => `
+    <div class="insight ${c.cls || ""}">
+      <div class="kicker">${c.kicker}</div>
+      <p>${c.text}</p>
+    </div>
+  `).join("");
+}
+
+function renderModeBars(parcels) {
+  const modeSums = [0, 0, 0, 0];
+  const modeCounts = [0, 0, 0, 0];
+
+  for (const p of parcels) {
+    for (const m of p[P_MODES_LIST]) {
+      modeCounts[m]++;
+    }
+  }
+
+  // Use precomputed or allocated segment totals
+  const totalEmissions = sumCol(parcels, P_EST_CO2) || 1;
+  const items = DATA.modes.map((m, i) => {
+    // Mode share estimate from summary or parcel distribution
+    const summaryItem = DATA.mode_summary.find(s => s.mode_transport === m);
+    const emissions = summaryItem ? summaryItem.total_emissions_kgco2e : 0;
+    const share = summaryItem ? summaryItem.emissions_share_pct : 0;
+    return {
+      key: i,
+      label: DATA.mode_labels[i],
+      value: emissions,
+      scoreText: format(emissions, 1) + " kg",
+      note: `${share}% share`,
+      color: DATA.mode_colors[i],
+      dimmed: !state.modes.has(i)
+    };
+  });
+
+  barChart(document.getElementById("byMode"), items, it => toggle(state.modes, it.key));
+}
+
+function renderCorridorBars(parcels) {
+  const map = new Map();
+  for (const p of parcels) {
+    const key = `${DATA.countries[p[P_ORIGIN]].code} → ${DATA.countries[p[P_DEST]].code}`;
+    if (!map.has(key)) map.set(key, { count: 0, sumKg: 0, orig: p[P_ORIGIN], dest: p[P_DEST] });
+    const c = map.get(key);
+    c.count++;
+    c.sumKg += (p[P_EST_CO2] || 0);
+  }
+
+  const items = [...map.entries()]
+    .map(([corr, d]) => ({
+      label: corr,
+      value: d.sumKg,
+      scoreText: format(d.sumKg, 1) + " kg",
+      note: `${d.count} parcels`,
+      color: "var(--accent-blue)",
+      orig: d.orig,
+      dest: d.dest
+    }))
+    .sort((a, b) => b.value - a.value)
+    .slice(0, 10);
+
+  barChart(document.getElementById("byCorridor"), items, it => {
+    state.origins = new Set([it.orig]);
+    state.dests = new Set([it.dest]);
+    render();
+  });
+}
+
+function renderWeightBars(parcels) {
+  const brackets = [
+    { label: "Small (< 2 kg)", filter: p => p[P_WEIGHT] < 2, color: "#1f9d6b" },
+    { label: "Medium (2 – 10 kg)", filter: p => p[P_WEIGHT] >= 2 && p[P_WEIGHT] <= 10, color: "#2f6df6" },
+    { label: "Heavy (> 10 kg)", filter: p => p[P_WEIGHT] > 10, color: "#e8a33d" }
+  ];
+
+  const items = brackets.map(b => {
+    const group = parcels.filter(b.filter);
+    const sumKg = sumCol(group, P_EST_CO2);
+    const avgKg = average(group, P_EST_CO2);
+    return {
+      label: b.label,
+      value: sumKg,
+      scoreText: format(sumKg, 1) + " kg",
+      note: `${format(avgKg, 1)} kg/parcel`,
+      color: b.color
+    };
+  });
+
+  barChart(document.getElementById("byWeight"), items, null);
+}
+
+function renderIntensityBars() {
+  const items = DATA.mode_summary.map(s => {
+    const mIdx = DATA.modes.indexOf(s.mode_transport);
+    return {
+      label: s.mode_transport,
+      value: s.intensity_gco2e_per_tkm,
+      scoreText: format(s.intensity_gco2e_per_tkm, 1) + " g",
+      note: `${format(s.avg_kgco2e_per_km, 3)} kg/km`,
+      color: mIdx >= 0 ? DATA.mode_colors[mIdx] : "var(--accent)"
+    };
+  }).sort((a, b) => b.value - a.value);
+
+  barChart(document.getElementById("byIntensity"), items, null);
+}
+
+function renderDistribution(parcels) {
+  const bins = [
+    { label: "< 5 kgCO2e", min: 0, max: 5 },
+    { label: "5 – 10 kgCO2e", min: 5, max: 10 },
+    { label: "10 – 15 kgCO2e", min: 10, max: 15 },
+    { label: "15 – 20 kgCO2e", min: 15, max: 20 },
+    { label: "> 20 kgCO2e", min: 20, max: 9999 }
+  ];
+
+  const counts = bins.map(b => parcels.filter(p => {
+    const v = p[P_EST_CO2] ?? p[P_ML_CO2] ?? 0;
+    return v >= b.min && v < b.max;
+  }).length);
+
+  const total = parcels.length || 1;
+  const items = bins.map((b, i) => ({
+    label: b.label,
+    value: counts[i],
+    scoreText: `${Math.round((counts[i] / total) * 100)}%`,
+    note: `${counts[i]} pkgs`,
+    color: SERIES_COLORS[i % SERIES_COLORS.length]
+  }));
+
+  barChart(document.getElementById("distribution"), items, null);
+}
+
+function renderTrend(parcels) {
+  const weeks = DATA.weeks.slice(state.fromWeek, state.toWeek + 1);
+  const target = document.getElementById("trend");
+
+  if (weeks.length < 2 || !parcels.length) {
+    target.innerHTML = '<p class="empty">Widen the date filter to see weekly trends.</p>';
+    return;
+  }
+
+  const width = 900, height = 260, padX = 50, padY = 24;
+  const x = i => padX + (i / (weeks.length - 1)) * (width - padX * 2);
+
+  const byWeek = groupBy(parcels, P_WEEK);
+  const weeklyTotals = weeks.map((w, i) => {
+    const group = byWeek.get(state.fromWeek + i) || [];
+    return sumCol(group, P_EST_CO2) / 1000.0; // in metric tons
+  });
+
+  const maxVal = Math.max(...weeklyTotals, 0.5) * 1.15;
+  const y = val => height - padY - (val / maxVal) * (height - padY * 2);
+
+  const points = weeklyTotals.map((val, i) => ({
+    x: x(i),
+    y: y(val),
+    week: weeks[i],
+    val: val
+  }));
+
+  const gridLines = [0, 0.5, 1.0].map(p => {
+    const v = maxVal * p;
+    return `
+      <line x1="${padX}" y1="${y(v)}" x2="${width - padX}" y2="${y(v)}" stroke="#e6eaf1"/>
+      <text x="${padX - 8}" y="${y(v) + 4}" text-anchor="end" font-size="11" fill="#6b7a8d">${v.toFixed(1)}t</text>
+    `;
+  }).join("");
+
+  const labels = weeks.map((w, i) => `
+    <text x="${x(i)}" y="${height - 4}" text-anchor="middle" font-size="11" fill="#6b7a8d">${w}</text>
+  `).join("");
+
+  const polyPoints = points.map(pt => `${pt.x},${pt.y}`).join(" ");
+  const line = `
+    <polyline fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round" points="${polyPoints}"/>
+    ${points.map(pt => `
+      <circle cx="${pt.x}" cy="${pt.y}" r="4" fill="var(--accent)">
+        <title>${pt.week}: ${pt.val.toFixed(2)} tCO2e</title>
+      </circle>
+    `).join("")}
+  `;
+
+  target.innerHTML = `
+    <svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}">
+      ${gridLines}
+      ${line}
+      ${labels}
+    </svg>
+    <div class="legend">
+      <span style="color: var(--accent);">&#9632; Total Weekly Footprint (metric tons CO2e)</span>
+    </div>
+  `;
+}
+
+function renderHeatmap(parcels) {
+  const target = document.getElementById("corridorHeatmap");
+  const origins = [...state.origins].sort();
+  const dests = [...state.dests].sort();
+
+  if (!origins.length || !dests.length || !parcels.length) {
+    target.innerHTML = '<p class="empty">No shipments match filters.</p>';
+    return;
+  }
+
+  // Calculate sum and average CO2 for each origin x dest pair
+  const matrix = origins.map(o => dests.map(d => {
+    const group = parcels.filter(p => p[P_ORIGIN] === o && p[P_DEST] === d);
+    if (!group.length) return null;
+    return {
+      count: group.length,
+      sumKg: sumCol(group, P_EST_CO2),
+      avgKg: average(group, P_EST_CO2)
+    };
+  }));
+
+  const maxVal = Math.max(...matrix.flat().filter(Boolean).map(c => c.avgKg), 1);
+
+  const head = dests.map(d => `<th class="num">${DATA.countries[d].code}</th>`).join("");
+  const body = origins.map((o, rIdx) => {
+    const cells = dests.map((d, cIdx) => {
+      const cellData = matrix[rIdx][cIdx];
+      if (!cellData) return '<td class="rate" style="color: #cbd5e1;">–</td>';
+      const ratio = cellData.avgKg / maxVal;
+      const bg = heatColor(ratio);
+      const txtColor = ratio > 0.65 ? "#ffffff" : "var(--ink)";
+      return `
+        <td class="rate" style="background: ${bg}; color: ${txtColor}; cursor: pointer;" title="${DATA.countries[o].code} → ${DATA.countries[d].code}: ${cellData.count} pkgs, ${cellData.avgKg.toFixed(1)} kg avg">
+          ${cellData.avgKg.toFixed(1)}
+        </td>
+      `;
+    }).join("");
+    return `<tr><td><strong>${DATA.countries[o].name} (${DATA.countries[o].code})</strong></td>${cells}</tr>`;
+  }).join("");
+
+  target.innerHTML = `
+    <table class="heat">
+      <thead><tr><th>Origin \\ Dest</th>${head}</tr></thead>
+      <tbody>${body}</tbody>
+    </table>
+    <div style="font-size: 11px; color: var(--muted); margin-top: 8px;">Cells indicate average emissions per parcel (kgCO2e). Color heat scales with emission intensity.</div>
+  `;
+}
+
+function renderHubs() {
+  const target = document.getElementById("byHub");
+  const hubCounts = new Map();
+
+  for (const tid in DATA.segments) {
+    for (const seg of DATA.segments[tid]) {
+      const oHub = seg[1];
+      const dHub = seg[2];
+      if (oHub !== null && oHub !== undefined) {
+        hubCounts.set(oHub, (hubCounts.get(oHub) || 0) + 1);
+      }
+      if (dHub !== null && dHub !== undefined) {
+        hubCounts.set(dHub, (hubCounts.get(dHub) || 0) + 1);
+      }
+    }
+  }
+
+  const items = DATA.hubs.map((h, i) => ({
+    label: `${h.city} — ${h.name} (${h.type})`,
+    value: hubCounts.get(i) || 0,
+    scoreText: (hubCounts.get(i) || 0).toLocaleString("en"),
+    note: "touchpoints",
+    color: h.type === "AIRPORT" ? "var(--air)" : h.type === "WAREHOUSE" ? "var(--truck)" : "var(--accent-blue)"
+  })).sort((a, b) => b.value - a.value);
+
+  barChart(target, items, null);
+}
+
+/* ---------- Rendering: Tab 2 Simulator ---------- */
+
+function updateSimulation() {
+  const airShift = parseFloat(document.getElementById("slider-air").value) / 100.0;
+  const lcvShift = parseFloat(document.getElementById("slider-lcv").value) / 100.0;
+  const loadShift = parseFloat(document.getElementById("slider-load").value) / 100.0;
+
+  document.getElementById("val-air-shift").innerText = `${Math.round(airShift * 100)}%`;
+  document.getElementById("val-lcv-shift").innerText = `${Math.round(lcvShift * 100)}%`;
+  document.getElementById("val-load-shift").innerText = `${Math.round(loadShift * 100)}%`;
+
+  const baselineAir = 2257.06;
+  const baselineLCV = 10577.67;
+  const baselineTruck = 966.65;
+  const totalBaseline = 13801.38;
+
+  // Air shifted to rail/road: 0.50 -> 0.018 kgCO2e/t.km (96.4% reduction)
+  const airSavings = baselineAir * airShift * 0.964;
+
+  // LCV shifted to electric van (0.065 kg/km) & cargo bike (0.00): ~82% reduction
+  const lcvSavings = baselineLCV * lcvShift * 0.82;
+
+  // Route & load factor consolidation reduces Truck & LCV distance
+  const loadSavings = (baselineTruck + (baselineLCV - lcvSavings)) * loadShift;
+
+  const totalSavingsKg = airSavings + lcvSavings + loadSavings;
+  const totalSavingsTons = totalSavingsKg / 1000.0;
+  const pctSaved = ((totalSavingsKg / totalBaseline) * 100.0).toFixed(1);
+  const newTotalTons = ((totalBaseline - totalSavingsKg) / 1000.0).toFixed(2);
+
+  document.getElementById("sim-pct-saved").innerText = `${pctSaved}%`;
+  document.getElementById("sim-tons-saved").innerText = `${totalSavingsTons.toFixed(2)} metric tons CO2e avoided`;
+  document.getElementById("sim-new-total").innerText = `${newTotalTons} tCO2e`;
+
+  const trees = Math.round(totalSavingsKg / 22.0);
+  const cars = (totalSavingsKg / 4600.0).toFixed(1);
+  document.getElementById("sim-equivalence").innerText = `🌲 Equivalent to planting ${trees.toLocaleString()} mature trees annually or removing ${cars} passenger cars from roads for a year.`;
+
+  // Render modal comparison bars
+  const simAir = baselineAir - airSavings;
+  const simLCV = baselineLCV - lcvSavings;
+  const simTruck = baselineTruck * (1.0 - loadShift);
+  const maxM = baselineLCV;
+
+  document.getElementById("simModeBars").innerHTML = `
+    <div style="margin-bottom: 12px;">
+      <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">LCV Delivery Vans</div>
+      <div class="bar">
+        <span class="name">Baseline</span>
+        <div class="track"><div class="fill" style="width: ${(baselineLCV/maxM)*100}%; background: var(--lcv);"></div></div>
+        <span class="score">${format(baselineLCV, 0)} kg</span>
+      </div>
+      <div class="bar">
+        <span class="name">Simulated</span>
+        <div class="track"><div class="fill" style="width: ${(simLCV/maxM)*100}%; background: #16a34a;"></div></div>
+        <span class="score" style="color: #16a34a;">${format(simLCV, 0)} kg</span>
+      </div>
+    </div>
+    <div style="margin-bottom: 12px;">
+      <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">Air Freight</div>
+      <div class="bar">
+        <span class="name">Baseline</span>
+        <div class="track"><div class="fill" style="width: ${(baselineAir/maxM)*100}%; background: var(--air);"></div></div>
+        <span class="score">${format(baselineAir, 0)} kg</span>
+      </div>
+      <div class="bar">
+        <span class="name">Simulated</span>
+        <div class="track"><div class="fill" style="width: ${(simAir/maxM)*100}%; background: #16a34a;"></div></div>
+        <span class="score" style="color: #16a34a;">${format(simAir, 0)} kg</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">Heavy Trucks</div>
+      <div class="bar">
+        <span class="name">Baseline</span>
+        <div class="track"><div class="fill" style="width: ${(baselineTruck/maxM)*100}%; background: var(--truck);"></div></div>
+        <span class="score">${format(baselineTruck, 0)} kg</span>
+      </div>
+      <div class="bar">
+        <span class="name">Simulated</span>
+        <div class="track"><div class="fill" style="width: ${(simTruck/maxM)*100}%; background: #16a34a;"></div></div>
+        <span class="score" style="color: #16a34a;">${format(simTruck, 0)} kg</span>
+      </div>
+    </div>
+  `;
+
+  // Render corridor abatement impact
+  const topCorrs = DATA.corridor_summary.slice(0, 7);
+  const rows = topCorrs.map(c => {
+    const isAirLane = c.corridor.includes("CA");
+    const factorReduction = isAirLane ? (airShift * 0.45 + loadShift * 0.15) : (lcvShift * 0.35 + loadShift * 0.15);
+    const saved = c.total_emissions_kg * factorReduction;
+    const simKg = c.total_emissions_kg - saved;
+    return `
+      <tr>
+        <td><strong>${c.corridor}</strong></td>
+        <td class="num">${c.parcel_count}</td>
+        <td class="num">${format(c.total_emissions_kg, 1)} kg</td>
+        <td class="num" style="color: #16a34a; font-weight: 600;">${format(simKg, 1)} kg</td>
+        <td class="num" style="color: #16a34a;">-${((saved / c.total_emissions_kg) * 100).toFixed(0)}%</td>
+      </tr>
+    `;
+  }).join("");
+
+  document.getElementById("simCorridorTable").innerHTML = `
+    <table>
+      <thead>
+        <tr><th>Corridor</th><th class="num">Shipments</th><th class="num">Baseline</th><th class="num">Simulated</th><th class="num">Abatement</th></tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+}
+
+/* ---------- Rendering: Tab 3 Journeys & Inspector ---------- */
+
+function inspectParcel(tid) {
+  state.inspectedParcel = tid.trim().toUpperCase();
+  const parcel = DATA.parcels.find(p => p[P_ID].toUpperCase() === state.inspectedParcel);
+  const card = document.getElementById("inspectorCard");
+  const timeline = document.getElementById("journeyTimeline");
+
+  if (!parcel) {
+    card.style.display = "block";
+    card.innerHTML = `<p class="empty" style="padding: 10px;">Parcel <strong>${state.inspectedParcel}</strong> not found in dataset.</p>`;
+    timeline.innerHTML = "";
+    return;
+  }
+
+  const origName = DATA.countries[parcel[P_ORIGIN]].name;
+  const destName = DATA.countries[parcel[P_DEST]].name;
+  const isP001 = parcel[P_ID] === "P001";
+
+  card.style.display = "block";
+  card.innerHTML = `
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+      <div>
+        <h3 style="margin: 0 0 4px; font-size: 17px; display: flex; align-items: center; gap: 8px;">
+          Parcel ${parcel[P_ID]}
+          ${isP001 ? '<span class="badge-tag">Benchmark Walkthrough Case</span>' : ''}
+        </h3>
+        <div style="font-size: 13px; color: var(--muted);">
+          ${origName} (${DATA.countries[parcel[P_ORIGIN]].code}) → ${destName} (${DATA.countries[parcel[P_DEST]].code}) • First Scan: ${parcel[P_DATE] || "N/A"} • Weight: <strong>${parcel[P_WEIGHT] ? parcel[P_WEIGHT] + " kg" : "Imputed"}</strong> • Volume: ${parcel[P_VOLUME] || 0} m³
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 11px; text-transform: uppercase; color: var(--muted); font-weight: 600;">Total Footprint</div>
+        <div style="font-size: 24px; font-weight: 700; color: var(--accent);">
+          ${parcel[P_EST_CO2] !== null ? parcel[P_EST_CO2] + " kgCO2e" : (parcel[P_ML_CO2] || 0) + " kgCO2e (ML Imputed)"}
+        </div>
+      </div>
+    </div>
+  `;
+
+  const segs = DATA.segments[parcel[P_ID]] || [];
+  if (!segs.length) {
+    timeline.innerHTML = `
+      <div class="card" style="border-left: 4px solid var(--warn);">
+        <strong>⚠️ Incomplete Scan Log:</strong> Granular multi-segment transit events were unrecorded. Total footprint estimated via Deliverable 4 Machine Learning model: <strong>${parcel[P_ML_CO2]} kgCO2e</strong>.
+      </div>
+    `;
+    return;
+  }
+
+  timeline.innerHTML = segs.map(s => {
+    const oHub = DATA.hubs[s[1]] || { name: "Origin", type: "HUB" };
+    const dHub = DATA.hubs[s[2]] || { name: "Destination", type: "HUB" };
+    const modeName = DATA.modes[s[6]];
+    let icon = "🚚", cls = "lcv";
+    if (modeName === "AIR_FREIGHT") { icon = "✈️"; cls = "air"; }
+    else if (modeName === "HEAVY_TRUCK") { icon = "🚛"; cls = "truck"; }
+    else if (modeName === "BICYCLE") { icon = "🚲"; cls = "bike"; }
+
+    return `
+      <div class="timeline-item">
+        <div class="timeline-icon ${cls}">${icon}</div>
+        <div class="timeline-content">
+          <div class="timeline-route">
+            <span>Segment ${s[0]}: <strong>${oHub.name}</strong> (${oHub.type}) → <strong>${dHub.name}</strong> (${dHub.type})</span>
+            <span style="font-weight: 700; color: ${s[10] === 0 ? "var(--bike)" : "var(--ink)"};">${s[10] !== null ? format(s[10], 2) + " kgCO2e" : "0.00 kgCO2e"}</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="meta-tag"><strong>Mode:</strong> ${modeName}</span>
+            <span class="meta-tag"><strong>Distance:</strong> ${s[7]} km</span>
+            <span class="meta-tag"><strong>Factor:</strong> ${s[9]}</span>
+            <span class="meta-tag"><strong>Duration:</strong> ${s[5]} hrs</span>
+            <span class="meta-tag"><strong>Dep:</strong> ${s[3]}</span>
+            <span class="meta-tag"><strong>Arr:</strong> ${s[4]}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+function renderTable() {
+  const q = state.tableQuery.toLowerCase();
+  const filtered = selectedParcels(false).filter(p => {
+    if (!q) return true;
+    const tid = p[P_ID].toLowerCase();
+    const orig = DATA.countries[p[P_ORIGIN]].name.toLowerCase();
+    const dest = DATA.countries[p[P_DEST]].name.toLowerCase();
+    return tid.includes(q) || orig.includes(q) || dest.includes(q);
+  });
+
+  const total = filtered.length;
+  const start = state.tablePage * state.pageSize;
+  const pageRows = filtered.slice(start, start + state.pageSize);
+
+  document.getElementById("pageInfo").innerText = `Showing ${total ? start + 1 : 0}–${Math.min(start + pageRows.length, total)} of ${total.toLocaleString("en")} shipments`;
+
+  const tbody = document.getElementById("tableBody");
+  tbody.innerHTML = pageRows.map(p => `
+    <tr>
+      <td><strong>${p[P_ID]}</strong></td>
+      <td>${p[P_DATE] ? p[P_DATE].substring(0, 10) : "N/A"}</td>
+      <td>${DATA.countries[p[P_ORIGIN]].code} → ${DATA.countries[p[P_DEST]].code}</td>
+      <td class="num">${p[P_WEIGHT] !== null ? p[P_WEIGHT] : '<span style="color: var(--warn);">Imputed</span>'}</td>
+      <td class="num">${p[P_HUBS]}</td>
+      <td class="num">${p[P_DIST] !== null ? p[P_DIST] : "–"}</td>
+      <td><span style="font-size: 11px; color: var(--muted);">${p[P_MODES_TEXT] ? p[P_MODES_TEXT].substring(0, 24) : "–"}</span></td>
+      <td class="num" style="font-weight: 600;">${p[P_EST_CO2] !== null ? p[P_EST_CO2] : "–"}</td>
+      <td class="num" style="color: var(--muted);">${p[P_ML_CO2] !== null ? p[P_ML_CO2] : "–"}</td>
+      <td style="text-align: center;">
+        <button style="padding: 3px 8px; font-size: 11px;" onclick="selectAndInspect('${p[P_ID]}')">Inspect</button>
+      </td>
+    </tr>
+  `).join("");
+}
+
+function selectAndInspect(tid) {
+  showView("viewJourneys");
+  inspectParcel(tid);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+/* ---------- Rendering: Tab 4 ML Predictive Model ---------- */
+
+function renderML() {
+  const m = DATA.model_metrics;
+  const cards = [
+    { label: "Model Architecture", value: "Random Forest", note: `${m.n_estimators} trees, max depth ${m.max_depth}` },
+    { label: "Cross-Validation R²", value: format(m.r2, 3), note: "Explains 82.5% of variance" },
+    { label: "Root Mean Sq. Error", value: format(m.rmse, 2) + " kg", note: "RMSE on test folds" },
+    { label: "Mean Absolute Error", value: format(m.mae, 2) + " kg", note: "MAE average residual" },
+    { label: "Complete Verified", value: m.n_verified.toLocaleString("en"), note: "Parcels with complete scans" },
+    { label: "ML Imputed Shipments", value: m.n_incomplete.toLocaleString("en"), note: "100% accounting completeness" }
+  ];
+
+  document.getElementById("mlKpis").innerHTML = cards.map(c => `
+    <div class="card kpi">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      <div class="note">${c.note}</div>
+    </div>
+  `).join("");
+
+  // Feature Importance
+  const fiItems = DATA.feature_importance.map(f => ({
+    label: f.label || f.feature,
+    value: f.share,
+    scoreText: f.share.toFixed(1) + "%",
+    color: "var(--accent)"
+  })).sort((a, b) => b.value - a.value);
+
+  barChart(document.getElementById("mlFeatureImportance"), fiItems, null);
+
+  // Calculated vs ML Parity
+  const parcels = selectedParcels(false);
+  const diffs = parcels.map(p => {
+    const calc = p[P_EST_CO2];
+    const ml = p[P_ML_CO2];
+    if (calc === null || ml === null) return null;
+    return Math.abs(calc - ml);
+  }).filter(v => v !== null);
+
+  const brackets = [
+    { label: "Within ± 1.0 kg", count: diffs.filter(d => d <= 1.0).length, color: "#16a34a" },
+    { label: "Within ± 2.5 kg", count: diffs.filter(d => d > 1.0 && d <= 2.5).length, color: "#2f6df6" },
+    { label: "Within ± 5.0 kg", count: diffs.filter(d => d > 2.5 && d <= 5.0).length, color: "#e8a33d" },
+    { label: "Deviation > 5.0 kg", count: diffs.filter(d => d > 5.0).length, color: "#e0533d" }
+  ];
+
+  const totalDiffs = diffs.length || 1;
+  const parityItems = brackets.map(b => ({
+    label: b.label,
+    value: b.count,
+    scoreText: `${Math.round((b.count / totalDiffs) * 100)}%`,
+    note: `${b.count} pkgs`,
+    color: b.color
+  }));
+
+  barChart(document.getElementById("mlParityComparison"), parityItems, null);
+
+  // Error by Corridor table
+  const corrErrors = new Map();
+  for (const p of parcels) {
+    const key = `${DATA.countries[p[P_ORIGIN]].code} → ${DATA.countries[p[P_DEST]].code}`;
+    const calc = p[P_EST_CO2];
+    const ml = p[P_ML_CO2];
+    if (calc !== null && ml !== null) {
+      if (!corrErrors.has(key)) corrErrors.set(key, { count: 0, sumErr: 0, sumCalc: 0, sumMl: 0 });
+      const c = corrErrors.get(key);
+      c.count++;
+      c.sumErr += Math.abs(calc - ml);
+      c.sumCalc += calc;
+      c.sumMl += ml;
+    }
+  }
+
+  const errRows = [...corrErrors.entries()]
+    .map(([corr, d]) => ({
+      corr,
+      count: d.count,
+      mae: d.sumErr / d.count,
+      avgCalc: d.sumCalc / d.count,
+      avgMl: d.sumMl / d.count
+    }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 10)
+    .map(r => `
+      <tr>
+        <td><strong>${r.corr}</strong></td>
+        <td class="num">${r.count}</td>
+        <td class="num">${format(r.avgCalc, 2)} kg</td>
+        <td class="num">${format(r.avgMl, 2)} kg</td>
+        <td class="num" style="color: ${r.mae > 3.0 ? "var(--warn)" : "var(--ink)"}; font-weight: 600;">${format(r.mae, 2)} kg</td>
+      </tr>
+    `).join("");
+
+  document.getElementById("mlCorridorErrors").innerHTML = `
+    <table>
+      <thead>
+        <tr><th>Corridor</th><th class="num">Evaluated</th><th class="num">Avg Empirical</th><th class="num">Avg ML</th><th class="num">Lane MAE</th></tr>
+      </thead>
+      <tbody>${errRows}</tbody>
+    </table>
+  `;
+}
+
+/* ---------- Global Render Loop ---------- */
+
+function render() {
+  const parcels = selectedParcels(false);
+
+  // Sync chips
+  document.querySelectorAll("#originChips .chip").forEach((c, i) => c.classList.toggle("on", state.origins.has(i)));
+  document.querySelectorAll("#destChips .chip").forEach((c, i) => c.classList.toggle("on", state.dests.has(i)));
+  document.querySelectorAll("#modeChips .chip").forEach((c, i) => c.classList.toggle("on", state.modes.has(i)));
+  document.getElementById("fromWeek").value = state.fromWeek;
+  document.getElementById("toWeek").value = state.toWeek;
+
+  renderKpis(parcels);
+  renderInsights(parcels);
+  renderModeBars(parcels);
+  renderCorridorBars(parcels);
+  renderWeightBars(parcels);
+  renderIntensityBars();
+  renderTrend(parcels);
+  renderHeatmap(parcels);
+  renderHubs();
+  renderDistribution(parcels);
+
+  updateSimulation();
+  renderTable();
+  renderML();
+}
+
+function showView(view) {
+  state.view = view;
+  document.querySelectorAll(".tab").forEach(tab => tab.classList.toggle("on", tab.dataset.view === view));
+  document.getElementById("viewEmissions").hidden = view !== "viewEmissions";
+  document.getElementById("viewSimulator").hidden = view !== "viewSimulator";
+  document.getElementById("viewJourneys").hidden = view !== "viewJourneys";
+  document.getElementById("viewML").hidden = view !== "viewML";
+}
+
+function toggle(set, key) {
+  if (set.has(key) && set.size > 1) set.delete(key);
+  else if (set.has(key)) return;
+  else set.add(key);
+  render();
+}
+
+function buildChips(target, labels, set) {
+  target.innerHTML = labels.map((l, i) => `<button class="chip" data-i="${i}">${escapeHtml(l)}</button>`).join("");
+  target.querySelectorAll(".chip").forEach(chip => {
+    chip.addEventListener("click", () => toggle(set, Number(chip.dataset.i)));
+  });
+}
+
+function buildWeekSelects() {
+  const options = DATA.weeks.map((w, i) => `<option value="${i}">${w}</option>`).join("");
+  const from = document.getElementById("fromWeek");
+  const to = document.getElementById("toWeek");
+  from.innerHTML = options;
+  to.innerHTML = options;
+  to.value = state.toWeek;
+
+  from.addEventListener("change", () => {
+    state.fromWeek = Math.min(Number(from.value), state.toWeek);
+    from.value = state.fromWeek;
+    render();
+  });
+  to.addEventListener("change", () => {
+    state.toWeek = Math.max(Number(to.value), state.fromWeek);
+    to.value = state.toWeek;
+    render();
+  });
+}
+
+function exportCsv(parcels) {
+  const header = [
+    "tracking_id", "date_premier_flashage", "origin_country", "destination_country",
+    "weight_kg", "volume_m3", "number_of_hubs", "distance_estimee_km",
+    "mode_transport", "facteur_emission", "estimated_emissions", "ml_emissions"
+  ];
+
+  const lines = parcels.map(p => [
+    p[P_ID],
+    p[P_DATE],
+    DATA.countries[p[P_ORIGIN]].code,
+    DATA.countries[p[P_DEST]].code,
+    p[P_WEIGHT] ?? "",
+    p[P_VOLUME] ?? "",
+    p[P_HUBS] ?? "",
+    p[P_DIST] ?? "",
+    p[P_MODES_TEXT] ?? "",
+    p[P_FACTOR] ?? "",
+    p[P_EST_CO2] ?? "",
+    p[P_ML_CO2] ?? ""
+  ].map(v => `"${String(v).replace(/"/g, '""')}"`).join(","));
+
+  const blob = new Blob([[header.join(","), ...lines].join("\n")], { type: "text/csv;charset=utf-8" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "master_parcels_filtered.csv";
+  link.click();
+  URL.revokeObjectURL(link.href);
+}
+
+/* ---------- Setup Event Listeners ---------- */
+
+buildChips(document.getElementById("originChips"), DATA.countries.map(c => c.code), state.origins);
+buildChips(document.getElementById("destChips"), DATA.countries.map(c => c.code), state.dests);
+buildChips(document.getElementById("modeChips"), DATA.mode_labels, state.modes);
+buildWeekSelects();
+
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => showView(tab.dataset.view));
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+  state.origins = new Set(DATA.countries.map((_, i) => i));
+  state.dests = new Set(DATA.countries.map((_, i) => i));
+  state.modes = new Set(DATA.modes.map((_, i) => i));
+  state.fromWeek = 0;
+  state.toWeek = DATA.weeks.length - 1;
+  state.tableQuery = "";
+  document.getElementById("tableFilter").value = "";
+  render();
+});
+
+document.getElementById("export").addEventListener("click", () => {
+  exportCsv(selectedParcels(false));
+});
+
+// Simulator sliders
+["slider-air", "slider-lcv", "slider-load"].forEach(id => {
+  document.getElementById(id).addEventListener("input", updateSimulation);
+});
+
+// Inspector buttons
+document.getElementById("btnP001").addEventListener("click", () => {
+  document.getElementById("parcelSearch").value = "P001";
+  inspectParcel("P001");
+});
+document.getElementById("btnSearch").addEventListener("click", () => {
+  inspectParcel(document.getElementById("parcelSearch").value);
+});
+document.getElementById("parcelSearch").addEventListener("keydown", e => {
+  if (e.key === "Enter") inspectParcel(e.target.value);
+});
+
+// Table search & pagination
+document.getElementById("tableFilter").addEventListener("input", e => {
+  state.tableQuery = e.target.value;
+  state.tablePage = 0;
+  renderTable();
+});
+document.getElementById("prevPage").addEventListener("click", () => {
+  if (state.tablePage > 0) { state.tablePage--; renderTable(); }
+});
+document.getElementById("nextPage").addEventListener("click", () => {
+  state.tablePage++;
+  renderTable();
+});
+
+// Initialize default state
+inspectParcel("P001");
+render();
+</script>
+</body>
+</html>

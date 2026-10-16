@@ -1,0 +1,68 @@
+# Local wording -> platform value for the complaint fields that are not codes.
+# Match on the trimmed, uppercased source_value, the same way product codes match.
+# field=severity  -> 1 minor, 2 moderate, 3 major, 4 critical.
+#                    Germany grades 1-3 and Canada 1-5, so both are rescaled here.
+#                    Morocco does not grade its complaints at all.
+# field=status    -> OPEN, IN_PROGRESS, RESOLVED, ESCALATED, CLOSED
+# field=channel   -> WEB, PHONE, EMAIL, BRANCH, CHAT, APP, WHATSAPP
+country_code,field,source_value,target_value
+FR,severity,Mineur,1
+FR,severity,Moyen,2
+FR,severity,Majeur,3
+FR,severity,Critique,4
+ES,severity,Baja,1
+ES,severity,Media,2
+ES,severity,Alta,3
+ES,severity,Crítica,4
+DE,severity,1,1
+DE,severity,2,3
+DE,severity,3,4
+CA,severity,1,1
+CA,severity,2,2
+CA,severity,3,3
+CA,severity,4,4
+CA,severity,5,4
+FR,status,Ouvert,OPEN
+FR,status,En cours,IN_PROGRESS
+FR,status,Résolu,RESOLVED
+FR,status,Escaladé,ESCALATED
+FR,status,Clos,CLOSED
+ES,status,Pendiente,OPEN
+ES,status,En curso,IN_PROGRESS
+ES,status,Resuelto,RESOLVED
+ES,status,Escalado,ESCALATED
+ES,status,Cerrado,CLOSED
+DE,status,offen,OPEN
+DE,status,in Bearbeitung,IN_PROGRESS
+DE,status,gelöst,RESOLVED
+DE,status,eskaliert,ESCALATED
+DE,status,geschlossen,CLOSED
+CA,status,open,OPEN
+CA,status,in_progress,IN_PROGRESS
+CA,status,resolved,RESOLVED
+CA,status,escalated,ESCALATED
+CA,status,closed,CLOSED
+MA,status,Ouvert,OPEN
+MA,status,En cours,IN_PROGRESS
+MA,status,Résolu,RESOLVED
+MA,status,Clos,CLOSED
+FR,channel,Web,WEB
+FR,channel,Téléphone,PHONE
+FR,channel,Email,EMAIL
+FR,channel,Agence,BRANCH
+ES,channel,Web,WEB
+ES,channel,Teléfono,PHONE
+ES,channel,Email,EMAIL
+ES,channel,App,APP
+DE,channel,Web,WEB
+DE,channel,Telefon,PHONE
+DE,channel,E-Mail,EMAIL
+DE,channel,Filiale,BRANCH
+CA,channel,Web,WEB
+CA,channel,Phone,PHONE
+CA,channel,Email,EMAIL
+CA,channel,Chat,CHAT
+MA,channel,Web,WEB
+MA,channel,Téléphone,PHONE
+MA,channel,Agence,BRANCH
+MA,channel,WhatsApp,WHATSAPP

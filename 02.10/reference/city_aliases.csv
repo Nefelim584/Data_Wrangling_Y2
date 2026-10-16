@@ -1,0 +1,4 @@
+# Spellings that survive trimming and title-casing but still mean the same city.
+country_code,source_city,city_name
+MA,Casa,Casablanca
+MA,Marrakesh,Marrakech

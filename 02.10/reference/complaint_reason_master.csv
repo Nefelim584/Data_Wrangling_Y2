@@ -1,0 +1,20 @@
+# Global complaint reason reference. One row per reason the business recognises.
+# reason_key is owned by the platform, not by any country.
+# aspect says which survey score the reason explains, so a complaint can be read
+# next to the matching column of fact_survey. RSN_FEES is billing, not delivery.
+# is_compensable: the branch may pay the customer back for this reason.
+reason_key,reason_name,reason_name_fr,aspect,is_compensable
+RSN_LATE,Late delivery,Livraison en retard,delivery_score,false
+RSN_MISSED,Failed delivery attempt,Passage manqué,delivery_score,false
+RSN_LOST,Parcel lost,Colis perdu,delivery_score,true
+RSN_RUDE,Impolite courier,Livreur impoli,courier_score,false
+RSN_NOCALL,Courier left without ringing,Livreur reparti sans sonner,courier_score,false
+RSN_WRONGADDR,Delivered to the wrong address,Livré à la mauvaise adresse,courier_score,true
+RSN_DAMAGE,Parcel damaged,Colis endommagé,condition_score,true
+RSN_COLDCHAIN,Cold chain broken,Chaîne du froid rompue,condition_score,true
+RSN_MISSING,Items missing from the parcel,Articles manquants,condition_score,true
+RSN_NOREPLY,Customer service unreachable,Service client injoignable,service_score,false
+RSN_REFUND,Refund or claim not processed,Remboursement non traité,service_score,true
+RSN_WRONGINFO,Wrong information given,Information erronée,service_score,false
+RSN_FEES,Unexpected fees,Frais inattendus,,true
+RSN_UNK,Unknown,Inconnu,,false

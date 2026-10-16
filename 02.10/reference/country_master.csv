@@ -1,0 +1,10 @@
+# One row per local branch, describing how its survey and complaint files are shaped.
+# rating_scale: what the survey file contains before normalisation to 1-5.
+# currency: the money in complaint_file (refunds), one currency per branch.
+# eur_rate: what one unit of that currency is worth in euro, so refunds compare.
+country_code,country_name,region,source_file,source_format,rating_scale,date_format,currency,eur_rate,complaint_file,complaint_format
+FR,France,Europe,france_satisfaction_raw.xlsx,excel,1-5,dd/mm/yyyy,EUR,1.0,france_complaints_raw.xlsx,excel
+ES,Spain,Europe,spain_satisfaction_raw.json,json,words,yyyy-mm-dd,EUR,1.0,spain_complaints_raw.json,json
+DE,Germany,Europe,germany_satisfaction_raw.csv,csv-semicolon,1-5,dd.mm.yyyy,EUR,1.0,germany_complaints_raw.csv,csv-semicolon
+CA,Canada,North America,canada_satisfaction_raw.csv,csv-comma,1-10,yyyy-mm-dd,CAD,0.67,canada_complaints_raw.jsonl,json-lines
+MA,Morocco,Africa,morocco_satisfaction_raw.txt,pipe-text,free-text,dd/mm/yyyy,MAD,0.091,morocco_complaints_raw.txt,pipe-text

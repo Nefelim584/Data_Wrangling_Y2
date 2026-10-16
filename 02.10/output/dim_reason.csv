@@ -1,0 +1,15 @@
+reason_key,reason_name,reason_name_fr,aspect,is_compensable
+RSN_LATE,Late delivery,Livraison en retard,delivery_score,False
+RSN_MISSED,Failed delivery attempt,Passage manqué,delivery_score,False
+RSN_LOST,Parcel lost,Colis perdu,delivery_score,True
+RSN_RUDE,Impolite courier,Livreur impoli,courier_score,False
+RSN_NOCALL,Courier left without ringing,Livreur reparti sans sonner,courier_score,False
+RSN_WRONGADDR,Delivered to the wrong address,Livré à la mauvaise adresse,courier_score,True
+RSN_DAMAGE,Parcel damaged,Colis endommagé,condition_score,True
+RSN_COLDCHAIN,Cold chain broken,Chaîne du froid rompue,condition_score,True
+RSN_MISSING,Items missing from the parcel,Articles manquants,condition_score,True
+RSN_NOREPLY,Customer service unreachable,Service client injoignable,service_score,False
+RSN_REFUND,Refund or claim not processed,Remboursement non traité,service_score,True
+RSN_WRONGINFO,Wrong information given,Information erronée,service_score,False
+RSN_FEES,Unexpected fees,Frais inattendus,,True
+RSN_UNK,Unknown,Inconnu,,False

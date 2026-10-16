@@ -1,0 +1,8 @@
+product_key,product_name,product_name_fr,requires_cold_chain,is_insured
+PRD_STD,Standard,Standard,False,False
+PRD_EXP,Express,Express,False,False
+PRD_FRG,Fragile,Fragile,False,False
+PRD_CLD,Refrigerated,Réfrigéré,True,False
+PRD_LRG,Large,Volumineux,False,False
+PRD_VAL,Valuable,Valeur déclarée,False,True
+PRD_UNK,Unknown,Inconnu,False,False
